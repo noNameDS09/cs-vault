@@ -95,3 +95,91 @@ class Solution:
         
         return head
 ```
+
+### Optimal Solution
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution:
+
+    def reverse(self, head, last):
+        """
+        Reverse the linked list segment from 'head' up to (but not including) 'last'.
+
+        Example:
+            head -> 1 -> 2 -> 3 -> last(4)
+
+        After reversal:
+            3 -> 2 -> 1 -> 4
+
+        Returns:
+            (new_head, new_tail)
+        """
+        prev = last
+        curr = head
+
+        while curr != last:
+            # Save the next node before changing the link
+            nxt = curr.next
+
+            # Reverse the current node's pointer
+            curr.next = prev
+
+            # Move both pointers one step ahead
+            prev = curr
+            curr = nxt
+
+        # 'prev' is the new head of the reversed segment.
+        # Original 'head' becomes the tail.
+        return prev, head
+
+    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+
+        # No reversal needed
+        if not head or k == 1:
+            return head
+
+        # Dummy node simplifies handling the first group
+        dummy = ListNode(0)
+        dummy.next = head
+
+        # Points to the tail of the previously processed group
+        prev_tail = dummy
+
+        # Current group's head
+        curr = head
+
+        while curr:
+
+            # Check if there are at least k nodes remaining
+            temp = curr
+            count = 0
+
+            while count < k and temp:
+                temp = temp.next
+                count += 1
+
+            # Fewer than k nodes remain -> leave them unchanged
+            if count < k:
+                break
+
+            # Reverse the current group
+            # new_head = head of reversed group
+            # new_tail = tail of reversed group (original curr)
+            new_head, new_tail = self.reverse(curr, temp)
+
+            # Connect previous group to the reversed group
+            prev_tail.next = new_head
+
+            # Move prev_tail to the end of the reversed group
+            prev_tail = new_tail
+
+            # Start processing the next group
+            curr = temp
+
+        return dummy.next
+```
