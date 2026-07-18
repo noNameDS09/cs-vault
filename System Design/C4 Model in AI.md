@@ -1,0 +1,1 @@
+In the AI field, the **C4 model** refers to ==applying Simon Brown’s software architecture framework to AI-driven systems==. It allows teams to visualize complex AI applications (like agentic workflows, LLMs, and RAG pipelines) by breaking them down into four hierarchical levels: **Context, Containers, Components, and Code**.
