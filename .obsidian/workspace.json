@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6040722c0f9ec87f",
+        "id": "ab54ee8a05cdf869",
         "type": "tabs",
         "children": [
           {
-            "id": "d5deb9fe388d37a9",
+            "id": "71afeb941b959c79",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Leetcode Solved List.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Leetcode Solved List"
             }
           }
         ]
@@ -152,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "dsa/Leetcode Solved List.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Leetcode Solved List"
             }
           },
           {
@@ -197,8 +201,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "copilot-chat-view"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
@@ -224,44 +228,45 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "809928d553b27851",
+  "active": "71afeb941b959c79",
   "lastOpenFiles": [
+    "copilot/copilot-conversations/I_want_to_link_the_solved_problems_from_the_folder@20260720_105543.md",
+    "copilot/copilot-conversations",
+    "dsa/Solved/1_TwoSum.md",
+    "dsa/Leetcode Solved List.md",
+    "dsa/Solved",
     "ML/RAG.md",
-    "ml_dl_ai/temp.md",
-    "ml_dl_ai/rag.md",
-    "ml_dl_ai/rag.excalidraw",
-    "README.md",
     "Enterprise RAG/Chat with ChatGPT.md",
-    "Excalidraw/MySystemDesigns.md",
-    "Enterprise RAG/Architecture.md",
+    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "dsa/Solved/1081_SmallestSubsequenceOfDistinctCharacters.md",
+    "system_design/Domain-Driven Design (DDD).md",
+    "Learning Resources/G-LLM-I-m0-l2-en-file-2.en.pdf",
+    "System Design/Git Basics.md",
     "Enterprise RAG/Architecture Decision Matrix.md",
-    "TimePass/GitHub Student Plan/Services Offered with GitHubs Student plan.md",
-    "TimePass/Msg Automation.md",
-    "TimePass",
-    "Welcome.md",
-    "First Note.md",
-    "TimePass/GitHub Student Plan",
-    "ML/Vector Databases.md",
-    "System Design/C4 Model in AI.md",
-    "System Design/Domain-Driven Design (DDD).md",
-    "System Design/Mermaid Diagrams for Concepts.md",
-    "System Design/Modular Monolith.md",
-    "Enterprise RAG",
-    "System Design/Key Notes.md",
-    "Excalidraw/Drawing 2026-07-17 17.56.29.excalidraw.md",
-    "System Design",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "video url.md",
+    "Enterprise RAG/Architecture.md",
+    "README.md",
+    "Learning Resources/G-LLM-I-m0-l2-en-file-2.en.pdf.crdownload",
+    "Learning Resources",
+    "New folder",
+    "notion/Projects & Tasks/Tasks/Research about competitors of compAire/Pricing/Business 217213addb1a8033b263d246ccbc78c1.md",
+    "notion/Home/My Tasks 8c3db0ea882546769ff341762d244223.md",
+    "notion/Home/Home views 0c29d36c416640029fe05aa78a8ecf04.md",
+    "notion/Daily Life/Untitled/The Psychology behind the Web Series 365213addb1a807fb359c863e5b6068e.md",
+    "notion/Daily Life/Untitled/Daily Entry 36c213addb1a8017b59bea2962ce7b10.md",
+    "notion/Daily Life/Untitled/Cockroach Janata Party 366213addb1a80f590bbf92e5e3b995f.md",
+    "notion/Daily Life/Untitled/After Long Time 34c213addb1a80009a53f36eeb63b854.md",
+    "notion/Daily Life/Untitled/Untitled 350213addb1a80ac99d9c0e9bd016067.md",
+    "notion/Daily Life/Untitled/Untitled 36e213addb1a8000bb91edd3cd0f7d19.md",
+    "notion/Daily Life/Untitled/Untitled 351213addb1a802fa591ccaaf0686494.md",
+    "Home views 0c29d36c416640029fe05aa78a8ecf04.csv.md",
+    "notion/Daily Life 34c213addb1a806a913fc62beccfe5b1.md",
+    "notion/Destination 515d112b46134f31a01c6ddbb5f37bc8.md",
+    "notion/Projects & Tasks/Tasks/Research about competitors of compAire/Pricing/Pro 217213addb1a80ca8600ed384e790d7f.md",
+    "notion/Projects & Tasks/Tasks/Research about competitors of compAire/Pricing 217213addb1a80bda5e5c09823c074f3_all.csv",
+    "notion/Projects & Tasks/Tasks/Research about competitors of compAire/Pricing",
+    "notion/Projects & Tasks/Tasks/Research about competitors of compAire",
+    "notion/Projects & Tasks/Projects/Shravan",
     "Pasted image 20260717171212.png",
-    "Pasted image 20260717111149.png",
-    "ML",
-    "First Note.restored.md",
-    "Excalidraw/Drawing 2026-07-16 21.29.03.excalidraw.md",
-    "Excalidraw",
-    "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts",
-    "copilot"
+    "Pasted image 20260717111149.png"
   ]
 }
