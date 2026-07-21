@@ -1,0 +1,1 @@
+This directory contains documentation and resources related to system design concepts, including architectural patterns, design principles, scalability strategies, and other foundational topics.
