@@ -53,5 +53,8 @@
 - [3312_SortedGCDPairQueries.md](Solved/3312_SortedGCDPairQueries.md)
 - [3867_SumOfGCDOfFormedPairs.md](Solved/3867_SumOfGCDOfFormedPairs.md)
 - [1260_Shift2dGrid.md](Solved/1260_Shift2dGrid.md)
+- [3499_MaximizeActiveSectionWithTradeI.md](Solved/3499_MaximizeActiveSectionWithTradeI.md)
+- [572_SubtreeOfAnotherTree.md](Solved/572_SubtreeOfAnotherTree.md)
+- 
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 

@@ -5,7 +5,13 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "LiTarget",
+      "❕",
+      "LiExcalidrawIcon",
+      "💡",
+      "LiListTodo"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -27,5 +33,10 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "TO-DO.md": "LiListTodo",
+  "IDEA.md": "💡",
+  "Excalidraw": "LiExcalidrawIcon",
+  "dsa/Shortcuts.md": "❕",
+  "dsa/Leetcode Solved List.md": "LiTarget"
 }
