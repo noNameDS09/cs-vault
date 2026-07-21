@@ -52,5 +52,6 @@
 - [2963_CountGoodPartitions.md](Solved/2963_CountGoodPartitions.md)
 - [3312_SortedGCDPairQueries.md](Solved/3312_SortedGCDPairQueries.md)
 - [3867_SumOfGCDOfFormedPairs.md](Solved/3867_SumOfGCDOfFormedPairs.md)
+- [1260_Shift2dGrid.md](Solved/1260_Shift2dGrid.md)
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 

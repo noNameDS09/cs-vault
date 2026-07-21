@@ -169,3 +169,93 @@ ON e.dept_id = d.id;
 ```
 
 
+## **MODULE 3: AGGREGATIONS & GROUP BY**
+
+### Aggregation Functions
+
+```sql
+SELECT COUNT(*) FROM employees;           -- Count rows
+SELECT SUM(salary) FROM employees;        -- Total salary
+SELECT AVG(salary) FROM employees;        -- Average salary
+SELECT MAX(salary) FROM employees;        -- Highest salary
+SELECT MIN(salary) FROM employees;        -- Lowest salary
+```
+
+### GROUP BY - Aggregate by category
+
+```sql
+SELECT dept_id, COUNT(*) as emp_count
+FROM employees
+GROUP BY dept_id;
+```
+
+**Result:**
+
+```
+| dept_id | emp_count |
+|---------|-----------|
+| 1       | 3         |
+| 2       | 1         |
+| NULL    | 1         |
+```
+
+### Multiple Grouping
+
+```sql
+SELECT dept_id, COUNT(*) as count, AVG(salary) as avg_salary
+FROM employees
+GROUP BY dept_id;
+```
+
+### HAVING - Filter groups (like WHERE but for aggregates)
+
+```sql
+SELECT dept_id, COUNT(*) as emp_count
+FROM employees
+GROUP BY dept_id
+HAVING COUNT(*) > 1;  -- Only departments with 2+ employees
+```
+
+---
+
+### **Key Difference**
+
+- **WHERE** = filters rows BEFORE grouping
+- **HAVING** = filters groups AFTER grouping
+
+```sql
+SELECT dept_id, COUNT(*) as count
+FROM employees
+WHERE salary > 50000      -- Filter rows first
+GROUP BY dept_id
+HAVING COUNT(*) > 1;      -- Filter groups after
+```
+
+---
+
+### **Quick Practice**
+
+1. Find average salary by department
+2. Find departments with total salary > 100000
+3. Count employees per department, show only depts with 2+ employees
+
+```SQL
+SELECT d.department_name, AVG(e.salary) as avg_salary
+FROM employees e
+LEFT JOIN departments d ON e.dept_id = d.id
+GROUP BY d.department_name;
+
+SELECT d.department_name, SUM(e.salary) as total_salary
+FROM employees e
+LEFT JOIN departments d ON e.dept_id = d.id
+GROUP BY d.department_name
+HAVING SUM(e.salary) > 100000;
+
+
+SELECT COUNT(*) as total, d.department_name
+FROM employees e
+LEFT JOIN departments d ON e.dept_id = d.id
+GROUP BY d.department_name
+HAVING COUNT(*) > 1;
+```
+

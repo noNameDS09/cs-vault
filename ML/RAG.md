@@ -2,153 +2,153 @@
 
 # Table of Contents
 
-1. **Introduction**
+1. [[#1. Introduction| Introduction]]
     
-2. **Why RAG Exists**
+2. [[#2. Why RAG Exists|Why RAG Exists]]
     
-    - 2.1 The Deeper Reasoning — First Principles
+    - [[#2.1 The Deeper Reasoning — First Principles|2.1 The Deeper Reasoning — First Principles]]
         
-3. **The Core Principle of RAG**
+3. [[#3. The Core Principle of RAG|The Core Principle of RAG]]
     
-    - 3.1 The Systems Thinking Perspective
+    - [[#3.1 The Systems Thinking Perspective|3.1 The Systems Thinking Perspective]]
         
-4. **The Architectural View**
+4. [[#4. The Architectural View|The Architectural View]]
     
-    - 4.1 Knowledge Source
+    - [[#4.1 Knowledge Source|4.1 Knowledge Source]]
         
-    - 4.2 Ingestion Pipeline
+    - [[#4.2 Ingestion Pipeline|4.2 Ingestion Pipeline]]
         
-    - 4.3 Retrieval Layer
+    - [[#4.3 Retrieval Layer|4.3 Retrieval Layer]]
         
-    - 4.4 Ranking and Reranking
+    - [[#4.4 Ranking and Reranking|4.4 Ranking and Reranking]]
         
-    - 4.5 Generation Layer
+    - [[#4.5 Generation Layer|4.5 Generation Layer]]
         
-    - 4.6 Evaluation and Monitoring
+    - [[#4.6 Evaluation and Monitoring|4.6 Evaluation and Monitoring]]
         
-5. **The Retrieval Problem**
+5. [[#5. The Retrieval Problem|The Retrieval Problem]]
     
-    - 5.1 The "Necessary Documents" Problem
+    - [[#5.1 The "Necessary Documents" Problem|5.1 The "Necessary Documents" Problem]]
         
-6. **Chunking as a Structural Decision**
+6. [[#6. Chunking as a Structural Decision|Chunking as a Structural Decision]
     
-    - 6.1 Fixed-size Chunking
+    - [[#6.1 Fixed-size Chunking|6.1 Fixed-size Chunking]]
         
-    - 6.2 Semantic Chunking
+    - [[#6.2 Semantic Chunking|6.2 Semantic Chunking]]
         
-    - 6.3 Recursive Chunking
+    - [[#6.3 Recursive Chunking|6.3 Recursive Chunking]]
         
-    - 6.4 Parent-Child Chunking
+    - [[#6.4 Parent-Child Chunking|6.4 Parent-Child Chunking]]
         
-    - 6.5 Sliding Windows and Overlap
+    - [[#6.5 Sliding Windows and Overlap|6.5 Sliding Windows and Overlap]]
         
-    - 6.6 Chunk Size Optimization
+    - [[#6.6 Chunk Size Optimization|6.6 Chunk Size Optimization]]
         
-7. **Embeddings and Representation**
+7. [[#7. Embeddings and Representation|Embeddings and Representation]]
     
-    - 7.1 Similarity Measures
+    - [[#7.1 Similarity Measures|7.1 Similarity Measures]]
         
-    - 7.2 Embedding Model Selection
+    - [[#7.2 Embedding Model Selection|7.2 Embedding Model Selection]]
         
-8. **Dense, Sparse, and Hybrid Retrieval**
+8. [[#8. Dense, Sparse, and Hybrid Retrieval | Dense, Sparse, and Hybrid Retrieval]]
     
-    - 8.1 Sparse Retrieval
+    - [[#8.1 Sparse Retrieval|8.1 Sparse Retrieval]]
         
-    - 8.2 Dense Retrieval
+    - [[#8.2 Dense Retrieval|8.2 Dense Retrieval]]
         
-    - 8.3 Hybrid Retrieval
+    - [[#8.3 Hybrid Retrieval|8.3 Hybrid Retrieval]]
         
-9. **Retrieval Quality and Ranking**
+9. [[#9. Retrieval Quality and Ranking|Retrieval Quality and Ranking]]
     
-    - 9.1 Reranking Models
+    - [[#9.1 Reranking Models|9.1 Reranking Models]]
         
-10. **Prompt Construction as an Engineering Discipline**
+10. [[#10. Prompt Construction as an Engineering Discipline|Prompt Construction as an Engineering Discipline]]
     
-    - 10.1 Token Budgeting
+    - [[#10.1 Token Budgeting|10.1 Token Budgeting]]
         
-    - 10.2 The "Lost in the Middle" Effect
+    - [[#10.2 The "Lost in the Middle" Effect|10.2 The "Lost in the Middle" Effect]]
         
-11. **Hallucination and Grounding**
+11. [[#11. Hallucination and Grounding|Hallucination and Grounding]]
     
-12. **Evaluation: Measuring Real System Quality**
+12. [[#12. Evaluation: Measuring Real System Quality|Evaluation: Measuring Real System Quality]]
     
-    - 12.1 Offline vs. Online Evaluation
+    - [[#12.1 Offline vs. Online Evaluation|12.1 Offline vs. Online Evaluation]]
         
-    - 12.2 The RAGAS Framework
+    - [[#12.2 The RAGAS Framework|12.2 The RAGAS Framework]]
         
-13. **Production Engineering Challenges**
+13. [[#13. Production Engineering Challenges|Production Engineering Challenges]]
     
-    - 13.1 Latency
+    - [[#13.1 Latency|13.1 Latency]]
         
-    - 13.2 Cost
+    - [[#13.2 Cost|13.2 Cost]]
         
-    - 13.3 Reliability
+    - [[#13.3 Reliability|13.3 Reliability]]
         
-    - 13.4 Observability
+    - [[#13.4 Observability|13.4 Observability]]
         
-    - 13.5 Security and Governance
+    - [[#13.5 Security and Governance|13.5 Security and Governance]]
         
-    - 13.6 Data Freshness
+    - [[#13.6 Data Freshness|13.6 Data Freshness]]
         
-    - 13.7 Throughput and Scaling
+    - [[#13.7 Throughput and Scaling|13.7 Throughput and Scaling]]
         
-14. **Indexing Strategies**
+14. [[#14. Indexing Strategies|Indexing Strategies]]
     
-    - 14.1 Vector Indexes and ANN Algorithms
+    - [[#14.1 Vector Indexes and ANN Algorithms|14.1 Vector Indexes and ANN Algorithms]]
         
-    - 14.2 HNSW (Hierarchical Navigable Small World Graphs)
+    - [[#14.2 HNSW (Hierarchical Navigable Small World Graphs)|14.2 HNSW (Hierarchical Navigable Small World Graphs)]]
         
-    - 14.3 IVF (Inverted File Index)
+    - [[#14.3 IVF (Inverted File Index)|14.3 IVF (Inverted File Index)]]
         
-    - 14.4 PQ (Product Quantization)
+    - [[#14.4 PQ (Product Quantization)|14.4 PQ (Product Quantization)]]
         
-    - 14.5 DiskANN
+    - [[#14.5 DiskANN|14.5 DiskANN]]
         
-15. **Advanced Retrieval Techniques**
+15. [[#15. Advanced Retrieval Techniques|Advanced Retrieval Techniques]]
     
-    - 15.1 Query Rewriting and Expansion
+    - [[#15.1 Query Rewriting and Expansion|15.1 Query Rewriting and Expansion]]
         
-    - 15.2 Multi-query Retrieval
+    - [[#15.2 Multi-query Retrieval|15.2 Multi-query Retrieval]]
         
-    - 15.3 HyDE (Hypothetical Document Embeddings)
+    - [[#15.3 HyDE (Hypothetical Document Embeddings)|15.3 HyDE (Hypothetical Document Embeddings)]]
         
-    - 15.4 Context Compression
+    - [[#15.4 Context Compression|15.4 Context Compression]]
         
-    - 15.5 Parent Document Retrieval
+    - [[#15.5 Parent Document Retrieval|15.5 Parent Document Retrieval]]
         
-16. **Production Technology Stack**
+16. [[#16. Production Technology Stack|Production Technology Stack]]
     
-    - 16.1 Orchestration Frameworks
+    - [[#16.1 Orchestration Frameworks|16.1 Orchestration Frameworks]]
         
-    - 16.2 Vector Databases
+    - [[#16.2 Vector Databases|16.2 Vector Databases]]
         
-    - 16.3 LLM Providers
+    - [[#16.3 LLM Providers|16.3 LLM Providers]]
         
-    - 16.4 Observability Stack
+    - [[#16.4 Observability Stack|16.4 Observability Stack]]
         
-    - 16.5 Example Production Stack
+    - [[#16.5 Example Production Stack|16.5 Example Production Stack]]
         
-17. **Design Trade-offs in RAG**
+17. [[#17. Design Trade-offs in RAG|Design Trade-offs in RAG]]
     
-    - 17.1 Requirements-First Tool Selection
+    - [[#17.1 Requirements-First Tool Selection|17.1 Requirements-First Tool Selection]]
         
-18. **A Mature Mental Model**
+18. [[#18. A Mature Mental Model|A Mature Mental Model]]
     
-    - 18.1 Capabilities of a RAG Systems Engineer
+    - [[#18.1 Capabilities of a RAG Systems Engineer|18.1 Capabilities of a RAG Systems Engineer]]
         
-19. **Learning Roadmap**
+19. [[#19. Learning Roadmap|Learning Roadmap]]
     
-    - 19.1 Foundational Papers
+    - [[#19.1 Foundational Papers|19.1 Foundational Papers]]
         
-    - 19.2 Deep-Dive Topics
+    - [[#19.2 Deep-Dive Topics|19.2 Deep-Dive Topics]]
         
-    - 19.3 Engineering Blogs
+    - [[#19.3 Engineering Blogs|19.3 Engineering Blogs]]
         
-    - 19.4 Books
+    - [[#19.4 Books|19.4 Books]]
         
-20. **Engineering Mindset Principles**
+20. [[#20. Engineering Mindset Principles|Engineering Mindset Principles]]
     
-21. **Final Perspective**
+21. [[#21. Final Perspective|Final Perspective]]
 
 
 # Retrieval-Augmented Generation: A Professional Theory of Knowledge-Aware AI Systems
