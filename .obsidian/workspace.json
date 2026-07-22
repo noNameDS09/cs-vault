@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ef9b04e310dabdd0",
+        "id": "cd7e1969cf58df31",
         "type": "tabs",
         "children": [
           {
-            "id": "d3861903d5f4e0e9",
+            "id": "55f1f165ee839672",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Design/02 Functional vs Non Functional Requirements.md",
+                "file": "System Design/07 Load Balancer.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 Functional vs Non Functional Requirements"
+              "title": "07 Load Balancer"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "15a703db7c0dcfb2",
@@ -228,38 +229,38 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "d3861903d5f4e0e9",
+  "active": "55f1f165ee839672",
   "lastOpenFiles": [
-    "System Design/01 Introduction.md",
-    "dsa/Solved/572_SubtreeOfAnotherTree.md",
+    "System Design/06 CAP Theorem.md",
+    "ML/54 LangChain Basics.md",
+    "ML/56 ML Project Lifecycle.md",
+    "ML/57 MLOps Fundamentals.md",
+    "ML/README.md",
+    "dsa/Solved/3499_MaximizeActiveSectionWithTradeI.md",
+    "ML/49 GPU vs CPU Inference.md",
+    "ML/50 RAG.md",
+    "ML/48 Model Serving.md",
+    "ML/47 FastAPI Basics.md",
+    "ML/46 Multi-Agent Systems.md",
+    "ML/45 AI Safety and Guardrails.md",
+    "ML/43 Structured Outputs.md",
+    "ML/44 Temperature Top-k Top-p.md",
+    "ML/42 Function Calling with LLMs.md",
+    "ML/40 BERT Overview.md",
+    "ML/41 Hallucinations in LLMs.md",
+    "ML/30 Overfitting vs Underfitting.md",
+    "ML/28 Regularization.md",
+    "ML/29 Cross-Validation.md",
+    "ML/27 Data Drift.md",
     "dsa/Leetcode Solved List.md",
-    "ETAG/syllabus.md",
-    "ETAG/README.md",
+    "ML/36 Prompt Engineering.md",
+    "ML/37 Context Window & LLM Limits.md",
+    "ML/33 Text Preprocessing.md",
+    "ML/38 Word2Vec.md",
     "ETAG/DA_syllabus.pdf",
     "ETAG/_DA_syllabus_2026.pdf",
     "ETAG/_DA_syllabus_raw.pdf",
     "ETAG/_DA_syllabus_v2.pdf",
-    "README.md",
-    "dsa/Shortcuts.md",
-    "System Design/24 Interview Questions.md",
-    "TO-DO.md",
-    "System Design/21 Common Design Patterns.md",
-    "System Design/23 Interview Strategy.md",
-    "System Design/22 Logging & Monitoring.md",
-    "System Design/20 HLD Process.md",
-    "System Design/19 Microservices vs Monolith.md",
-    "System Design/16 CDN.md",
-    "System Design/18 Authentication & Authorization.md",
-    "System Design/17 API Design & REST.md",
-    "System Design/14 Message Queues.md",
-    "System Design/15 Rate Limiting.md",
-    "System Design/12 Replication & Sharding.md",
-    "System Design/13 Consistent Hashing.md",
-    "System Design/11 Database Indexing.md",
-    "System Design/08 Reverse Proxy.md",
-    "System Design/10 Database Basics.md",
-    "System Design/07 Load Balancer.md",
-    "System Design/09 Caching.md",
     "Solved",
     "Untitled 1.canvas",
     "Untitled.canvas",

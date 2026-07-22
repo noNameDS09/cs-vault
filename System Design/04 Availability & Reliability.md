@@ -90,7 +90,7 @@ Availability is "is the system up?", and Reliability is "does the system work co
 ## Further Reading
 - [[01 Introduction to System Design]]
 - [[03 Scalability]]
-- [[07 Load Balancer]]
+- [[05 Latency vs Throughput]]
 - [[12 Replication & Sharding]]
 
 #system-design #placements #interview #reliability #availability

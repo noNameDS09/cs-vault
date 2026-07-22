@@ -101,7 +101,7 @@ Vertical scaling is "getting a bigger machine," while Horizontal scaling is "get
 
 ## Further Reading
 - [[01 Introduction to System Design]]
-- [[07 Load Balancer]]
+- [[04 Availability & Reliability]]
 - [[12 Replication & Sharding]]
 
 #system-design #placements #interview #scalability
