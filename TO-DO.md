@@ -1,5 +1,8 @@
 # 📅 Daily Placement Preparation Checklist
 
+💼**Apply for the JOBS**
+- [x] Apply for at least 5 Jobs ✅ 2026-07-24
+
 ## 🧠 Coding
 - [ ] Solve the Daily LeetCode Challenge
 - [ ] Solve 1 Additional DSA Problem (Easy/Medium/Hard based on the plan)

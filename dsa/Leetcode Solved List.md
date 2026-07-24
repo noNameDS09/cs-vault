@@ -55,6 +55,7 @@
 - [1260_Shift2dGrid.md](Solved/1260_Shift2dGrid.md)
 - [3499_MaximizeActiveSectionWithTradeI.md](Solved/3499_MaximizeActiveSectionWithTradeI.md)
 - [572_SubtreeOfAnotherTree.md](Solved/572_SubtreeOfAnotherTree.md)
+- [[3513_NumberOfUniqueXORTripletsI]]
 - 
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 

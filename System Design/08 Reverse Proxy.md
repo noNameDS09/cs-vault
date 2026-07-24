@@ -82,6 +82,6 @@ A Reverse Proxy is a "Receptionist" for your servers. It manages incoming reques
 ## Further Reading
 - [[07 Load Balancer]]
 - [[09 Caching]]
-- [[17 CDN]]
+- [[17 API Design & REST]]
 
 #system-design #placements #interview #networking #proxy
