@@ -4,7 +4,7 @@
 - [x] Apply for at least 5 Jobs ✅ 2026-07-24
 
 ## 🧠 Coding
-- [ ] Solve the Daily LeetCode Challenge
+- [x] Solve the Daily LeetCode Challenge ✅ 2026-07-24
 - [ ] Solve 1 Additional DSA Problem (Easy/Medium/Hard based on the plan)
 - [ ] Analyze the solution and note key takeaways
 

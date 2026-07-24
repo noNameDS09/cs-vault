@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f4cb76b2fe5ef1f4",
+        "id": "32d2bfc0cf86714f",
         "type": "tabs",
         "children": [
           {
-            "id": "8afa54333ed76ca3",
+            "id": "9b5b5095710824af",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "TO-DO.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TO-DO"
             }
           }
         ]
@@ -180,29 +184,9 @@
               "icon": "lucide-ghost",
               "title": "excalidraw-sidepanel"
             }
-          },
-          {
-            "id": "ab7f0273e6cb9ce5",
-            "type": "leaf",
-            "state": {
-              "type": "claudian-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "claudian-view"
-            }
-          },
-          {
-            "id": "7c8894f785039e09",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -224,10 +208,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8afa54333ed76ca3",
+  "active": "9b5b5095710824af",
   "lastOpenFiles": [
-    "dsa/Solved/3513_NumberOfUniqueXORTripletsI.md",
+    "README.md",
     "dsa/Leetcode Solved List.md",
+    "dsa/Solved/3514_NumberOfUniqueXORTripletsII.md",
+    "dsa/Solved/3513_NumberOfUniqueXORTripletsI.md",
     "Projects/Enterprise RAG/Architecture Decision Matrix.md",
     "Projects/Enterprise RAG/Architecture.md",
     "Projects/Enterprise RAG/README.md",
@@ -241,7 +227,6 @@
     "System Design/10 Database Basics.md",
     "Untitled.base",
     "2026-07-22.md",
-    "README.md",
     "IDEA.md",
     "ML/05 Data Cleaning.md",
     "ML/04 Python for ML.md",
@@ -253,7 +238,6 @@
     "ML/54 LangChain Basics.md",
     "ML/56 ML Project Lifecycle.md",
     "ML/57 MLOps Fundamentals.md",
-    "ML/README.md",
     "ETAG/DA_syllabus.pdf",
     "ETAG/_DA_syllabus_2026.pdf",
     "ETAG/_DA_syllabus_raw.pdf",

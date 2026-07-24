@@ -56,6 +56,7 @@
 - [3499_MaximizeActiveSectionWithTradeI.md](Solved/3499_MaximizeActiveSectionWithTradeI.md)
 - [572_SubtreeOfAnotherTree.md](Solved/572_SubtreeOfAnotherTree.md)
 - [[3513_NumberOfUniqueXORTripletsI]]
-- 
+- [[3514_NumberOfUniqueXORTripletsII]]
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
+- 
 
