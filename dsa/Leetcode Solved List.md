@@ -57,6 +57,7 @@
 - [572_SubtreeOfAnotherTree.md](Solved/572_SubtreeOfAnotherTree.md)
 - [[3513_NumberOfUniqueXORTripletsI]]
 - [[3514_NumberOfUniqueXORTripletsII]]
+- [[3536_MaximumProductOfTwoDigits]]
+- [[1967_NumberOfStringsThatAppearAsSubstringsInWord]]
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
-- 
 
