@@ -6,7 +6,7 @@ Welcome to your System Design knowledge vault! This roadmap is specifically cura
 
 ### Phase 1: The Fundamentals (The "What" and "Why")
 *Goal: Understand the basic terminology and goals of any system.*
-- [[01 Introduction to System Design]]
+- [[01 Introduction]]
 - [[02 Functional vs Non Functional Requirements]]
 - [[03 Scalability]]
 - [[04 Availability & Reliability]]
@@ -24,7 +24,7 @@ Welcome to your System Design knowledge vault! This roadmap is specifically cura
 - [[13 Consistent Hashing]]
 - [[14 Message Queues]]
 - [[15 Rate Limiting]]
-- [[16 CDN (Content Delivery Network)]]
+- [[16 CDN]]
 - [[17 API Design & REST]]
 - [[18 Authentication & Authorization]]
 
@@ -32,13 +32,13 @@ Welcome to your System Design knowledge vault! This roadmap is specifically cura
 *Goal: Learn how to connect the components and handle the interview.*
 - [[19 Microservices vs Monolith]]
 - [[20 HLD Process]]
-- [[21 Common Design Patterns in System Design]]
+- [[21 Common Design Patterns]]
 - [[22 Logging & Monitoring]]
 - [[23 Interview Strategy]]
 
 ### Phase 4: Final Sprint (Execution)
 *Goal: Solve real problems and polish your delivery.*
-- [[24 Common Interview Questions]]
+- [[24 Interview Questions]]
 
 ---
 
@@ -55,19 +55,19 @@ Welcome to your System Design knowledge vault! This roadmap is specifically cura
 ---
 
 ## ✅ Revision Checklist
-- [ ] Can I explain the difference between Vertical and Horizontal scaling?
-- [ ] Do I know when to use SQL vs NoSQL?
-- [ ] Can I explain the CAP theorem using a real-world example?
+- [x] Can I explain the difference between Vertical and Horizontal scaling? ✅ 2026-07-26
+- [x] Do I know when to use SQL vs NoSQL? ✅ 2026-07-26
+- [x] Can I explain the CAP theorem using a real-world example? ✅ 2026-07-26
 - [ ] Do I know the 5 steps of the HLD Process?
 - [ ] Can I design a basic API for a simple app (e.g., To-Do list)?
-- [ ] Do I understand why we need a Load Balancer and a Cache?
+- [x] Do I understand why we need a Load Balancer and a Cache? ✅ 2026-07-26
 - [ ] Am I comfortable discussing "Trade-offs" (e.g., Latency vs Consistency)?
 
 ---
 
 ## 🚨 Last-Minute Revision Plan (24 Hours before Interview)
 1. **Quick Scan**: Read the "Summary" and "Common Interview Questions" sections of all 24 notes.
-2. **Case Study Review**: Review the 5 common scenarios in [[24 Common Interview Questions]].
+2. **Case Study Review**: Review the 5 common scenarios in [[24 Interview Questions]].
 3. **Process Refresh**: Re-read [[20 HLD Process]] to ensure you don't start drawing too early.
 4. **Mental Checklist**: Remind yourself to **Think Aloud** and discuss **Trade-offs**.
 

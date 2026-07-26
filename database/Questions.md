@@ -204,8 +204,24 @@ ORDER BY d.id ASC, e.salary DESC;
 
 Find the employee with the highest salary in each department
 ```SQL
-
+SELECT *
+FROM (
+    SELECT
+        e.name,
+        e.salary,
+        d.department_name,
+        DENSE_RANK() OVER (
+            PARTITION BY e.dept_id
+            ORDER BY e.salary DESC
+        ) AS salary_rank
+    FROM employees e
+    JOIN departments d
+        ON e.dept_id = d.id
+) 
+WHERE salary_rank = 1;
 ```
+
+### Concepts used here RANK, DENSE_RANK, PARTITION BY, OVER : [[SQL]]
 
 Get cumulative salary by department
 ```SQL

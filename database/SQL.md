@@ -259,3 +259,133 @@ GROUP BY d.department_name
 HAVING COUNT(*) > 1;
 ```
 
+# SQL Window Functions (Short Notes)
+
+## `OVER()`
+Defines the **window (set of rows)** on which a window function operates.
+
+- Required for functions like `RANK()`, `DENSE_RANK()`, `ROW_NUMBER()`, etc.
+
+**Syntax**
+```sql
+RANK() OVER (ORDER BY salary DESC)
+```
+
+> [!tip] Memory Tip
+> `OVER()` → Defines the **window**.
+
+---
+
+## `PARTITION BY`
+Splits data into **groups (partitions)**.
+
+- Window functions are applied **separately within each group**.
+- Similar to `GROUP BY`, but **does not reduce rows**.
+
+**Syntax**
+```sql
+RANK() OVER (
+    PARTITION BY department
+    ORDER BY salary DESC
+)
+```
+
+**Example**
+Each department gets its own ranking.
+
+> [!tip] Memory Tip
+> `PARTITION BY` → Splits data into **groups**.
+
+---
+
+## `RANK()`
+Assigns a rank based on the specified order.
+
+- Tied values receive the **same rank**.
+- **Skips** the next rank after a tie.
+
+### Example
+
+| Salary | Rank |
+|-------:|----:|
+| 100 | 1 |
+| 90 | 2 |
+| 90 | 2 |
+| 80 | 4 |
+
+**Result:** `1, 2, 2, 4`
+
+> [!note]
+> If two rows are ranked **2**, the next rank becomes **4**.
+
+---
+
+## `DENSE_RANK()`
+Assigns a rank based on the specified order.
+
+- Tied values receive the **same rank**.
+- **Does not skip** ranks after a tie.
+
+### Example
+
+| Salary | Dense Rank |
+|-------:|----------:|
+| 100 | 1 |
+| 90 | 2 |
+| 90 | 2 |
+| 80 | 3 |
+
+**Result:** `1, 2, 2, 3`
+
+> [!note]
+> If two rows are ranked **2**, the next rank becomes **3**.
+
+---
+
+# Difference: `RANK()` vs `DENSE_RANK()`
+
+| `RANK()` | `DENSE_RANK()` |
+|-----------|----------------|
+| Skips ranks after ties | No skipped ranks |
+| Example: `1, 2, 2, 4` | Example: `1, 2, 2, 3` |
+
+---
+
+# Quick Example
+
+```sql
+SELECT
+    name,
+    department,
+    salary,
+    RANK() OVER (
+        PARTITION BY department
+        ORDER BY salary DESC
+    ) AS rank,
+    DENSE_RANK() OVER (
+        PARTITION BY department
+        ORDER BY salary DESC
+    ) AS dense_rank
+FROM employees;
+```
+
+---
+
+# Summary
+
+| Concept | Purpose |
+|----------|---------|
+| `OVER()` | Defines the window for the function |
+| `PARTITION BY` | Splits rows into groups |
+| `ORDER BY` | Defines ranking order within each partition |
+| `RANK()` | Same rank for ties, skips numbers |
+| `DENSE_RANK()` | Same rank for ties, no skipped numbers |
+
+---
+
+> [!success] Quick Memory Trick
+> - **`OVER()`** → Defines the **window**.
+> - **`PARTITION BY`** → Splits data into **groups**.
+> - **`RANK()`** → Ties → **Skip** numbers.
+> - **`DENSE_RANK()`** → Ties → **No Skip**.
+

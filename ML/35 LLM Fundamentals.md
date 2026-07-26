@@ -147,4 +147,4 @@ LLMs are Transformer-based models that predict the next token. They use Attentio
 - [[36 Prompt Engineering]]
 - [[39 Embeddings]]
 - [[50 RAG]] (See existing [[RAG]] note)
-- [[51 Vector Databases]] (See existing [[Vector Databases]] note)
+- [[51 Vector Databases]] (See existing [[51 Vector Databases]] note)

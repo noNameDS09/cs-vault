@@ -59,5 +59,6 @@
 - [[3514_NumberOfUniqueXORTripletsII]]
 - [[3536_MaximumProductOfTwoDigits]]
 - [[1967_NumberOfStringsThatAppearAsSubstringsInWord]]
+- [[628_MaximumProductOfThreeNumbers]]
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 
