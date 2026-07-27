@@ -64,5 +64,6 @@
 - [[235_LowestCommonAncestorOfABinarySearchTree]]
 - [[102_BinaryTreeLevelOrderTraversal]]
 - [[199_BinaryTreeRightSideView]]
+- [[2315_CountAsterisks]]
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 
