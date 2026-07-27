@@ -12,8 +12,7 @@
 
  are temporary. So, let's check. Who is actually paying for this? OpenAI currently has the largest market share at 53.9% with Gemini at 27.9, Claude 9.2, and Grok at 2.4%. Despite this, only around 5% of ChatGPT users actually pay for a subscription, and notably more users are switching to Claude or Gemini. >> So, I just switched from ChatGPT to Claude as I'm sure many of you have. >> I can't lie, Claude is a game-changer, man. Like, that ChatGPT stuff, that's in the past.
 
-
- >> As someone who literally went viral for teaching people how to study with ChatGPT, I fear I might be switching over to Claude because she is that girl. >> So, even after spending $6 billion on sales and marketing, they couldn't convince their users to upgrade to the $20 paid version. It's almost as if people don't find it that valuable, which is even more concerning when you consider that $20 a month isn't anywhere near what these AI companies need to charge to be profitable. So, if users
+ As someone who literally went viral for teaching people how to study with ChatGPT, I fear I might be switching over to Claude because she is that girl. >> So, even after spending $6 billion on sales and marketing, they couldn't convince their users to upgrade to the $20 paid version. It's almost as if people don't find it that valuable, which is even more concerning when you consider that $20 a month isn't anywhere near what these AI companies need to charge to be profitable. So, if users
 
 
  aren't willing to pay, who is? The obvious answer is businesses, but they're not seeing the value either. In May this year, IBM's survey of CEOs revealed only 25% of AI initiatives have delivered expected return on investment and only 16% have scaled enterprise-wide. And where gains do exist, they're narrow. The gain concentrates in code generation, customer support assistance, and drafting. Most other roles show no measurable payback yet. Which makes sense. ChatGPT, Claude, Gemini, these

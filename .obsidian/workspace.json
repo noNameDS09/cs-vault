@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "295bce4e69c589b7",
+        "id": "c895f86f0ea71909",
         "type": "tabs",
         "children": [
           {
-            "id": "b434b9038598f29a",
+            "id": "5e867d2254d1c217",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Leetcode Solved List.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Leetcode Solved List"
             }
           }
         ]
@@ -202,10 +206,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "809928d553b27851",
+  "active": "5e867d2254d1c217",
   "lastOpenFiles": [
-    "Blogs/AI Bubble 02.md",
-    "Blogs/AI Bubble 01.md",
+    "dsa/Solved/1464_MaximumProductOfTwoElementsInAnArray.md",
+    "dsa/Solved/628_MaximumProductOfThreeNumbers.md",
+    "dsa/Leetcode Solved List.md",
+    "Blogs/AI Bubble/AI Bubble 01.md",
+    "Blogs/AI Bubble/AI Bubble 02.md",
+    "Blogs/AI Bubble",
+    "Blogs/README.md",
+    "Blogs/images/AI Bubble.png",
+    "Blogs/images/Unconfirmed 392765.crdownload",
+    "Blogs/images",
+    "Blogs/New folder",
     "LICENSE.md",
     "Blogs/AI Bubble 02.txt",
     "Blogs/AI Bubble 01.txt",
@@ -215,8 +228,6 @@
     "System Design/24 Interview Questions.md",
     "database/Questions.md",
     "database/SQL.md",
-    "dsa/Leetcode Solved List.md",
-    "dsa/Solved/628_MaximumProductOfThreeNumbers.md",
     "IDEA.md",
     "Learning Resources/README.md",
     "Learning Resources/G-LLM-I-m0-l2-en-file-2.en.pdf",
@@ -232,14 +243,8 @@
     "Projects/Enterprise RAG/Architecture Decision Matrix.md",
     "Projects/Enterprise RAG/Architecture.md",
     "Projects/Enterprise RAG/README.md",
-    "Projects/Enterprise RAG/Interview Questions.md",
-    "Projects/Enterprise RAG/Implementation Log for the project/step-1-architecture-contracts.md",
     "Projects/Enterprise RAG/Implementation Log for the project",
     "Untitled.base",
-    "ETAG/DA_syllabus.pdf",
-    "ETAG/_DA_syllabus_2026.pdf",
-    "ETAG/_DA_syllabus_raw.pdf",
-    "ETAG/_DA_syllabus_v2.pdf",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Pasted image 20260717171212.png",
