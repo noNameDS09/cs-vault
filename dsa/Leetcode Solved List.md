@@ -61,5 +61,8 @@
 - [[1967_NumberOfStringsThatAppearAsSubstringsInWord]]
 - [[628_MaximumProductOfThreeNumbers]]
 - [[1464_MaximumProductOfTwoElementsInAnArray]]
+- [[235_LowestCommonAncestorOfABinarySearchTree]]
+- [[102_BinaryTreeLevelOrderTraversal]]
+- [[199_BinaryTreeRightSideView]]
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 
