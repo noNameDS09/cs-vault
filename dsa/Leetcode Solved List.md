@@ -65,5 +65,6 @@
 - [[102_BinaryTreeLevelOrderTraversal]]
 - [[199_BinaryTreeRightSideView]]
 - [[2315_CountAsterisks]]
+- [[3517_SmallestPalindromicRearrangementI]]
 - [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
 

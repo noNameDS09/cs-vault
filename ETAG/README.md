@@ -13,6 +13,7 @@ This directory contains organized study materials, notes, problem-solving resour
 ├── Machine Learning
 ├── Probability and Statistics
 ├── Programming, Data Structures and Algorithms
+├── Resources
 └── syllabus.md
 ```
 
@@ -45,6 +46,10 @@ Covers probability theory, random variables, probability distributions, expectat
 ### Programming, Data Structures and Algorithms
 
 Contains programming fundamentals, algorithm analysis, recursion, arrays, linked lists, stacks, queues, trees, graphs, hashing, sorting, searching, dynamic programming, greedy algorithms, and graph algorithms.
+
+**Resources**
+
+Contains various resources for concepts and questions
 
 ### syllabus.md
 
