@@ -4,17 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "8ba11562f6f26717",
+        "id": "81658bec7107650b",
         "type": "tabs",
         "children": [
           {
-            "id": "922dfcb53d75541c",
+            "id": "53bd06129c2177ba",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Solved/3014_MinimumNumberOfPushesToTypeWordI.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "3014_MinimumNumberOfPushesToTypeWordI"
+            }
+          },
+          {
+            "id": "c799c42df52c635e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ETAG/Papers/DA24.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "DA24"
             }
           }
         ]
@@ -202,11 +218,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "809928d553b27851",
+  "active": "53bd06129c2177ba",
   "lastOpenFiles": [
+    "ETAG/Papers/DA24.md",
+    "dsa/Solved/3014_MinimumNumberOfPushesToTypeWordI.md",
+    "ETAG/Papers/DA24.pdf",
+    "ETAG/Machine Learning/Machine Learning.md",
+    "Excalidraw/MySystemDesigns.md",
     "ETAG/syllabus.md",
-    "ETAG/Papers/GATE-DA-2025-Master-Question-Paper.pdf",
-    "ETAG/Papers/DA24S1.pdf",
+    "ETAG/Papers/DA25.pdf",
     "ETAG/Resources/Online Resources.md",
     "ETAG/Programming, Data Structures and Algorithms/Time Complexities.md",
     "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
@@ -234,9 +254,6 @@
     "Projects/Enterprise RAG/Architecture.md",
     "Projects/Enterprise RAG/Interview Questions.md",
     "dsa/Solved/1464_MaximumProductOfTwoElementsInAnArray.md",
-    "dsa/Solved/628_MaximumProductOfThreeNumbers.md",
-    "Blogs/AI Bubble/AI Bubble 01.md",
-    "Blogs/AI Bubble/AI Bubble 02.md",
     "Blogs/AI Bubble",
     "Blogs/images/AI Bubble.png",
     "Blogs/images/Unconfirmed 392765.crdownload",
