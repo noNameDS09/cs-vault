@@ -11,6 +11,7 @@ This directory contains organized study materials, notes, problem-solving resour
 ├── Database Management and Warehousing
 ├── Linear Algebra
 ├── Machine Learning
+├── Papers
 ├── Probability and Statistics
 ├── Programming, Data Structures and Algorithms
 ├── Resources
@@ -38,6 +39,10 @@ Provides study material on vectors, matrices, determinants, eigenvalues, eigenve
 ### Machine Learning
 
 Focuses on supervised and unsupervised learning, regression, classification, clustering, dimensionality reduction, model evaluation, feature engineering, bias-variance trade-off, and foundational machine learning algorithms.
+
+### Papers
+
+Contains previous year question papers and its corresponding answers in detail
 
 ### Probability and Statistics
 
