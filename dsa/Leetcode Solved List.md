@@ -67,5 +67,9 @@
 - [[2315_CountAsterisks]]
 - [[3517_SmallestPalindromicRearrangementI]]
 - [[3014_MinimumNumberOfPushesToTypeWordI]]
-- [kmp_PatternSearch.md](Solved/kmp_PatternSearch.md)
+- [[3016_MinimumNumberOfPushesToTypeWordII]]
+- [[3838_WeightedWordMapping]]
+- [[2130_MaximumTwinSumOfALinkedList]]
+- [[2095_DeleteTheMiddleNodeOfALinkedList]]
+- [[kmp_PatternSearch]]
 

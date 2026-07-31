@@ -49,21 +49,21 @@ if (pages.length) {
 > [!abstract] **Mental Model: How SQL Actually Works**
 > 
 > ```
-> ┌─────────────────────────────────────────────────────────────────────┐
-> │                        SQL EXECUTION PIPELINE                       │
-> ├─────────────────────────────────────────────────────────────────────┤
-> │                                                                     │
+> ┌───────────────────────────────────────────────────────────────────┐
+> │                        SQL EXECUTION PIPELINE                     │
+> ├───────────────────────────────────────────────────────────────────┤
+> │                                                                   │
 > │  ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐     │
 > │  │  PARSER  │───▶│  RESOLVER│───▶│ OPTIMIZER│───▶│ EXECUTOR │     │
 > │  └──────────┘    └──────────┘    └──────────┘    └──────────┘     │
-> │       │               │               │               │            │
-> │       ▼               ▼               ▼               ▼            │
+> │       │               │               │               │           │
+> │       ▼               ▼               ▼               ▼           │
 > │  Check syntax   Resolve tables   Generate query   Execute plan,   │
 > │  & semantics    & columns,       plans, pick       stream rows    │
-> │  (AST)          check perms      optimal via      to client      │
-> │                 (catalog)        cost model                    │
-> │                                                                     │
-> └─────────────────────────────────────────────────────────────────────┘
+> │  (AST)          check perms      optimal via      to client       │
+> │                 (catalog)        cost model                       │
+> │                                                                   │
+> └───────────────────────────────────────────────────────────────────┘
 > ```
 
 ### 🎯 Key Mental Models

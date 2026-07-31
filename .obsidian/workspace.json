@@ -4,21 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "76eb0968cd9d5495",
+        "id": "7149b74ebbced6ca",
         "type": "tabs",
         "children": [
           {
-            "id": "6316c809a89cd3aa",
+            "id": "1be46d15dfbf2778",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ETAG/Programming, Data Structures and Algorithms/PYQs and questions.md",
+                "file": "dsa/Leetcode Solved List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PYQs and questions"
+              "title": "Leetcode Solved List"
+            }
+          },
+          {
+            "id": "14f543e2e5ef4e2a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -41,7 +51,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -206,8 +218,30 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "6316c809a89cd3aa",
+  "active": "1be46d15dfbf2778",
   "lastOpenFiles": [
+    "dsa/Leetcode Solved List.md",
+    "dsa/Solved/2095_DeleteTheMiddleNodeOfALinkedList.md",
+    "dsa/Solved/2130_MaximumTwinSumOfALinkedList.md",
+    "dsa/Solved/143_ReorderList.md",
+    "dsa/Solved/3838_WeightedWordMapping.md",
+    "dsa/Solved/3016_MinimumNumberOfPushesToTypeWordII.md",
+    "dsa/README.md",
+    "dsa/Shortcuts.md",
+    "dsa/theory/Binary Tree Templates.md",
+    "dsa/theory/binary_trees.md",
+    "ETAG/Artificial Intelligence/Theory.md",
+    "ETAG/Artificial Intelligence/Quick Revision.md",
+    "ETAG/Artificial Intelligence/Index.md",
+    "ETAG/Artificial Intelligence/Artificial Intelligence.md",
+    "database/SQL.md",
+    "database/README.md",
+    "database/Questions.md",
+    "ETAG/Artificial Intelligence/Questions.md",
+    "ETAG/Linear Algebra/Linear Algebra.md",
+    "ETAG/Programming, Data Structures and Algorithms/Index.md",
+    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
+    "ETAG/Programming, Data Structures and Algorithms/PYQs and questions.md",
     "ETAG/Artificial Intelligence/DPPs/Miscellaneous DPP 01 Notes.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 814675.crdownload",
     "ETAG/Artificial Intelligence/DPPs/Miscellaneous DPP 01.pdf",
@@ -215,35 +249,13 @@
     "ETAG/Artificial Intelligence/DPPs/Preposition and Predictive Logic DPP 1.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 470188.crdownload",
     "ETAG/Artificial Intelligence/DPPs/Preposition and Predictive Logic DPP 1 Notes.pdf",
-    "ETAG/Programming, Data Structures and Algorithms/PYQs and questions.md",
     "ETAG/Artificial Intelligence/DPPs/Un Informed Search DPP 2 Notes.pdf",
     "ETAG/Artificial Intelligence/DPPs/Adverserial Search DPP 2.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 17356.crdownload",
-    "ETAG/Artificial Intelligence/DPPs/Adverserial Search DPP 2 Notes.pdf",
     "ETAG/Programming, Data Structures and Algorithms/Time Complexities.md",
-    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
-    "ETAG/Programming, Data Structures and Algorithms/Index.md",
-    "database/SQL.md",
     "ETAG/Papers/DA25.md",
     "ETAG/README.md",
     "ETAG/Papers/DA24.md",
-    "dsa/Leetcode Solved List.md",
-    "dsa/Solved/3014_MinimumNumberOfPushesToTypeWordI.md",
-    "Untitled.md",
-    "ETAG/Machine Learning/Machine Learning.md",
-    "Excalidraw/MySystemDesigns.md",
-    "ETAG/syllabus.md",
-    "ETAG/Resources/Online Resources.md",
-    "dsa/Solved/3517_SmallestPalindromicRearrangementI.md",
-    "dsa/Solved/2315_CountAsterisks.md",
-    "dsa/Solved/199_BinaryTreeRightSideView.md",
-    "dsa/Solved/102_BinaryTreeLevelOrderTraversal.md",
-    "ML/01 Introduction to AI.md",
-    "dsa/Solved/235_LowestCommonAncestorOfABinarySearchTree.md",
-    "ML/53 AI Agents.md",
-    "ML/50 RAG.md",
-    "ML/47 FastAPI Basics.md",
-    "ML/RAG.md",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",
