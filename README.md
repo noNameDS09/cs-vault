@@ -22,3 +22,6 @@ I am focused on strengthening my foundation in:
 - [Excalidraw Drawings](./Excalidraw/README.md)
 
 ---
+
+‼️**For the best experience, open the folder in Obsidian. It will be easy to navigate through links.**
+

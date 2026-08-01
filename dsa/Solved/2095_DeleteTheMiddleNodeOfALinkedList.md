@@ -154,7 +154,31 @@ class Solution:
 ```
 
 **Approach 2**
+Using `slow` and `fast` pointers
+**Algorithm:**
+	1. Use the `slow` and `fast` pointers to identify the middle node of LL
+	2. Use the `prev` pointer to store the previous node
+	3. Update the pointers as `prev.next = slow.next (mid.next)` 
+	4. Return `head`
 
 ```python
-
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        slow, fast = head, head
+        if not head.next:
+            return None
+        
+        prev = None
+        while fast and fast.next:
+            prev = slow
+            slow = slow.next
+            fast = fast.next.next
+        
+        prev.next = slow.next
+        return head
 ```

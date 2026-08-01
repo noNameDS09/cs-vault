@@ -28,21 +28,6 @@ aliases:
 
 ## 📚 Table of Contents
 
-```dataviewjs
-// Auto-generated TOC from headings
-const pages = dv.pages('"ETAG/Programming, Data Structures and Algorithms"').where(p => p.file.name === "Programming, Data Structures and Algorithms");
-if (pages.length) {
-  const content = await dv.io.load(pages[0].file.path);
-  const headings = content.match(/^#{2,4}\s+(.+)$/gm) || [];
-  for (const h of headings) {
-    const level = h.match(/^#+/)[0].length;
-    const text = h.replace(/^#+\s+/, '').replace(/[🧠📚🎯🔑💡⚡🔥💎🚀📝📌⚠️✅❌🔗🔍📖💡]/g, '').trim();
-    const anchor = text.toLowerCase().replace(/[^\w]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-    dv.paragraph(`${'  '.repeat(level-2)}- [[Programming, Data Structures and Algorithms#${anchor}|${text}]]`);
-  }
-}
-```
-
 ---
 
 ## 🗂️ MODULE 0: MENTAL MODELS & PROBLEM-SOLVING FRAMEWORK
@@ -50,47 +35,47 @@ if (pages.length) {
 > [!abstract] **How Top Engineers Think About DSA**
 >
 > ```
-> ┌─────────────────────────────────────────────────────────────────────┐
-> │                    PROBLEM-SOLVING PIPELINE                         │
-> ├─────────────────────────────────────────────────────────────────────┤
-> │                                                                     │
-> │  1. UNDERSTAND                                                      │
-> │     ▸ Rephrase in your own words                                    │
-> │     ▸ Identify inputs, outputs, constraints                         │
-> │     ▸ Ask clarifying questions (edge cases, scale)                  │
-> │                        │                                            │
-> │                        ▼                                            │
-> │  2. BRUTE FORCE                                                     │
-> │     ▸ Naive solution first (correctness > speed)                    │
-> │     ▸ State time/space complexity                                   │
-> │     ▸ Identify bottlenecks                                          │
-> │                        │                                            │
-> │                        ▼                                            │
-> │  3. OPTIMIZE                                                        │
-> │     ▸ Look for patterns:                                            │
-> │       • Sorting → Binary Search / Two Pointers                      │
-> │       • Repeated subproblems → DP / Memoization                     │
-> │       • Hierarchical / Tree → Recursion / DFS / BFS                 │
-> │       • Graph / Dependencies → Topological Sort / Union-Find        │
-> │       • Sliding window / Subarray → Two Pointers / Prefix Sum       │
-> │       • Frequency counting → Hash Map / Counter                     │
-> │       • Min/Max in stream → Heap / Monotonic Stack                  │
-> │       • String matching → KMP / Trie / Rolling Hash                 │
-> │     ▸ Apply technique, derive complexity                            │
-> │                        │                                            │
-> │                        ▼                                            │
-> │  4. CODE                                                            │
-> │     ▸ Clean, modular, typed Python                                  │
-> │     ▸ Handle edge cases explicitly                                  │
-> │     ▸ Variable names: intention-revealing                           │
-> │                        │                                            │
-> │                        ▼                                            │
-> │  5. VERIFY                                                          │
-> │     ▸ Trace through examples                                        │
-> │     ▸ Test edge cases: empty, single, max, duplicates, negatives   │
-> │     ▸ Dry-run complexity analysis                                   │
-> │                                                                     │
-> └─────────────────────────────────────────────────────────────────────┘
+> ┌───────────────────────────────────────────────────────────────────┐
+> │                    PROBLEM-SOLVING PIPELINE                       │
+> ├───────────────────────────────────────────────────────────────────┤
+> │                                                                   │
+> │  1. UNDERSTAND                                                    │
+> │     ▸ Rephrase in your own words                                  │
+> │     ▸ Identify inputs, outputs, constraints                       │
+> │     ▸ Ask clarifying questions (edge cases, scale)                │
+> │                        │                                          │
+> │                        ▼                                          │
+> │  2. BRUTE FORCE                                                   │
+> │     ▸ Naive solution first (correctness > speed)                  │
+> │     ▸ State time/space complexity                                 │
+> │     ▸ Identify bottlenecks                                        │
+> │                        │                                          │
+> │                        ▼                                          │
+> │  3. OPTIMIZE                                                      │
+> │     ▸ Look for patterns:                                          │
+> │       • Sorting → Binary Search / Two Pointers                    │
+> │       • Repeated subproblems → DP / Memoization                   │
+> │       • Hierarchical / Tree → Recursion / DFS / BFS               │
+> │       • Graph / Dependencies → Topological Sort / Union-Find      │
+> │       • Sliding window / Subarray → Two Pointers / Prefix Sum     │
+> │       • Frequency counting → Hash Map / Counter                   │
+> │       • Min/Max in stream → Heap / Monotonic Stack                │
+> │       • String matching → KMP / Trie / Rolling Hash               │
+> │     ▸ Apply technique, derive complexity                          │
+> │                        │                                          │
+> │                        ▼                                          │
+> │  4. CODE                                                          │
+> │     ▸ Clean, modular, typed Python                                │
+> │     ▸ Handle edge cases explicitly                                │
+> │     ▸ Variable names: intention-revealing                         │
+> │                        │                                          │
+> │                        ▼                                          │
+> │  5. VERIFY                                                        │
+> │     ▸ Trace through examples                                      │
+> │     ▸ Test edge cases: empty, single, max, duplicates, negatives  │
+> │     ▸ Dry-run complexity analysis                                 │
+> │                                                                   │
+> └───────────────────────────────────────────────────────────────────┘
 > ```
 
 ### 🎯 Core Patterns Cheat Sheet

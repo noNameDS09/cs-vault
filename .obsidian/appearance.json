@@ -1,7 +1,7 @@
 {
   "theme": "obsidian",
   "cssTheme": "Minimal",
-  "interfaceFontFamily": "Poppins,Cambria",
+  "interfaceFontFamily": "Consolas,Helvetica,Verdana,Cambria",
   "baseFontSize": 16,
   "nativeMenus": false
 }

@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7149b74ebbced6ca",
+        "id": "70ed2779d4539616",
         "type": "tabs",
         "children": [
           {
-            "id": "1be46d15dfbf2778",
+            "id": "080f042b11f5ab9b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dsa/Leetcode Solved List.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Leetcode Solved List"
-            }
-          },
-          {
-            "id": "14f543e2e5ef4e2a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -218,30 +204,37 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "1be46d15dfbf2778",
+  "active": "080f042b11f5ab9b",
   "lastOpenFiles": [
     "dsa/Leetcode Solved List.md",
+    "dsa/Solved/2078_TwoFurthestHousesWithDifferentColors.md",
+    "Projects/Paper Implementation/README.md",
+    "Projects/Enterprise RAG/Project structure.md",
+    "Projects/Enterprise RAG/Interview Questions.md",
+    "Projects/Enterprise RAG/Implementation Log for the project/step-1-architecture-contracts.md",
+    "Projects/Enterprise RAG/Architecture Decision Matrix.md",
+    "Projects/Enterprise RAG/Architecture.md",
+    "Projects/Rate Limiter/README.md",
+    "Projects/Paper Implementation",
+    "README.md",
+    "dsa/Solved/7_ReverseInteger.md",
+    "dsa/Solved/3300_MinimumElementAfterReplacementWithDigitSum.md",
+    "ML/README.md",
+    "TO-DO.md",
+    "LICENSE.md",
+    "dsa/Solved/3612_ProcessStringWithSpecialOperationsI.md",
+    "ETAG/Artificial Intelligence/DPPs/Un Informed Search DPP 2.pdf",
+    "ETAG/Artificial Intelligence/DPPs/Un Informed Search DPP 2 Notes.pdf",
+    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
+    "ETAG/Machine Learning/Machine Learning.md",
+    "ETAG/Linear Algebra/Linear Algebra.md",
+    "ETAG/Database Management and Warehousing/Database Management and Warehousing.md",
+    "ETAG/Artificial Intelligence/Theory.md",
+    "ETAG/Artificial Intelligence/Questions.md",
+    "ETAG/Artificial Intelligence/Quick Revision.md",
+    "ETAG/Artificial Intelligence/Artificial Intelligence.md",
     "dsa/Solved/2095_DeleteTheMiddleNodeOfALinkedList.md",
     "dsa/Solved/2130_MaximumTwinSumOfALinkedList.md",
-    "dsa/Solved/143_ReorderList.md",
-    "dsa/Solved/3838_WeightedWordMapping.md",
-    "dsa/Solved/3016_MinimumNumberOfPushesToTypeWordII.md",
-    "dsa/README.md",
-    "dsa/Shortcuts.md",
-    "dsa/theory/Binary Tree Templates.md",
-    "dsa/theory/binary_trees.md",
-    "ETAG/Artificial Intelligence/Theory.md",
-    "ETAG/Artificial Intelligence/Quick Revision.md",
-    "ETAG/Artificial Intelligence/Index.md",
-    "ETAG/Artificial Intelligence/Artificial Intelligence.md",
-    "database/SQL.md",
-    "database/README.md",
-    "database/Questions.md",
-    "ETAG/Artificial Intelligence/Questions.md",
-    "ETAG/Linear Algebra/Linear Algebra.md",
-    "ETAG/Programming, Data Structures and Algorithms/Index.md",
-    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
-    "ETAG/Programming, Data Structures and Algorithms/PYQs and questions.md",
     "ETAG/Artificial Intelligence/DPPs/Miscellaneous DPP 01 Notes.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 814675.crdownload",
     "ETAG/Artificial Intelligence/DPPs/Miscellaneous DPP 01.pdf",
@@ -249,13 +242,6 @@
     "ETAG/Artificial Intelligence/DPPs/Preposition and Predictive Logic DPP 1.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 470188.crdownload",
     "ETAG/Artificial Intelligence/DPPs/Preposition and Predictive Logic DPP 1 Notes.pdf",
-    "ETAG/Artificial Intelligence/DPPs/Un Informed Search DPP 2 Notes.pdf",
-    "ETAG/Artificial Intelligence/DPPs/Adverserial Search DPP 2.pdf",
-    "ETAG/Artificial Intelligence/DPPs/Unconfirmed 17356.crdownload",
-    "ETAG/Programming, Data Structures and Algorithms/Time Complexities.md",
-    "ETAG/Papers/DA25.md",
-    "ETAG/README.md",
-    "ETAG/Papers/DA24.md",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",

@@ -71,5 +71,9 @@
 - [[3838_WeightedWordMapping]]
 - [[2130_MaximumTwinSumOfALinkedList]]
 - [[2095_DeleteTheMiddleNodeOfALinkedList]]
+- [[3612_ProcessStringWithSpecialOperationsI]]
+- [[3300_MinimumElementAfterReplacementWithDigitSum]]
+- [[7_ReverseInteger]]
+- [[2078_TwoFurthestHousesWithDifferentColors]]
 - [[kmp_PatternSearch]]
 

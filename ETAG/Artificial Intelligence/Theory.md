@@ -23,25 +23,6 @@ aliases:
 
 ---
 
-## 📚 Table of Contents
-
-```dataviewjs
-// Auto-generated TOC from headings
-const pages = dv.pages('"ETAG/Artificial Intelligence"').where(p => p.file.name === "Theory");
-if (pages.length) {
-  const content = await dv.io.load(pages[0].file.path);
-  const headings = content.match(/^#{2,4}\s+(.+)$/gm) || [];
-  for (const h of headings) {
-    const level = h.match(/^#+/)[0].length;
-    const text = h.replace(/^#+\s+/, '').replace(/[🤖🔍🎯🔑💡⚡🔥💎🚀📝📌⚠️✅❌🔗🔍📖💡]/g, '').trim();
-    const anchor = text.toLowerCase().replace(/[^\w]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-    dv.paragraph(`${'  '.repeat(level-2)}- [[Theory#${anchor}|${text}]]`);
-  }
-}
-```
-
----
-
 ## 🗂️ MODULE 0: AI FOUNDATIONS & MENTAL MODELS
 
 ### What is AI? (GATE Perspective)
