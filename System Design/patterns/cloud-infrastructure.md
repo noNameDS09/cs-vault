@@ -40,55 +40,57 @@ Design a container orchestration platform managing thousands of nodes, tens of t
 
 ```mermaid
 graph TB
-    subgraph Control Plane
-        API[API Server<br/>etcd]
-        Scheduler[Scheduler]
-        ControllerMgr[Controller Manager]
-        CloudCtrl[Cloud Controller Manager]
-    end
-    
-    subgraph Data Plane (Worker Nodes)
-        Node1[Node 1<br/>Kubelet, kube-proxy, CRI]
-        Node2[Node 2<br/>Kubelet, kube-proxy, CRI]
-        NodeN[Node N<br/>Kubelet, kube-proxy, CRI]
-    end
-    
-    subgraph Add-ons
-        CNI[CNI Plugin<br/>Calico/Cilium/Flannel]
-        CSI[CSI Driver<br/>Storage]
-        DNS[CoreDNS]
-        Ingress[Ingress Controller<br/>NGINX/Traefik]
-        Metrics[Metrics Server<br/>Prometheus Adapter]
-    end
-    
-    subgraph External
-        etcd[(etcd Cluster<br/>3-5 nodes)]
-        Registry[Container Registry]
-        Cloud[Cloud Provider API]
-    end
-    
-    API --> etcd
-    API --> Scheduler
-    API --> ControllerMgr
-    API --> CloudCtrl
-    
-    Scheduler --> API
-    ControllerMgr --> API
-    CloudCtrl --> Cloud
-    
-    API --> Node1
-    API --> Node2
-    API --> NodeN
-    
-    Node1 --> CNI
-    Node1 --> CSI
-    Node2 --> CNI
-    Node2 --> CSI
-    
-    CNI --> Node1
-    CNI --> Node2
-    CSI --> Node1
-    CSI --> Node2
+
+subgraph "Control Plane"
+    API["API Server"]
+    Scheduler["Scheduler"]
+    ControllerMgr["Controller Manager"]
+    CloudCtrl["Cloud Controller Manager"]
+end
+
+subgraph "Worker Nodes"
+    Node1["Node 1"]
+    Node2["Node 2"]
+    NodeN["Node N"]
+end
+
+subgraph "Add-ons"
+    CNI["CNI Plugin"]
+    CSI["CSI Driver"]
+    DNS["CoreDNS"]
+    Ingress["Ingress Controller"]
+    Metrics["Metrics Server"]
+end
+
+subgraph "External"
+    ETCD[(etcd Cluster)]
+    Registry["Container Registry"]
+    Cloud["Cloud Provider API"]
+end
+
+API --> ETCD
+API --> Scheduler
+API --> ControllerMgr
+API --> CloudCtrl
+
+Scheduler --> API
+ControllerMgr --> API
+CloudCtrl --> Cloud
+
+API --> Node1
+API --> Node2
+API --> NodeN
+
+Node1 --> CNI
+Node1 --> CSI
+Node2 --> CNI
+Node2 --> CSI
+
+CNI --> Node1
+CNI --> Node2
+
+CSI --> Node1
+CSI --> Node2
 ```
 
 ### Key Components
