@@ -40,6 +40,7 @@ aliases:
 | File | Purpose |
 |------|---------|
 | [[Time Complexities]] | Sorting & operation complexity cheat sheet |
+| [[recurrence]] | **Recurrence relations & Master Theorem reference** |
 | [[PYQs and questions]] | GATE DA previous year questions + practice |
 | [[syllabus]] | Official GATE DA syllabus (all sections) |
 | [[Quick Reference Card]] | Printable interview snippets |

@@ -4,17 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "70ed2779d4539616",
+        "id": "03f464a8c49f3be6",
         "type": "tabs",
         "children": [
           {
-            "id": "080f042b11f5ab9b",
+            "id": "39d1ea9057a64bda",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Solved/746_MinCostClimbingStairs.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "746_MinCostClimbingStairs"
+            }
+          },
+          {
+            "id": "dff9b5826b4d36ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Programming, Data Structures and Algorithms"
+            }
+          },
+          {
+            "id": "e32039b045fe692b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Leetcode Solved List.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Leetcode Solved List"
+            }
+          },
+          {
+            "id": "2885b3ea68a3e0c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Solved/198_HouseRobber.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "198_HouseRobber"
             }
           }
         ]
@@ -204,44 +250,44 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "080f042b11f5ab9b",
+  "active": "39d1ea9057a64bda",
   "lastOpenFiles": [
+    "System Design/Quick_Reference.md",
+    "System Design/patterns/ml-systems.md",
+    "System Design/patterns/security.md",
+    "System Design/patterns/data-processing.md",
+    "System Design/patterns/caching.md",
+    "System Design/patterns/distributed-systems.md",
+    "dsa/theory/dp claude.md",
+    "dsa/Solved/746_MinCostClimbingStairs.md",
+    "System Design/patterns/cloud-infrastructure.md",
+    "System Design/patterns/ecommerce.md",
+    "dsa/theory/dp.md",
+    "dsa/Solved/198_HouseRobber.md",
     "dsa/Leetcode Solved List.md",
-    "dsa/Solved/2078_TwoFurthestHousesWithDifferentColors.md",
-    "Projects/Paper Implementation/README.md",
-    "Projects/Enterprise RAG/Project structure.md",
-    "Projects/Enterprise RAG/Interview Questions.md",
-    "Projects/Enterprise RAG/Implementation Log for the project/step-1-architecture-contracts.md",
-    "Projects/Enterprise RAG/Architecture Decision Matrix.md",
-    "Projects/Enterprise RAG/Architecture.md",
-    "Projects/Rate Limiter/README.md",
+    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
+    "System Design/patterns/ride-sharing-maps.md",
+    "System Design/21 Common Design Patterns.md",
+    "System Design/patterns/messaging-notifications.md",
+    "System Design/patterns/video-streaming.md",
+    "System Design/patterns/search-recommendation.md",
+    "System Design/patterns/storage-databases.md",
+    "System Design/patterns/social-media.md",
+    "System Design/patterns",
+    "System Design/System_Design_Index.md",
+    "ETAG/Programming, Data Structures and Algorithms/recurrence.md",
+    "ETAG/Programming, Data Structures and Algorithms/PYQs and questions.md",
+    "Excalidraw/Drawing 2026-08-01 22.51.29.excalidraw.md",
+    "Excalidraw/MySystemDesigns.md",
+    "Projects/Resume",
+    "Untitled",
     "Projects/Paper Implementation",
-    "README.md",
-    "dsa/Solved/7_ReverseInteger.md",
-    "dsa/Solved/3300_MinimumElementAfterReplacementWithDigitSum.md",
-    "ML/README.md",
-    "TO-DO.md",
-    "LICENSE.md",
-    "dsa/Solved/3612_ProcessStringWithSpecialOperationsI.md",
     "ETAG/Artificial Intelligence/DPPs/Un Informed Search DPP 2.pdf",
     "ETAG/Artificial Intelligence/DPPs/Un Informed Search DPP 2 Notes.pdf",
-    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
-    "ETAG/Machine Learning/Machine Learning.md",
-    "ETAG/Linear Algebra/Linear Algebra.md",
-    "ETAG/Database Management and Warehousing/Database Management and Warehousing.md",
-    "ETAG/Artificial Intelligence/Theory.md",
-    "ETAG/Artificial Intelligence/Questions.md",
-    "ETAG/Artificial Intelligence/Quick Revision.md",
-    "ETAG/Artificial Intelligence/Artificial Intelligence.md",
-    "dsa/Solved/2095_DeleteTheMiddleNodeOfALinkedList.md",
-    "dsa/Solved/2130_MaximumTwinSumOfALinkedList.md",
     "ETAG/Artificial Intelligence/DPPs/Miscellaneous DPP 01 Notes.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 814675.crdownload",
     "ETAG/Artificial Intelligence/DPPs/Miscellaneous DPP 01.pdf",
     "ETAG/Artificial Intelligence/DPPs/Unconfirmed 910611.crdownload",
-    "ETAG/Artificial Intelligence/DPPs/Preposition and Predictive Logic DPP 1.pdf",
-    "ETAG/Artificial Intelligence/DPPs/Unconfirmed 470188.crdownload",
-    "ETAG/Artificial Intelligence/DPPs/Preposition and Predictive Logic DPP 1 Notes.pdf",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",

@@ -75,5 +75,7 @@
 - [[3300_MinimumElementAfterReplacementWithDigitSum]]
 - [[7_ReverseInteger]]
 - [[2078_TwoFurthestHousesWithDifferentColors]]
+- [[486_PredictTheWinner]]
+- [[198_HouseRobber]]
 - [[kmp_PatternSearch]]
 
