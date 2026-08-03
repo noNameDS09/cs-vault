@@ -1,5 +1,6 @@
 {
   "newFileLocation": "current",
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "showIndentGuide": false
 }

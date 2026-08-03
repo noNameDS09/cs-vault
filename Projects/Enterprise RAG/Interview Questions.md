@@ -63,7 +63,77 @@ This document contains deep-dive interview questions tailored to the architectur
 
 **Q1: Walk me through the end-to-end architecture of your Enterprise RAG system.**
 
-* **Answer:** The system follows a modular, decoupled architecture. A user query hits the FastAPI `/chat` endpoint. It is passed to the `GenerationService`, which executes a pipeline. First, the `RetrievalService` takes the query, embeds it via a sentence-transformer model, and queries the Qdrant vector database. The retrieved chunks are deduplicated, filtered by a score threshold, and reranked using a Cross-Encoder. The top results are passed to the `PromptStage` to construct a system/user message payload. The `GenerateStage` calls the LLM provider (e.g., Ollama), and the generated text, along with source citations, is returned to the user.
+* **Answer:** Your description is technically accurate. Here's a slightly more polished version that reads like software architecture documentation:
+
+> The system follows a modular, decoupled architecture. A user query is received by the FastAPI `/chat` endpoint and forwarded to the `GenerationService`, which orchestrates the end-to-end response pipeline. First, the `RetrievalService` converts the query into an embedding using a Sentence Transformer model and performs a semantic search against the Qdrant vector database. The retrieved document chunks are then deduplicated, filtered using a similarity score threshold, and reranked with a Cross-Encoder to improve relevance. The highest-ranked chunks are passed to the `PromptStage`, which constructs the system and user prompts for the language model. Next, the `GenerateStage` invokes the configured LLM provider (e.g., Ollama) to generate a response using the retrieved context. Finally, the generated answer, together with the corresponding source citations, is returned to the user through the API.
+
+The pipeline can be visualized as:
+
+```text
+                User
+                  │
+                  ▼
+        FastAPI /chat Endpoint
+                  │
+                  ▼
+          GenerationService
+                  │
+        ┌─────────┴─────────┐
+        │                   │
+        ▼                   │
+      RetrievalService      │
+        │
+        ▼
+ Sentence Transformer
+        │
+        ▼
+ Query Embedding
+        │
+        ▼
+     Qdrant Search
+        │
+        ▼
+ Retrieved Chunks
+        │
+        ▼
+Deduplication & Threshold Filter
+        │
+        ▼
+     Cross-Encoder
+      Re-ranking
+        │
+        ▼
+   Top-k Chunks
+        │
+        ▼
+      PromptStage
+        │
+        ▼
+    GenerateStage
+        │
+        ▼
+ LLM (e.g., Ollama)
+        │
+        ▼
+ Answer + Citations
+        │
+        ▼
+             Client
+```
+
+This architecture follows a common production RAG pattern because each component has a single responsibility:
+
+- **FastAPI** exposes the HTTP API.
+- **GenerationService** orchestrates the workflow.
+- **RetrievalService** handles semantic search.
+- **Sentence Transformer** creates query embeddings.
+- **Qdrant** retrieves candidate document chunks.
+- **Deduplication and threshold filtering** remove redundant or low-confidence results.
+- **Cross-Encoder** reranks the retrieved chunks for higher precision.
+- **PromptStage** formats the retrieved context into prompts.
+- **GenerateStage** invokes the LLM.
+- **LLM (e.g., Ollama)** generates the final answer grounded in the retrieved context.
+- **Source citations** provide traceability back to the original documents.
 
 * **Why it matters:** Tests your ability to explain complex data flows and component responsibilities clearly.
 
@@ -240,3 +310,6 @@ This document contains deep-dive interview questions tailored to the architectur
   3. **Vector Database:** Qdrant is very fast, but at 10k RPM, we would deploy read replicas to handle the search concurrency.
 
 * **Why it matters:** Tests your senior-level system design skills.
+
+
+

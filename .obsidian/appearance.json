@@ -1,7 +1,8 @@
 {
   "theme": "obsidian",
   "cssTheme": "Minimal",
-  "interfaceFontFamily": "Consolas,Helvetica,Verdana,Cambria",
+  "interfaceFontFamily": "Yu Gothic,Sans Serif Collection,Segoe UI",
   "baseFontSize": 16,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "textFontFamily": "Cascadia Mono"
 }

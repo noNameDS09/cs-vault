@@ -77,5 +77,9 @@
 - [[2078_TwoFurthestHousesWithDifferentColors]]
 - [[486_PredictTheWinner]]
 - [[198_HouseRobber]]
+- [[877. Stone Game]]
+- [[416_PartitionEqualSubsetSum]]
+- [[746_MinCostClimbingStairs]]
+- 
 - [[kmp_PatternSearch]]
 
