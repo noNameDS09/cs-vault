@@ -80,6 +80,10 @@
 - [[877. Stone Game]]
 - [[416_PartitionEqualSubsetSum]]
 - [[746_MinCostClimbingStairs]]
-- 
+- [[1406_StoneGameIII]]
+- [[3731_FindMissingElements]]
+- [[3310_RemoveMethodsFromProject]]
+- [[4006_CountValidPrefixes]]
+- [[3982_SumOfIntegersWithMaximumDigitRange]]
 - [[kmp_PatternSearch]]
 

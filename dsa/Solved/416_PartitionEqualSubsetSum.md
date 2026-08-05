@@ -125,3 +125,61 @@ class Solution:
 		
 		return solve(0, total // 2)
 ```
+
+**Bottom Up (Tabulation)**
+```python
+class Solution:
+    def canPartition(self, arr: List[int]) -> bool:
+        # Calculate the total sum of the array.
+        total = sum(arr)
+
+        # If the total sum is odd, it cannot be split into
+        # two subsets having equal sum.
+        if total % 2 != 0:
+            return False
+
+        # Each subset must sum to half of the total.
+        target = total // 2
+        n = len(arr)
+
+        # dp[i][t] = Can we make sum 't' using elements
+        # from index i to n-1?
+        #
+        # Rows    -> Current index (0 ... n)
+        # Columns -> Target sum (0 ... target)
+        #
+        # We create n+1 rows because the extra row (i = n)
+        # represents the state where no elements are left.
+        dp = [[False] * (target + 1) for _ in range(n + 1)]
+
+        # Base Case:
+        # A target sum of 0 can always be formed by choosing
+        # no elements, regardless of the current index.
+        for i in range(n + 1):
+            dp[i][0] = True
+
+        # Fill the table from bottom to top because
+        # dp[i] depends on dp[i+1].
+        for i in range(n - 1, -1, -1):
+
+            # Compute every possible target sum.
+            for t in range(1, target + 1):
+
+                # Option 1: Skip the current element.
+                skip = dp[i + 1][t]
+
+                # Option 2: Take the current element
+                # (only if it does not exceed the target).
+                take = False
+                if arr[i] <= t:
+                    take = dp[i + 1][t - arr[i]]
+
+                # If either taking or skipping works,
+                # then this state is achievable.
+                dp[i][t] = take or skip
+
+        # The answer is:
+        # Can we form 'target' using all elements
+        # starting from index 0?
+        return dp[0][target]
+```
