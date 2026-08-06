@@ -85,5 +85,11 @@
 - [[3310_RemoveMethodsFromProject]]
 - [[4006_CountValidPrefixes]]
 - [[3982_SumOfIntegersWithMaximumDigitRange]]
+- [[66_PlusOne]]
+- [[3345_SmallestDivisibleDigitProductI]]
+- [[1448_CountGoodNodesInBinaryTree]]
+- [[98_ValidateBinarySearchTree]]
+- [[230_KthSmallestElementInABST]]
+- [[2770_MaximumNumberOfJumpsToReachTheLastIndex]]
 - [[kmp_PatternSearch]]
 

@@ -27,20 +27,13 @@ Problem Statement
 
 Each solution may include:
 
-- Problem description
-    
-- Approach and intuition
-    
-- Algorithm explanation
-    
-- Time and space complexity analysis
-    
-- Implementation details
-    
-- Alternative or optimized solutions
-    
-- Edge cases and observations
-    
+* Problem description
+* Approach and intuition
+* Algorithm explanation
+* Time and space complexity analysis
+* Implementation details
+* Alternative or optimized solutions
+* Edge cases and observations
 
 ### Theory
 
@@ -48,56 +41,31 @@ Contains comprehensive notes on DSA concepts, including data structures, algorit
 
 Topics may include:
 
-- Arrays and Strings
-    
-- Linked Lists
-    
-- Stacks and Queues
-    
-- Hash Tables
-    
-- Trees and Binary Search Trees
-    
-- Heaps and Priority Queues
-    
-- Graphs
-    
-- Tries
-    
-- Recursion and Backtracking
-    
-- Divide and Conquer
-    
-- Greedy Algorithms
-    
-- Dynamic Programming
-    
-- Sliding Window
-    
-- Two Pointers
-    
-- Binary Search
-    
-- Graph Traversal (BFS/DFS)
-    
-- Shortest Path Algorithms
-    
-- Minimum Spanning Trees
-    
-- Union-Find (Disjoint Set Union)
-    
-- Segment Trees and Fenwick Trees
-    
-- Bit Manipulation
-    
-- Mathematical Algorithms
-    
-- String Algorithms
-    
-- Computational Geometry
-    
-- Complexity Analysis and Algorithm Design
-    
+* Arrays and Strings
+* Linked Lists
+* Stacks and Queues
+* Hash Tables
+* [Trees and Binary Search Trees](obsidian://open?vault=DSA&file=dsa%2Ftheory%2FBinary%20Tree%20Templates)
+* Heaps and Priority Queues
+* Graphs
+* Tries
+* Recursion and Backtracking
+* Divide and Conquer
+* Greedy Algorithms
+* [Dynamic Programming](obsidian://open?vault=DSA&file=dsa%2Ftheory%2Fdp%20claude)
+* Sliding Window
+* Two Pointers
+* Binary Search
+* Graph Traversal (BFS/DFS)
+* Shortest Path Algorithms
+* Minimum Spanning Trees
+* Union-Find (Disjoint Set Union)
+* Segment Trees and Fenwick Trees
+* Bit Manipulation
+* Mathematical Algorithms
+* String Algorithms
+* Computational Geometry
+* Complexity Analysis and Algorithm Design
 
 ### SOLVED LIST.md
 
@@ -105,20 +73,13 @@ Acts as a centralized index of all solved problems in the repository. Each entry
 
 The index may also include:
 
-- Problem title
-    
-- Difficulty level
-    
-- Topic(s)
-    
-- Source or platform
-    
-- Status
-    
-- Link to the solution
-    
-- Notes or key concepts used
-    
+* Problem title
+* Difficulty level
+* Topic(s)
+* Source or platform
+* Status
+* Link to the solution
+* Notes or key concepts used
 
 ## Purpose
 

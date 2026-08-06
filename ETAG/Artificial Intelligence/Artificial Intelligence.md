@@ -32,7 +32,7 @@ aliases:
 | File | Description |
 |------|-------------|
 | [[Theory]] | **Complete theory** — All 6 modules with algorithms, proofs, examples |
-| [[Questions]] | **PYQs + Practice** — GATE DA 2024 questions + 50+ topic-wise practice |
+| [[ETAG/Artificial Intelligence/Questions]] | **PYQs + Practice** — GATE DA 2024 questions + 50+ topic-wise practice |
 | [[Quick Revision]] | **Formula sheet** — Printable 2-page cheatsheet for final review |
 | [[Index]] | This navigation file |
 
@@ -46,7 +46,7 @@ Read modules in order:
 2. **Logic** (Propositional → Predicate)
 3. **Uncertainty** (BN → Inference → Sampling)
 
-### 2. Practice → [[Questions]]
+### 2. Practice → [[ETAG/Artificial Intelligence/Questions]]
 - Start with **GATE DA 2024 PYQs** (actual exam questions)
 - Then **topic-wise practice** (50+ questions)
 - Focus on **shortcuts** in explanations

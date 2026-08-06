@@ -40,6 +40,15 @@ Welcome to your System Design knowledge vault! This roadmap is specifically cura
 *Goal: Solve real problems and polish your delivery.*
 - [[24 Interview Questions]]
 
+Also consider:
+[[Domain-Driven Design (DDD)]]
+[[Git Basics]]
+[[Key Notes]]
+[[Mermaid Diagrams for Concepts]]
+[[Modular Monolith]]
+[[Quick_Reference]]
+
+
 ---
 
 ## ⏱️ Estimated Study Time

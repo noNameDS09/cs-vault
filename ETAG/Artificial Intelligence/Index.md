@@ -21,7 +21,7 @@ aliases:
 | File                        | Purpose                                                                | Size  |
 | --------------------------- | ---------------------------------------------------------------------- | ----- |
 | [[Theory]]                  | **Complete theory** — Search, Logic, BN, Inference (29 KB)             | 29 KB |
-| [[Questions]]               | **PYQs + Practice** — GATE DA 2024/25 + high-yield practice (18 KB)    | 18 KB |
+| [[ETAG/Artificial Intelligence/Questions]]               | **PYQs + Practice** — GATE DA 2024/25 + high-yield practice (18 KB)    | 18 KB |
 | [[Quick Revision]]          | **Formula sheet** — All algorithms, rules, shortcuts on 1 page (10 KB) | 10 KB |
 | [[Artificial Intelligence]] | Syllabus overview & topic map                                          | 3 KB  |
 
@@ -43,7 +43,7 @@ aliases:
 
 ---
 
-## 🎯 Practice Categories (in [[Questions]])
+## 🎯 Practice Categories (in [[ETAG/Artificial Intelligence/Questions]])
 
 | Category | Questions | Source |
 |----------|-----------|--------|
