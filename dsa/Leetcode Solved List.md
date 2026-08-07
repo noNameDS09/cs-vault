@@ -91,5 +91,8 @@
 - [[98_ValidateBinarySearchTree]]
 - [[230_KthSmallestElementInABST]]
 - [[2770_MaximumNumberOfJumpsToReachTheLastIndex]]
+- [[1732_FindTheHighestAltitude]]
+- [[3866_FirstUniqueEvenElement]]
+- []
 - [[kmp_PatternSearch]]
 

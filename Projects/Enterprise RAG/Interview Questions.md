@@ -74,21 +74,57 @@ The system follows a **modular, decoupled architecture**:
 
 ```mermaid
 flowchart TD
-    A[User Query] --> B[FastAPI /chat Endpoint]
-    B --> C[GenerationService]
-    C --> D[RetrievalService]
-    D --> E[Sentence Transformer]
-    E --> F[Query Embedding]
-    F --> G[Qdrant Search]
-    G --> H[Retrieved Chunks]
-    H --> I[Deduplication & Threshold Filter]
-    I --> J[Cross-Encoder Re-ranking]
-    J --> K[Top-k Chunks]
-    K --> L[PromptStage]
-    L --> M[GenerateStage]
-    M --> N[LLM e.g., Ollama]
-    N --> O[Answer + Citations]
-    O --> P[Client]
+    subgraph Client_Layer[Client Layer]
+        A[👤 User Query]
+    end
+    
+    subgraph API_Layer[API Layer]
+        B[🌐 FastAPI /chat Endpoint]
+    end
+    
+    subgraph Orchestration[Orchestration]
+        C[🎯 GenerationService]
+    end
+    
+    subgraph Retrieval[Retrieval Pipeline]
+        D[🔍 RetrievalService]
+        E[🧠 Sentence Transformer]
+        F[📐 Query Embedding]
+        G[🗄️ Qdrant Vector Search]
+        H[📄 Retrieved Chunks]
+        I[🔧 Deduplication & Threshold Filter]
+        J[⚖️ Cross-Encoder Re-ranking]
+        K[✅ Top-k Chunks]
+    end
+    
+    subgraph Generation[Generation Pipeline]
+        L[📝 PromptStage]
+        M[⚙️ GenerateStage]
+        N[🤖 LLM (Ollama)]
+        O[📋 Answer + Citations]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+    M --> N
+    N --> O
+    O --> A
+    
+    style Client_Layer fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style API_Layer fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style Orchestration fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style Retrieval fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style Generation fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
 ```
 
 **Component Responsibilities:**
@@ -390,11 +426,35 @@ Architecture divided into two major pipelines: **Indexing Pipeline** & **Query P
 
 ```mermaid
 flowchart LR
-    A[Document Upload] --> B[Text Extraction\n(PDF/DOCX + Metadata)]
-    B --> C[Text Chunking\n(Overlapping chunks\n+ Metadata)]
-    C --> D[Embedding Generation\n(Semantic vectors)]
-    D --> E[Vector Storage\n(Qdrant + HNSW Index)]
+
+    subgraph Ingestion
+        A["Document Upload"]
+        B["Text Extraction<br/>(PDF/DOCX + Metadata)"]
+    end
+
+    subgraph Processing
+        C["Text Chunking<br/>(Overlapping chunks<br/>+ Metadata)"]
+    end
+
+    subgraph Embedding
+        D["Embedding Generation<br/>(Semantic vectors)"]
+    end
+
+    subgraph Storage
+        E["Vector Storage<br/>(Qdrant + HNSW Index)"]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    style Ingestion fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style Processing fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style Embedding fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style Storage fill:#fce4ec,stroke:#c2185b,stroke-width:2px
 ```
+
 
 **Details:**
 
@@ -410,20 +470,59 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A[User Query] --> B[Query Rewriting Agent\n(Conversation History)]
-    B --> C[Standalone Query]
-    C --> D[Hybrid Retrieval]
-    D --> E[Dense Vector Search]
-    D --> F[BM25 Keyword Search]
-    E --> G[Reciprocal Rank Fusion\n(RRF)]
+    subgraph Input[Input]
+        A[User Query]
+    end
+    
+    subgraph Rewriting[Query Rewriting]
+        B["Query Rewriting Agent<br/>(Conversation History)"]
+        C[Standalone Query]
+    end
+    
+    subgraph HybridRetrieval[Hybrid Retrieval]
+        D[Hybrid Retrieval Orchestrator]
+        E["Dense Vector Search<br/>(Semantic similarity)"]
+        F["BM25 Keyword Search<br/>(Exact term matching)"]
+    end
+    
+    subgraph Fusion[Rank Fusion]
+        G["Reciprocal Rank Fusion<br/>(RRF)"]
+    end
+    
+    subgraph Reranking[Precision Layer]
+        H["Cross-Encoder Reranking<br/>(Joint query-doc encoding)"]
+        I[Top-k Chunks]
+    end
+    
+    subgraph Generation[Generation]
+        J["Prompt Construction<br/>(Context + History + System)"]
+        K["Generation<br/>(Ollama LLM)"]
+        L["Streaming Response<br/>(SSE)"]
+        M["Frontend<br/>(Tokens + Citations)"]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    E --> G
     F --> G
-    G --> H[Cross-Encoder Reranking]
-    H --> I[Top-k Chunks]
-    I --> J[Prompt Construction\n(Context + History + System)]
-    J --> K[Generation\n(Ollama LLM)]
-    K --> L[Streaming Response\n(SSE)]
-    L --> M[Frontend\nTokens + Citations]
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+    
+    style Input fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style Rewriting fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style HybridRetrieval fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style Fusion fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style Reranking fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style Generation fill:#ede7f6,stroke:#5e35b1,stroke-width:2px
 ```
+
 
 **Details:**
 
@@ -616,23 +715,55 @@ Because of this joint encoding, the reranker can better capture nuanced relevanc
 
 The retrieval pipeline looks like this:
 
-```text
-User Query
-    ↓
-Dense Search
-+
-BM25
-    ↓
-RRF
-    ↓
-Top 20–50 candidates
-    ↓
-Cross-Encoder Reranker
-    ↓
-Top 5–10 chunks
-    ↓
-LLM
+```mermaid
+flowchart TD
+    subgraph Input[Input]
+        A[User Query]
+    end
+    
+    subgraph Retrieval[Candidate Retrieval]
+        B["Dense Search<br/>(ANN - semantic)"]
+        C["BM25 Search<br/>(Lexical - exact terms)"]
+    end
+    
+    subgraph Fusion[Rank Fusion]
+        D["Reciprocal Rank Fusion<br/>(RRF)"]
+    end
+    
+    subgraph Candidates[Candidate Pool]
+        E["Top 20-50 Candidates"]
+    end
+    
+    subgraph Reranking[Precision Reranking]
+        F["Cross-Encoder Reranker<br/>(Joint query-doc attention)"]
+    end
+    
+    subgraph Output[Final Context]
+        G["Top 5-10 Chunks<br/>(High-precision context)"]
+    end
+    
+    subgraph Generation[Answer Generation]
+        H["LLM<br/>(Grounded generation)"]
+    end
+    
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    
+    style Input fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style Retrieval fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style Fusion fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style Candidates fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style Reranking fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style Output fill:#ede7f6,stroke:#5e35b1,stroke-width:2px
+    style Generation fill:#e0f2f1,stroke:#00796b,stroke-width:2px
 ```
+
 
 Although RRF combines rankings from multiple retrievers, it still relies on retrieval heuristics.
 
