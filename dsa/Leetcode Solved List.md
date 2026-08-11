@@ -93,6 +93,9 @@
 - [[2770_MaximumNumberOfJumpsToReachTheLastIndex]]
 - [[1732_FindTheHighestAltitude]]
 - [[3866_FirstUniqueEvenElement]]
-- []
+- [[3302_FindTheLexicographicallySmallestValidSequence]]
+- [[1140_StoneGameII]]
+- [[1510_StoneGameIV]]
+- [[796_RotateString]]
 - [[kmp_PatternSearch]]
 

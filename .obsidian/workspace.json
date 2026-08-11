@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "ac4478147423036e",
+        "id": "a5c9182aa17421e0",
         "type": "tabs",
         "children": [
           {
-            "id": "4c25dcec359be2e9",
+            "id": "e562ce58640b7d06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Enterprise RAG/Interview Questions.md",
+                "file": "dsa/Leetcode Solved List.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Leetcode Solved List"
+            }
+          },
+          {
+            "id": "ca19a2185016e9b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ETAG/Programming, Data Structures and Algorithms/recurrence.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview Questions"
+              "title": "recurrence"
+            }
+          },
+          {
+            "id": "d606baa689687345",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,14 +238,27 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "4c25dcec359be2e9",
+  "active": "d606baa689687345",
   "lastOpenFiles": [
+    "ETAG/Programming, Data Structures and Algorithms/recurrence.md",
+    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
+    "Untitled.md",
+    "dsa/Leetcode Solved List.md",
+    "dsa/Solved/796_RotateString.md",
+    "ETAG/Machine Learning/Theory/Important.md",
+    "ETAG/Machine Learning/MCQs/MCQs 1.md",
+    "ETAG/Machine Learning/Theory/03 Simple Linear Regression.md",
+    "ETAG/Machine Learning/Theory/01 Supervised Learning.md",
+    "dsa/Solved/1510_StoneGameIV.md",
+    "dsa/Solved/3302_FindTheLexicographicallySmallestValidSequence.md",
+    "dsa/Solved/1140_StoneGameII.md",
+    "dsa/Solved/3867_SumOfGCDOfFormedPairs.md",
+    "Projects/Enterprise RAG/Interview Questions.md",
     "Projects/Enterprise RAG/Questions.md",
     "Projects/Paper Implementation/Difficulty wise papers.md",
     "copilot/copilot-custom-prompts/Emojify.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-conversations/I_want_to_link_the_solved_problems_from_the_folder@20260720_105543.md",
-    "dsa/Leetcode Solved List.md",
     "dsa/Solved/3866_FirstUniqueEvenElement.md",
     "database/Solved/Leetcode Solved SQL.md",
     "database/Solved/178_RankScores.md",
@@ -224,20 +266,7 @@
     "database/README.md",
     "database/Questions.md",
     "database/Solved/177_NthHighestSalary.md",
-    "database/Solved/176_SecondHighestSalary.md",
-    "database/Solved/175_CombineTwoTables.md",
     "database/Solved",
-    "dsa/Solved/1732_FindTheHighestAltitude.md",
-    "ETAG/Machine Learning/Theory/06 Logistic Regression.md",
-    "ETAG/Machine Learning/Theory/03 Simple Linear Regression.md",
-    "ETAG/Machine Learning/Theory/02 Regression.md",
-    "ETAG/Machine Learning/Theory/01 Supervised Learning.md",
-    "ETAG/Machine Learning/Theory/Formula Sheet.md",
-    "ETAG/Machine Learning/Theory/13 Cross Validation.md",
-    "ETAG/Machine Learning/Theory/23 Principal Component Analysis.md",
-    "ETAG/Machine Learning/Theory/22 Dimensionality Reduction.md",
-    "ETAG/Machine Learning/Theory/10 Support Vector Machine.md",
-    "ETAG/Machine Learning/Theory/21 Hierarchical Clustering.md",
     "ETAG/Resources/DA_GATE2027_Syllabus.pdf",
     "ETAG/Machine Learning/Theory",
     "ETAG/Papers/DA.pdf",

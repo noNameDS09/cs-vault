@@ -1,7 +1,7 @@
 ---
 tags: [machine-learning, gate-da, simple-linear-regression, revision]
 ---
-
+	
 # 03 Simple Linear Regression
 
 > [!note] Regression with **one predictor**: $y = \beta_0 + \beta_1 x + \epsilon$
@@ -16,13 +16,13 @@ Models linear relationship between single feature $x$ and target $y$. Foundation
 
 ## Key Concepts
 
-| Concept | Description |
-|---------|-------------|
-| **Slope ($\beta_1$)** | Change in $y$ per unit change in $x$ |
-| **Intercept ($\beta_0$)** | Expected $y$ when $x=0$ |
-| **Residual** | $e_i = y_i - \hat{y}_i$ |
-| **Fitted Value** | $\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i$ |
-| **Total/Explained/Residual SS** | $SS_{tot} = SS_{reg} + SS_{res}$ |
+| Concept                         | Description                                     |
+| ------------------------------- | ----------------------------------------------- |
+| **Slope ($\beta_1$)**           | Change in $y$ per unit change in $x$            |
+| **Intercept ($\beta_0$)**       | Expected $y$ when $x=0$                         |
+| **Residual**                    | $e_i = y_i - \hat{y}_i$                         |
+| **Fitted Value**                | $\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i$ |
+| **Total/Explained/Residual SS** | $SS_{tot} = SS_{reg} + SS_{res}$                |
 
 ---
 
@@ -187,10 +187,10 @@ $$
 
 ### CI vs PI
 
-| Interval | Width | For |
-|----------|-------|-----|
-| Confidence (mean) | Narrower | $E[Y|x_0]$ |
-| Prediction (individual) | Wider | $Y_{new}|x_0$ |
+| Interval                | Width    | For          |
+| ----------------------- | -------- | ------------ |
+| Confidence (mean)       | Narrower | $E[Yx_0]$    |
+| Prediction (individual) | Wider    | $Y_{new}x_0$ |
 
 ---
 
