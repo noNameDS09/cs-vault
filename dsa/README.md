@@ -46,6 +46,7 @@ Topics may include:
 * Stacks and Queues
 * Hash Tables
 * [Trees and Binary Search Trees](obsidian://open?vault=DSA&file=dsa%2Ftheory%2FBinary%20Tree%20Templates)
+* [[Segment Tree]]
 * Heaps and Priority Queues
 * Graphs
 * Tries
