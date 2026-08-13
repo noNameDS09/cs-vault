@@ -665,18 +665,18 @@ This phenomenon is known as the **Curse of Dimensionality**.
 
 # Quick Revision Table
 
-| Topic | Key Formula / Idea |
-|---------|-------------------|
-| Linear Regression | $\mathbf{w}=(X^TX)^{-1}X^Ty$ |
-| Ridge Regression | $\mathbf{w}=(X^TX+\lambda I)^{-1}X^Ty$ |
-| Logistic Regression | $w^Tx+b=0$ |
-| Entropy | $H=-\sum p\log_2p$ |
-| Information Gain | $IG=H(S)-H(\text{children})$ |
-| Sigmoid | $\sigma(x)=\frac{1}{1+e^{-x}}$ |
-| F1 Score | $\frac{2PR}{P+R}$ |
-| Return (RL) | $G_t=\sum\gamma^kR_{t+k+1}$ |
-| MLE | $\hat{\theta}=\arg\max P(D|\theta)$ |
-| K-Means Objective | $\sum\|x-\mu\|^2$ |
+| Topic               | Key Formula / Idea                     |
+| ------------------- | -------------------------------------- |
+| Linear Regression   | $\mathbf{w}=(X^TX)^{-1}X^Ty$           |
+| Ridge Regression    | $\mathbf{w}=(X^TX+\lambda I)^{-1}X^Ty$ |
+| Logistic Regression | $w^Tx+b=0$                             |
+| Entropy             | $H=-\sum p\log_2p$                     |
+| Information Gain    | $IG=H(S)-H(\text{children})$           |
+| Sigmoid             | $\sigma(x)=\frac{1}{1+e^{-x}}$         |
+| F1 Score            | $\frac{2PR}{P+R}$                      |
+| Return (RL)         | $G_t=\sum\gamma^kR_{t+k+1}$            |
+| MLE                 | $\hat{\theta}=\arg\max P(D\theta)$     |
+| K-Means Objective   | $\sum\|x-\mu\|^2$                      |
 
 > [!success]
 > These notes are fully compatible with **Obsidian**, **MathJax**, and PDF export.

@@ -26,3 +26,8 @@
 - [[10 Linear Regression]]
 - [[16 Clustering]]
 - [[21 Neural Networks Basics]]
+---
+# MCQs
+- [[MCQs 1]]
+- [[MCQs 2 Linear Regression (OLS, Ridge Regression excluded)]]
+- 

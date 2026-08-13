@@ -97,5 +97,7 @@
 - [[1140_StoneGameII]]
 - [[1510_StoneGameIV]]
 - [[796_RotateString]]
+- [[2996_SmallestMissingIntegerGreaterThanSequentialPrefixSum]]
+- [[2958_LengthOfLongestSubarrayWithAtMostKFrequency]]
 - [[kmp_PatternSearch]]
 
