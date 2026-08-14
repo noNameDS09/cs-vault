@@ -2,5 +2,6 @@
   "newFileLocation": "current",
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "./",
-  "showIndentGuide": false
+  "showIndentGuide": false,
+  "showUnsupportedFiles": true
 }

@@ -68,6 +68,9 @@ Topics may include:
 * Computational Geometry
 * Complexity Analysis and Algorithm Design
 
+### TEMPLATES
+- [[segment_tree.py]]
+
 ### SOLVED LIST.md
 
 Acts as a centralized index of all solved problems in the repository. Each entry links directly to the corresponding solution (`Solved/answer.md`), making it easy to browse, search, and revisit completed problems.

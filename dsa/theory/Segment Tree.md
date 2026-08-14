@@ -1,4 +1,4 @@
-Good context. You have the right tree foundation — that's all you need to get this. And for competitive programming, segment trees are one of the highest-leverage data structures you can learn. Problems that would take O(n) per query drop to O(log n).
+	Good context. You have the right tree foundation — that's all you need to get this. And for competitive programming, segment trees are one of the highest-leverage data structures you can learn. Problems that would take O(n) per query drop to O(log n).
 
 One honest thing to set expectations: segment trees are **not commonly asked in placement interviews** at the ₹15 LPA level. They show up in competitive programming (Codeforces Div 2 D/E, ICPC). So this is the right place to learn it — just know it's a CP skill, not a placement priority.
 

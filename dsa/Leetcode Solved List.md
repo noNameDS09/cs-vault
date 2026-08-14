@@ -99,5 +99,7 @@
 - [[796_RotateString]]
 - [[2996_SmallestMissingIntegerGreaterThanSequentialPrefixSum]]
 - [[2958_LengthOfLongestSubarrayWithAtMostKFrequency]]
+- [[3090_MaximumLengthSubstringWithTwoOccurrences]]
+- [[307_RangeSumQueryMutable]]
 - [[kmp_PatternSearch]]
 
