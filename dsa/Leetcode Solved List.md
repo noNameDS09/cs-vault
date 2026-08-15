@@ -101,5 +101,6 @@
 - [[2958_LengthOfLongestSubarrayWithAtMostKFrequency]]
 - [[3090_MaximumLengthSubstringWithTwoOccurrences]]
 - [[307_RangeSumQueryMutable]]
+- [[3702_LongestSubsequenceWithNon-ZeroBitwiseXOR]]
 - [[kmp_PatternSearch]]
 

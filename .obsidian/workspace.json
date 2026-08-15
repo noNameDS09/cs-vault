@@ -11,10 +11,14 @@
             "id": "81fd6b9422d6f8f5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "dsa/Leetcode Solved List.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Leetcode Solved List"
             }
           }
         ]
@@ -205,8 +209,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "809928d553b27851",
+  "active": "81fd6b9422d6f8f5",
   "lastOpenFiles": [
+    "dsa/Solved/3702_LongestSubsequenceWithNon-ZeroBitwiseXOR.md",
+    "ETAG/Papers/GATE2024DASampleQuestionPaperFinal.pdf",
+    "ETAG/Papers/Unconfirmed 502489.crdownload",
     "dsa/README.md",
     "dsa/Leetcode Solved List.md",
     "dsa/Solved/307_RangeSumQueryMutable.md",
@@ -235,14 +242,11 @@
     "ETAG/Machine Learning/Theory/Important.md",
     "dsa/Solved/1510_StoneGameIV.md",
     "dsa/Solved/3302_FindTheLexicographicallySmallestValidSequence.md",
-    "dsa/Solved/1140_StoneGameII.md",
     "database/Solved",
     "ETAG/Machine Learning/Theory",
     "ETAG/Papers/DA.pdf",
     "ETAG/Papers/DA25.pdf",
     "ETAG/Papers/cs_2021.pdf",
-    "ETAG/Papers/CS2.pdf",
-    "ETAG/Papers/Unconfirmed 328031.crdownload",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",
