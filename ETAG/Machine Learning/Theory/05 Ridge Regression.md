@@ -16,12 +16,12 @@ Ridge regression adds L2 penalty to handle multicollinearity and $p > n$ cases. 
 
 ## Key Concepts
 
-| Concept | Description |
-|---------|-------------|
-| **Regularization Parameter** | $\lambda \geq 0$ controls shrinkage |
-| **L2 Penalty** | $\lambda \sum_{j=1}^p \beta_j^2 = \lambda ||\beta||_2^2$ |
-| **Shrinkage** | Coefficients pulled toward zero |
-| **No Sparsity** | Unlike Lasso, coefficients rarely become exactly zero |
+| Concept                          | Description                                                               |
+| -------------------------------- | ------------------------------------------------------------------------- |
+| **Regularization Parameter**     | $\lambda \geq 0$ controls shrinkage                                       |
+| **L2 Penalty**                   | $\lambda \sum_{j=1}^p \beta_j^2 = \lambda\beta_2^2$                       |
+| **Shrinkage**                    | Coefficients pulled toward zero                                           |
+| **No Sparsity**                  | Unlike Lasso, coefficients rarely become exactly zero                     |
 | **Effective Degrees of Freedom** | $df(\lambda) = \text{tr}(H_\lambda) = \sum \frac{d_i^2}{d_i^2 + \lambda}$ |
 
 ---

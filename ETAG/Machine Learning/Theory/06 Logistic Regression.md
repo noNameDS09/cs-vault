@@ -16,13 +16,13 @@ Logistic regression models $P(y=1|x)$ using logistic (sigmoid) function. Despite
 
 ## Key Concepts
 
-| Concept | Description |
-|---------|-------------|
-| **Sigmoid Function** | $\sigma(z) = \frac{1}{1+e^{-z}}$ maps $\mathbb{R} \to (0,1)$ |
-| **Log-Odds (Logit)** | $\log \frac{P(y=1|x)}{P(y=0|x)} = \beta^T x$ |
-| **Decision Boundary** | $\beta^T x = 0$ (linear hyperplane) |
-| **Maximum Likelihood** | Parameters estimated via MLE, no closed form |
-| **Cross-Entropy Loss** | Convex loss function for training |
+| Concept                | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| **Sigmoid Function**   | $\sigma(z) = \frac{1}{1+e^{-z}}$ maps $\mathbb{R} \to (0,1)$ |
+| **Log-Odds (Logit)**   | $\log \frac{P(y=1x)}{P(y=0x)} = \beta^T x$                   |
+| **Decision Boundary**  | $\beta^T x = 0$ (linear hyperplane)                          |
+| **Maximum Likelihood** | Parameters estimated via MLE, no closed form                 |
+| **Cross-Entropy Loss** | Convex loss function for training                            |
 
 ---
 

@@ -102,5 +102,6 @@
 - [[3090_MaximumLengthSubstringWithTwoOccurrences]]
 - [[307_RangeSumQueryMutable]]
 - [[3702_LongestSubsequenceWithNon-ZeroBitwiseXOR]]
+- [[2029_StoneGameIX]]
 - [[kmp_PatternSearch]]
 
