@@ -103,5 +103,6 @@
 - [[307_RangeSumQueryMutable]]
 - [[3702_LongestSubsequenceWithNon-ZeroBitwiseXOR]]
 - [[2029_StoneGameIX]]
+- [[1563_StoneGameV]]
 - [[kmp_PatternSearch]]
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ETAG/Machine Learning/Theory/15 Multi Layer Perceptron.md",
+                "file": "dsa/Leetcode Solved List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15 Multi Layer Perceptron"
+              "title": "Leetcode Solved List"
             }
           }
         ]
@@ -211,6 +211,14 @@
   },
   "active": "e082e7dca8437465",
   "lastOpenFiles": [
+    "dsa/Solved/2553_SeparateTheDigitsInAnArray.md",
+    "dsa/Solved/1563_StoneGameV.md",
+    "ETAG/Machine Learning/MCQs/MCQs Linear Regression.md",
+    "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 2.md",
+    "ETAG/Machine Learning/MCQs/MCQs Logistic Regression and Linear Classification.md",
+    "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 1 (OLS, Ridge Regression excluded).md",
+    "ETAG/Machine Learning/MCQs/MCQs 1.md",
+    "ETAG/Machine Learning/Theory/15 Multi Layer Perceptron.md",
     "ETAG/Machine Learning/Theory/14 Neural Networks.md",
     "ETAG/Machine Learning/Theory/13 Cross Validation.md",
     "ETAG/Machine Learning/Theory/12 Bias Variance Tradeoff.md",
@@ -219,7 +227,6 @@
     "ETAG/Machine Learning/Theory/07 K Nearest Neighbour.md",
     "ETAG/Machine Learning/Theory/06 Logistic Regression.md",
     "ETAG/Probability and Statistics/Theory/Counting.md",
-    "ETAG/Machine Learning/MCQs/MCQs Logistic Regression and Linear Classification.md",
     "ETAG/Probability and Statistics/MCQs/Basic Counting Principles.md",
     "ETAG/Probability and Statistics/Probability and Statistics.md",
     "ETAG/Probability and Statistics/Theory",
@@ -234,15 +241,8 @@
     "dsa/Solved/3702_LongestSubsequenceWithNon-ZeroBitwiseXOR.md",
     "ETAG/Papers/GATE2024DASampleQuestionPaperFinal.pdf",
     "ETAG/Papers/Unconfirmed 502489.crdownload",
-    "dsa/README.md",
-    "dsa/Solved/307_RangeSumQueryMutable.md",
-    "dsa/theory/Segment Tree.md",
     "dsa/templates/segment_tree.py",
     "dsa/templates",
-    "dsa/Solved/3090_MaximumLengthSubstringWithTwoOccurrences.md",
-    "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 2.md",
-    "ETAG/Machine Learning/Machine Learning.md",
-    "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 1 (OLS, Ridge Regression excluded).md",
     "ETAG/Resources/DA_GATE2027_Syllabus.pdf",
     "database/Solved",
     "ETAG/Machine Learning/Theory",
