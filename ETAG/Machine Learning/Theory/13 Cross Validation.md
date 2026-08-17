@@ -2,7 +2,7 @@
 tags: [machine-learning, gate-da, cross-validation, model-selection, revision]
 ---
 
-# 13 Cross Validation
+# <mark style="background:rgba(240, 200, 0, 0.2)">13 Cross Validation</mark>
 
 > [!note] Technique for estimating model performance on unseen data and selecting hyperparameters
 
@@ -28,7 +28,7 @@ Cross-validation (CV) partitions data into complementary subsets for training an
 
 ## Formulae
 
-### K-Fold Cross Validation
+<font color="#f79646">### K-Fold Cross Validation</font>
 Split data into $K$ folds $D_1, ..., D_K$ of equal size.
 
 For $k = 1$ to $K$:
@@ -40,7 +40,7 @@ $$
 CV = \frac{1}{K} \sum_{k=1}^K L_k
 $$
 
-### Leave-One-Out CV (LOOCV)
+<font color="#f79646">### Leave-One-Out CV (LOOCV)</font>
 Special case $K = n$:
 $$
 LOOCV = \frac{1}{n} \sum_{i=1}^n L(y_i, \hat{f}^{(-i)}(x_i))
@@ -56,7 +56,7 @@ where $h_{ii}$ = diagonal of hat matrix $H$
 
 *No need to retrain n times!*
 
-### Stratified K-Fold
+<font color="#f79646">### Stratified K-Fold</font>
 - Each fold has approximately same class distribution as full dataset
 - Essential for imbalanced classification
 

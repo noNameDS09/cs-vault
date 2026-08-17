@@ -307,3 +307,61 @@ LOGISTIC REGRESSION
 ---
 
 #machine-learning #gate-da #logistic-regression #classification #revision
+
+---
+
+
+## Log-odds — separately
+
+This is an important GATE DA concept.
+
+In logistic regression,
+
+$p=P(y=1\mid x)$
+
+The **odds** are
+
+$\text{odds}=\frac{p}{1-p}$
+
+The **log-odds** are
+
+$\boxed{\log\left(\frac{p}{1-p}\right)}$
+
+Logistic regression assumes that the **log-odds are linear in the features**:
+
+$\boxed{\log\left(\frac{p}{1-p}\right)=w_0+w_1x_1+w_2x_2+\cdots+w_dx_d}$
+
+So if we call the right-hand side (z),
+
+$z=\log\left(\frac{p}{1-p}\right)$
+
+and therefore
+
+$\boxed{p=\frac{1}{1+e^{-z}}}$
+
+### The three values you should remember
+
+|$z$ / log-odds|Odds|Probability|
+|--:|--:|--:|
+|$z<0$|$<1$|$p<0.5$|
+|$z=0$|$1$|$p=0.5$|
+|$z>0$|$>1$|$p>0.5$|
+
+For example, if
+
+$z=2$
+
+then
+
+$\text{odds}=e^2>1$
+
+so
+
+$p>0.5$
+
+You **do not need to calculate the sigmoid every time**. For classification with a **0.5 threshold**, you can simply look at the sign of $z$:
+
+$\boxed{z\geq0\Rightarrow\text{Class 1}}$
+
+$\boxed{z<0\Rightarrow\text{Class 0}}$
+

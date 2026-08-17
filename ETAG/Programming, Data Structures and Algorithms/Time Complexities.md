@@ -18,18 +18,18 @@ aliases:
 
 ## 📊 Sorting Algorithms
 
-| Algorithm | Best | Average | Worst | Space | Stable | In-Place | Notes |
-|-----------|------|---------|-------|-------|--------|----------|-------|
-| **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) | ✅ | ✅ | Optimized: early exit if no swaps |
-| **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) | ❌ | ✅ | Min swaps (O(n)) |
-| **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) | ✅ | ✅ | Best for small/nearly sorted |
-| **Merge Sort** | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅ | ❌ | Stable, external sorting |
-| **Quick Sort** | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌ | ✅* | Randomized pivot → O(n log n) expected |
-| **Heap Sort** | O(n log n) | O(n log n) | O(n log n) | O(1) | ❌ | ✅ | Guaranteed O(n log n) |
-| **Timsort (Python)** | O(n) | O(n log n) | O(n log n) | O(n) | ✅ | ❌ | Hybrid merge+insertion, adaptive |
-| **Counting Sort** | O(n+k) | O(n+k) | O(n+k) | O(n+k) | ✅ | ❌ | Integers in range [0, k] |
-| **Radix Sort** | O(d(n+b)) | O(d(n+b)) | O(d(n+b)) | O(n+b) | ✅ | ❌ | d digits, base b |
-| **Bucket Sort** | O(n+k) | O(n+k) | O(n²) | O(n+k) | ✅ | ❌ | Uniform distribution |
+| Algorithm            | Best         | Average      | Worst        | Space       | Stable | In-Place | Notes                                    |
+| -------------------- | ------------ | ------------ | ------------ | ----------- | ------ | -------- | ---------------------------------------- |
+| **Bubble Sort**      | $O(n)$       | $O(n^2)$     | $O(n^2)$     | $O(1)$      | ✅      | ✅        | Optimized: early exit if no swaps        |
+| **Selection Sort**   | $O(n^2)$     | $O(n^2)$     | $O(n^2)$     | $O(1)$      | ❌      | ✅        | Minimum swaps: $O(n)$                    |
+| **Insertion Sort**   | $O(n)$       | $O(n^2)$     | $O(n^2)$     | $O(1)$      | ✅      | ✅        | Best for small/nearly sorted data        |
+| **Merge Sort**       | $O(n\log n)$ | $O(n\log n)$ | $O(n\log n)$ | $O(n)$      | ✅      | ❌        | Stable, useful for external sorting      |
+| **Quick Sort**       | $O(n\log n)$ | $O(n\log n)$ | $O(n^2)$     | $O(\log n)$ | ❌      | ✅*       | Randomized pivot → $O(n\log n)$ expected |
+| **Heap Sort**        | $O(n\log n)$ | $O(n\log n)$ | $O(n\log n)$ | $O(1)$      | ❌      | ✅        | Guaranteed $O(n\log n)$                  |
+| **Timsort (Python)** | $O(n)$       | $O(n\log n)$ | $O(n\log n)$ | $O(n)$      | ✅      | ❌        | Hybrid merge + insertion, adaptive       |
+| **Counting Sort**    | $O(n+k)$     | $O(n+k)$     | $O(n+k)$     | $O(n+k)$    | ✅      | ❌        | Integers in range $[0,k]$                |
+| **Radix Sort**       | $O(d(n+b))$  | $O(d(n+b))$  | $O(d(n+b))$  | $O(n+b)$    | ✅      | ❌        | $d$ digits, base $b$                     |
+| **Bucket Sort**      | $O(n+k)$     | $O(n+k)$     | $O(n^2)$     | $O(n+k)$    | ✅      | ❌        | Assumes uniform distribution             |
 
 > *Quick Sort recursive stack: O(log n) average, O(n) worst
 

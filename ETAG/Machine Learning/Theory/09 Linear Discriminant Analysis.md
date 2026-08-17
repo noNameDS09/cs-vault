@@ -16,14 +16,14 @@ LDA is a generative classifier that assumes Gaussian class-conditionals with **s
 
 ## Key Concepts
 
-| Concept | Description |
-|---------|-------------|
-| **Discriminant Function** | $\delta_k(x) = \log P(C_k|x)$ (score for class $k$) |
-| **Linear Decision Boundary** | $\delta_k(x) = \delta_l(x)$ → linear in $x$ |
-| **Shared Covariance** | $\Sigma_k = \Sigma$ for all classes |
-| **Between-Class Scatter** | $S_B = \sum n_k (\mu_k - \mu)(\mu_k - \mu)^T$ |
-| **Within-Class Scatter** | $S_W = \sum \sum_{i \in C_k} (x_i - \mu_k)(x_i - \mu_k)^T$ |
-| **Fisher's Criterion** | Maximize $\frac{w^T S_B w}{w^T S_W w}$ |
+| Concept                      | Description                                                |
+| ---------------------------- | ---------------------------------------------------------- |
+| **Discriminant Function**    | $\delta_k(x) = \log P(C_kx)$ (score for class $k$)         |
+| **Linear Decision Boundary** | $\delta_k(x) = \delta_l(x)$ → linear in $x$                |
+| **Shared Covariance**        | $\Sigma_k = \Sigma$ for all classes                        |
+| **Between-Class Scatter**    | $S_B = \sum n_k (\mu_k - \mu)(\mu_k - \mu)^T$              |
+| **Within-Class Scatter**     | $S_W = \sum \sum_{i \in C_k} (x_i - \mu_k)(x_i - \mu_k)^T$ |
+| **Fisher's Criterion**       | Maximize $\frac{w^T S_B w}{w^T S_W w}$                     |
 
 ---
 

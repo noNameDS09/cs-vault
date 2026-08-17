@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "190cd36ee2f6eb40",
+        "id": "037d74a870119e43",
         "type": "tabs",
         "children": [
           {
-            "id": "b773b8cf13912c6d",
+            "id": "e082e7dca8437465",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ETAG/Machine Learning/Theory/15 Multi Layer Perceptron.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "15 Multi Layer Perceptron"
             }
           }
         ]
@@ -205,12 +209,28 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "809928d553b27851",
+  "active": "e082e7dca8437465",
   "lastOpenFiles": [
-    "dsa/Solved/2029_StoneGameIX.md",
+    "ETAG/Machine Learning/Theory/14 Neural Networks.md",
+    "ETAG/Machine Learning/Theory/13 Cross Validation.md",
+    "ETAG/Machine Learning/Theory/12 Bias Variance Tradeoff.md",
+    "ETAG/Machine Learning/Theory/11 Decision Trees.md",
+    "ETAG/Machine Learning/Theory/09 Linear Discriminant Analysis.md",
+    "ETAG/Machine Learning/Theory/07 K Nearest Neighbour.md",
     "ETAG/Machine Learning/Theory/06 Logistic Regression.md",
-    "ETAG/Machine Learning/Theory/05 Ridge Regression.md",
+    "ETAG/Probability and Statistics/Theory/Counting.md",
+    "ETAG/Machine Learning/MCQs/MCQs Logistic Regression and Linear Classification.md",
+    "ETAG/Probability and Statistics/MCQs/Basic Counting Principles.md",
+    "ETAG/Probability and Statistics/Probability and Statistics.md",
+    "ETAG/Probability and Statistics/Theory",
+    "Untitled.md",
+    "ETAG/Probability and Statistics/MCQs",
+    "ETAG/Programming, Data Structures and Algorithms/Time Complexities.md",
+    "ETAG/Programming, Data Structures and Algorithms/recurrence.md",
+    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
     "dsa/Leetcode Solved List.md",
+    "dsa/Solved/2029_StoneGameIX.md",
+    "ETAG/Machine Learning/Theory/05 Ridge Regression.md",
     "dsa/Solved/3702_LongestSubsequenceWithNon-ZeroBitwiseXOR.md",
     "ETAG/Papers/GATE2024DASampleQuestionPaperFinal.pdf",
     "ETAG/Papers/Unconfirmed 502489.crdownload",
@@ -222,27 +242,11 @@
     "dsa/Solved/3090_MaximumLengthSubstringWithTwoOccurrences.md",
     "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 2.md",
     "ETAG/Machine Learning/Machine Learning.md",
-    "Untitled.md",
     "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 1 (OLS, Ridge Regression excluded).md",
-    "ETAG/Machine Learning/MCQs/MCQs 1.md",
-    "dsa/Shortcuts.md",
-    "dsa/Solved/2958_LengthOfLongestSubarrayWithAtMostKFrequency.md",
-    "ETAG/Machine Learning/Theory/03 Simple Linear Regression.md",
-    "ETAG/Machine Learning/Theory/02 Regression.md",
-    "ETAG/Machine Learning/Theory/01 Supervised Learning.md",
-    "ML/10 Linear Regression.md",
-    "ML/02 Machine Learning vs Deep Learning.md",
     "ETAG/Resources/DA_GATE2027_Syllabus.pdf",
-    "ETAG/syllabus.md",
-    "dsa/Solved/2996_SmallestMissingIntegerGreaterThanSequentialPrefixSum.md",
-    "ETAG/Programming, Data Structures and Algorithms/recurrence.md",
-    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
-    "dsa/Solved/796_RotateString.md",
     "database/Solved",
     "ETAG/Machine Learning/Theory",
     "ETAG/Papers/DA.pdf",
-    "ETAG/Papers/DA25.pdf",
-    "ETAG/Papers/cs_2021.pdf",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",
