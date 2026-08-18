@@ -1,3 +1,10 @@
+---
+tags:
+  - string
+  - kmp
+  - dynamic-programming
+---
+
 # KMP - Pattern Search (LPS / Prefix Function)
 
 ## Problem Statement

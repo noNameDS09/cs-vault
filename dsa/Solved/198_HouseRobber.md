@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - dynamic-programming
+---
+
 # 198. House Robber
 
 ## Problem Statement

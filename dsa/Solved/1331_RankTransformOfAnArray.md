@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - sorting
+  - hash-table
+---
+
 # 1331. Rank Transform of an Array
 
 ## Problem Statement

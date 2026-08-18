@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - string
+  - greedy
+  - sorting
+---
+
 # 3014. Minimum Number of Pushes to Type Word I
 
 ## Problem Statement

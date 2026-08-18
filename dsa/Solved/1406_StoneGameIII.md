@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - dynamic-programming
+  - game-theory
+---
+
 # 1406. Stone Game III
 
 ## Problem Statement

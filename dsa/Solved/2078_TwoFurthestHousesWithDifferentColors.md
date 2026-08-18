@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - two-pointers
+---
+
 # 2078. Two Furthest Houses With Different Colors
 
 ## Problem Statement

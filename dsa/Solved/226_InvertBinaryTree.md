@@ -1,3 +1,11 @@
+---
+tags:
+  - tree
+  - dfs
+  - bfs
+  - binary-tree
+---
+
 # 226. Invert Binary Tree
 
 ## Problem Statement

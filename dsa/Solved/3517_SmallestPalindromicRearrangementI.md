@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - string
+  - greedy
+  - hash-table
+---
+
 # 3517. Smallest Palindromic Rearrangement I
 
 ## Problem Statement

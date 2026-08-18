@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - binary-search
+---
+
 # 704. Binary Search
 
 ## Problem Statement

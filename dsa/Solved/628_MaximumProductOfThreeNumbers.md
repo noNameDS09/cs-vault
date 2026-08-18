@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - sorting
+  - math
+---
+
 # 628. Maximum Product of Three Numbers
 
 ## Problem Statement

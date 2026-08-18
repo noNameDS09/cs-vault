@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - queue
+  - sliding-window
+  - monotonic-queue
+---
+
 # 239. Sliding Window Maximum
 
 ## Problem Statement

@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - segment-tree
+  - binary-indexed-tree
+  - design
+---
+
 # [307. Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/)
 
 Given an integer array `nums`, handle multiple queries of the following types:
@@ -15,7 +23,7 @@ Implement the `NumArray` class:
 
 **Input**
 ["NumArray", "sumRange", "update", "sumRange"]
-[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]
+`[[1, 3, 5], [0, 2], [1, 2], [0, 2]]`
 **Output**
 [null, 9, null, 8]
 

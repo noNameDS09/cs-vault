@@ -1,3 +1,10 @@
+---
+tags:
+  - stack
+  - array
+  - math
+---
+
 # 150. Evaluate Reverse Polish Notation
 You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
 

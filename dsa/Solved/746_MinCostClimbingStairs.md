@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - dynamic-programming
+---
+
 # 746. Min Cost Climbing Stairs
 
 ## Problem Statement

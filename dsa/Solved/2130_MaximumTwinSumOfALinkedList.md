@@ -1,3 +1,10 @@
+---
+tags:
+  - linked-list
+  - two-pointers
+  - stack
+---
+
 # 2130. Maximum Twin Sum of a Linked List
 
 ## Problem Statement

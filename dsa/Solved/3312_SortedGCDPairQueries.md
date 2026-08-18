@@ -1,3 +1,16 @@
+---
+tags:
+  - array
+  - math
+  - number-theory
+  - gcd
+  - inclusion-exclusion
+  - sieve
+  - binary-search
+  - sorting
+  - hash-table
+---
+
 # GCD of Pair Queries
 
 ## Problem Statement

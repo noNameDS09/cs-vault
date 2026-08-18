@@ -1,3 +1,10 @@
+---
+tags:
+  - tree
+  - bst
+  - dfs
+---
+
 # 235. Lowest Common Ancestor of a Binary Search Tree
 
 ## Problem Statement

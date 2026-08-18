@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - hash-table
+  - sorting
+---
+
 # 🟢 Contains Duplicate
 
 > **Difficulty:** Easy  

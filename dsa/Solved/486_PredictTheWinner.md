@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - dynamic-programming
+  - game-theory
+  - minimax
+---
+
 # 486. Predict the Winner
 
 ## Problem Statement

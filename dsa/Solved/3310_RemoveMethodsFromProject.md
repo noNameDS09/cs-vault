@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - graph
+  - topological-sort
+---
+
 # 3310. Remove Methods From Project
 
 ## Problem Statement

@@ -1,3 +1,12 @@
+---
+tags:
+  - array
+  - hash-table
+  - greedy
+  - modulo
+  - combinatorics
+---
+
 # 2963. Count the Number of Good Partitions
 
 ## Problem Statement

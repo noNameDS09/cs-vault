@@ -1,3 +1,9 @@
+---
+tags:
+  - linked-list
+  - recursion
+---
+
 # 25. Reverse Nodes in k-Group
 
 ## Problem Statement

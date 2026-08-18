@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - sliding-window
+  - hash-table
+  - string
+---
+
 # [3090. Maximum Length Substring With Two Occurrences](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/)
 
 Given a string `s`, return the **maximum** length of a substring such that it contains _at most two occurrences_ of each character.

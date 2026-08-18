@@ -1,3 +1,12 @@
+---
+tags:
+  - math
+  - number-theory
+  - brute-force
+  - digit-dp
+  - simulation
+---
+
 # [3345. Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i/)
 
 ## Problem Statement

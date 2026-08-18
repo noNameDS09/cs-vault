@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - two-pointers
+  - stack
+  - prefix-sum
+---
+
 # 42. Trapping Rain Water
 
 ## Problem Statement

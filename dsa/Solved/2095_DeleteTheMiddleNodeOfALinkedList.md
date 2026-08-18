@@ -1,3 +1,9 @@
+---
+tags:
+  - linked-list
+  - two-pointers
+---
+
 # 2095. Delete the Middle Node of a Linked List
 
 ## Problem Statement

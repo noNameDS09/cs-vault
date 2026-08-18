@@ -1,3 +1,12 @@
+---
+tags:
+  - string
+  - stack
+  - monotonic-stack
+  - greedy
+  - hash-table
+---
+
 Given a string `s`, return _the_ _lexicographically smallest_ _subsequence_ _of_ `s` _that contains all the distinct characters of_ `s` _exactly once_.
 
 **Example 1:**

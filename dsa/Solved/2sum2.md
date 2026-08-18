@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - two-pointers
+  - binary-search
+---
+
 # 167. Two Sum II - Input Array Is Sorted
 
 ## Problem Statement

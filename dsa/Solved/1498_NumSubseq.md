@@ -1,3 +1,12 @@
+---
+tags:
+  - array
+  - two-pointers
+  - sorting
+  - math
+  - modulo
+---
+
 # 1498. Number of Subsequences That Satisfy the Given Sum Condition
 
 ## Problem Statement

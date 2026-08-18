@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - hash-table
+---
+
 # [3731. Find Missing Elements](https://leetcode.com/problems/find-missing-elements/)
 
 You are given an integer array `nums` consisting of **unique** integers.

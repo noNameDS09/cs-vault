@@ -1,3 +1,11 @@
+---
+tags:
+  - linked-list
+  - divide-and-conquer
+  - heap
+  - merge-sort
+---
+
 # 23. Merge k Sorted Lists
 
 ## Problem Statement

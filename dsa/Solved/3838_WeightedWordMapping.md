@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - hash-table
+  - string
+---
+
 # 3838. Weighted Word Mapping
 
 ## Problem Statement

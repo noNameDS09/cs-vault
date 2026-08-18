@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - stack
+  - monotonic-stack
+---
+
 # 84. Largest Rectangle in Histogram
 
 # Largest Rectangle in Histogram

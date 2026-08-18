@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - string
+  - simulation
+---
+
 # 2315. Count Asterisks
 
 ## Problem Statement

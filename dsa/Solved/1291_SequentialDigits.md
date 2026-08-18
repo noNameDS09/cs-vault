@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - math
+  - enumeration
+---
+
 # 1291. Sequential Digits
 
 ## Problem Statement

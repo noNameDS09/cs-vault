@@ -1,3 +1,11 @@
+---
+tags:
+  - tree
+  - dfs
+  - bfs
+  - binary-tree
+---
+
 # 104. Maximum Depth of Binary Tree
 
 ## Problem Statement

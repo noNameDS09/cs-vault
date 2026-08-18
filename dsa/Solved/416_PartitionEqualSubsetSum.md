@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - dynamic-programming
+  - bit-manipulation
+---
+
 # 416. Partition Equal Subset Sum
 
 ## Problem Statement

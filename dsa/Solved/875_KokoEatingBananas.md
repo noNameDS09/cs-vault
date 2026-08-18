@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - binary-search
+---
+
 # 875. Koko Eating Bananas
 
 ## Problem Statement

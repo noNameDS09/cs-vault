@@ -104,5 +104,6 @@
 - [[3702_LongestSubsequenceWithNon-ZeroBitwiseXOR]]
 - [[2029_StoneGameIX]]
 - [[1563_StoneGameV]]
+- [[3471_FindTheLargestAlmostMissingInteger]]
 - [[kmp_PatternSearch]]
 

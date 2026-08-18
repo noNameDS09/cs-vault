@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - two-pointers
+  - greedy
+---
+
 # 11. Container With Most Water
 
 ## Brute Force O(n^2))

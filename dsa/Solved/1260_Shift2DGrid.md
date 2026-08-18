@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - matrix
+  - simulation
+---
+
 # 1260. Shift 2D Grid
 
 ## Problem Statement

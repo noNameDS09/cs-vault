@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - sliding-window
+  - hash-table
+---
+
 # [2958. Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)
 
 You are given an integer array `nums` and an integer `k`.

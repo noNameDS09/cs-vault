@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - math
+---
+
 # 3536. Maximum Product of Two Digits
 
 ## Problem Statement

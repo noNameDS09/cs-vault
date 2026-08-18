@@ -96,21 +96,8 @@ $$
 - **Optimal complexity**: Minimizes total error
 
 ### Model Complexity vs Error
-```
-Error
-  ↑
-  |     Test Error (U-shaped)
-  |    /
-  |   / 
-  |  / 
-  | /___________
-  |/   ^        \
-  |    | Optimal \
-  |    | Complexity\
-  |    |            \
-  |____|_____________\___→ Model Complexity
-       Bias²↓      Variance↑
-```
+
+<image src="https://imgs.search.brave.com/cD1uJ8E4wbXuffbS5Ep6Urd0YPiWceupS-RPEzpOrLk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHV0b3JpYWxzcG9p/bnQuY29tL21hY2hp/bmVfbGVhcm5pbmcv/aW1hZ2VzL2JpYXNf/dmFyaWFuY2VfdHJh/ZGVvZmYuanBn"></image>
 
 ### Sources of Bias
 - Model class too simple (e.g., linear for non-linear truth)
@@ -148,15 +135,15 @@ If models uncorrelated, variance reduces by $1/B$.
 
 ### Controlling Bias-Variance
 
-| Technique | Effect on Bias | Effect on Variance |
-|-----------|---------------|-------------------|
-| More complex model | ↓ | ↑ |
-| Regularization (↑λ) | ↑ | ↓ |
-| More data | ~same | ↓ |
-| Feature selection | ↑ (if remove useful) | ↓ |
-| Bagging (RF) | ~same | ↓↓ |
-| Boosting | ↓↓ | ↑ (if overfit) |
-| Ensemble | ~same | ↓ |
+| Technique           | Effect on Bias       | Effect on Variance |
+| ------------------- | -------------------- | ------------------ |
+| More complex model  | ↓                    | ↑                  |
+| Regularization (↑λ) | ↑                    | ↓                  |
+| More data           | ~same                | ↓                  |
+| Feature selection   | ↑ (if remove useful) | ↓                  |
+| Bagging (RF)        | ~same                | ↓↓                 |
+| Boosting            | ↓↓                   | ↑ (if overfit)     |
+| Ensemble            | ~same                | ↓                  |
 
 ### Learning Curves
 - **High Bias**: Training error ≈ Test error (both high), adding data doesn't help

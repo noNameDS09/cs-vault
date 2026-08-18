@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - hash-table
+---
+
 # [3866. First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/)
 
 You are given an integer array `nums`.

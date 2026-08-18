@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - dynamic-programming
+  - game-theory
+  - math
+---
+
 # [2029. Stone Game IX](https://leetcode.com/problems/stone-game-ix/)
 
 Alice and Bob continue their games with stones. There is a row of n stones, and each stone has an associated value. You are given an integer array `stones`, where `stones[i]` is the **value** of the `ith` stone.

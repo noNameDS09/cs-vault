@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - stack
+  - monotonic-stack
+  - sorting
+---
+
 # 853. Car Fleet
 
 There are `n` cars at given miles away from the starting mile `0`, traveling to reach the mile `target`.

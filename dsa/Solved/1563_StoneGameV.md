@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - dynamic-programming
+  - game-theory
+  - interval-dp
+---
+
 # [1563. Stone Game V](https://leetcode.com/problems/stone-game-v/)
 
 There are several stones **arranged in a row**, and each stone has an associated value which is an integer given in the array `stoneValue`.

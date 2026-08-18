@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - math
+---
+
 # 66. Plus One
 
 ## Problem Statement

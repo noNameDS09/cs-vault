@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - prefix-sum
+---
+
 # 238. Product of Array Except Self
 
 ## Problem Statement

@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - binary-search
+  - matrix
+---
+
 # 74. Search a 2D Matrix
 
 

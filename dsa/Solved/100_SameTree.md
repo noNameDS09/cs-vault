@@ -1,3 +1,11 @@
+---
+tags:
+  - tree
+  - dfs
+  - bfs
+  - binary-tree
+---
+
 # 100. Same Tree
 
 ## Problem Statement

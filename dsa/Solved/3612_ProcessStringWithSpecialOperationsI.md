@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - string
+  - simulation
+---
+
 # 3612. Process String with Special Operations I
 
 ## Problem Statement

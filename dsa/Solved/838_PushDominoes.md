@@ -1,3 +1,10 @@
+---
+tags:
+  - string
+  - two-pointers
+  - simulation
+---
+
 # 838. Push Dominoes
 
 ## Problem Statement

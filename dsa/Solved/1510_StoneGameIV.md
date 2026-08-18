@@ -1,3 +1,10 @@
+---
+tags:
+  - dynamic-programming
+  - game-theory
+  - math
+---
+
 # [1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/)
 
 Alice and Bob take turns playing a game, with Alice starting first.

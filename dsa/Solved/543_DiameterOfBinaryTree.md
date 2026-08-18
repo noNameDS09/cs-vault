@@ -1,3 +1,10 @@
+---
+tags:
+  - tree
+  - dfs
+  - binary-tree
+---
+
 # 543. Diameter of Binary Tree
 
 ## Problem Statement

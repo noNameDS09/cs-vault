@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "037d74a870119e43",
+        "id": "e392d80d2d59977a",
         "type": "tabs",
         "children": [
           {
-            "id": "e082e7dca8437465",
+            "id": "ca39c50666413a5c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dsa/Leetcode Solved List.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Leetcode Solved List"
+              "title": "New tab"
             }
           }
         ]
@@ -55,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "416",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +67,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -80,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.8999938964844
+    "width": 248.70001220703125
   },
   "right": {
     "id": "15a703db7c0dcfb2",
@@ -209,44 +208,44 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e082e7dca8437465",
+  "active": "809928d553b27851",
   "lastOpenFiles": [
-    "dsa/Solved/2553_SeparateTheDigitsInAnArray.md",
-    "dsa/Solved/1563_StoneGameV.md",
-    "ETAG/Machine Learning/MCQs/MCQs Linear Regression.md",
-    "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 2.md",
-    "ETAG/Machine Learning/MCQs/MCQs Logistic Regression and Linear Classification.md",
-    "ETAG/Machine Learning/MCQs/MCQs Linear Regression set 1 (OLS, Ridge Regression excluded).md",
-    "ETAG/Machine Learning/MCQs/MCQs 1.md",
-    "ETAG/Machine Learning/Theory/15 Multi Layer Perceptron.md",
-    "ETAG/Machine Learning/Theory/14 Neural Networks.md",
-    "ETAG/Machine Learning/Theory/13 Cross Validation.md",
-    "ETAG/Machine Learning/Theory/12 Bias Variance Tradeoff.md",
-    "ETAG/Machine Learning/Theory/11 Decision Trees.md",
-    "ETAG/Machine Learning/Theory/09 Linear Discriminant Analysis.md",
-    "ETAG/Machine Learning/Theory/07 K Nearest Neighbour.md",
-    "ETAG/Machine Learning/Theory/06 Logistic Regression.md",
-    "ETAG/Probability and Statistics/Theory/Counting.md",
-    "ETAG/Probability and Statistics/MCQs/Basic Counting Principles.md",
-    "ETAG/Probability and Statistics/Probability and Statistics.md",
+    "ETAG/Probability and Statistics/Theory/09 Discrete Random Variables.md",
+    "ETAG/Probability and Statistics/Theory/08 Random Variables.md",
+    "ETAG/Probability and Statistics/Theory/07 Independence.md",
+    "ETAG/Probability and Statistics/Theory/06 Bayes Theorem.md",
+    "ETAG/Probability and Statistics/Theory/05 Conditional Probability.md",
+    "ETAG/Probability and Statistics/Theory/04 Permutations and Combinations.md",
+    "ETAG/Probability and Statistics/Theory/03 Counting Principles.md",
+    "ETAG/Probability and Statistics/Theory/01 Probability.md",
+    "ETAG/Probability and Statistics/Theory/02 Sample Space and Events.md",
+    "ETAG/Probability and Statistics/Theory/18 Joint Probability Distributions.md",
+    "ETAG/Probability and Statistics/Theory/63 Chebyshev Inequality.md",
+    "ETAG/Probability and Statistics/Theory/62 Markov Inequality.md",
+    "ETAG/Probability and Statistics/Theory/61 Probability Inequalities.md",
+    "ETAG/Probability and Statistics/Theory/60 Simple Linear Regression Statistics.md",
+    "ETAG/Probability and Statistics/Theory/59 Spearman Rank Correlation.md",
+    "ETAG/Probability and Statistics/Theory/58 Pearson Correlation.md",
+    "ETAG/Probability and Statistics/Theory/57 Covariance and Correlation.md",
+    "ETAG/Probability and Statistics/Theory/56 Skewness and Kurtosis.md",
+    "ETAG/Probability and Statistics/Theory/55 Range Variance Standard Deviation.md",
+    "ETAG/Probability and Statistics/Theory/54 Quartiles and Percentiles.md",
+    "ETAG/Probability and Statistics/Theory/53 Mean Median Mode.md",
+    "ETAG/Probability and Statistics/Theory/52 Descriptive Statistics.md",
+    "ETAG/Probability and Statistics/Theory/51 ANOVA.md",
+    "ETAG/Probability and Statistics/Theory/50 Chi Square Test.md",
+    "ETAG/Probability and Statistics/Theory/49 t Test.md",
+    "ETAG/Probability and Statistics/Theory/48 z Test.md",
+    "ETAG/Machine Learning/DPPs/Decision Tree DPP 1 Notes.pdf",
+    "ETAG/Machine Learning/DPPs/Decision Tree DPP 1.pdf",
+    "dsa/Solved/add_tags.py",
+    "Projects/Cloning old softwares",
+    "Projects/Simple AI Agent",
     "ETAG/Probability and Statistics/Theory",
-    "Untitled.md",
     "ETAG/Probability and Statistics/MCQs",
-    "ETAG/Programming, Data Structures and Algorithms/Time Complexities.md",
-    "ETAG/Programming, Data Structures and Algorithms/recurrence.md",
-    "ETAG/Programming, Data Structures and Algorithms/Programming, Data Structures and Algorithms.md",
-    "dsa/Leetcode Solved List.md",
-    "dsa/Solved/2029_StoneGameIX.md",
-    "ETAG/Machine Learning/Theory/05 Ridge Regression.md",
-    "dsa/Solved/3702_LongestSubsequenceWithNon-ZeroBitwiseXOR.md",
     "ETAG/Papers/GATE2024DASampleQuestionPaperFinal.pdf",
     "ETAG/Papers/Unconfirmed 502489.crdownload",
     "dsa/templates/segment_tree.py",
-    "dsa/templates",
-    "ETAG/Resources/DA_GATE2027_Syllabus.pdf",
-    "database/Solved",
-    "ETAG/Machine Learning/Theory",
-    "ETAG/Papers/DA.pdf",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",

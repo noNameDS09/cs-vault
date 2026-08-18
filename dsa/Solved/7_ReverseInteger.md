@@ -1,3 +1,9 @@
+---
+tags:
+  - math
+  - binary-search
+---
+
 # 7. Reverse Integer
 
 ## Problem Statement

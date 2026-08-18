@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - binary-search
+  - greedy
+  - string
+---
+
 # [3302. Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/)
 
 You are given two strings `word1` and `word2`.

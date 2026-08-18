@@ -1,3 +1,11 @@
+---
+tags:
+  - string
+  - hash-table
+  - two-pointers
+  - greedy
+---
+
 # 763. Partition Labels
 
 ## Problem Statement

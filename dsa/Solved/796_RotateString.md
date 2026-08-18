@@ -1,3 +1,9 @@
+---
+tags:
+  - string
+  - string-matching
+---
+
 # [796. Rotate String](https://leetcode.com/problems/rotate-string/)
 
 Given two strings `s` and `goal`, return `true` _if and only if_ `s` _can become_ `goal` _after some number of **shifts** on_ `s`.

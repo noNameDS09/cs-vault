@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - string
+  - hash-table
+  - trie
+---
+
 # [4006. Count Valid Prefixes](https://leetcode.com/problems/count-valid-prefixes/)
 
 ## Problem Statement

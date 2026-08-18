@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - hash-table
+  - prefix-sum
+---
+
 # [2996. Smallest Missing Integer Greater Than Sequential Prefix Sum](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/)
 
 You are given a **0-indexed** array of integers `nums`.

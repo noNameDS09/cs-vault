@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - bit-manipulation
+  - hash-table
+---
+
 # 3514. Number of Unique XOR Triplets II
 
 ## Problem Statement

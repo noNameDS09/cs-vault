@@ -1,3 +1,11 @@
+---
+tags:
+  - tree
+  - dfs
+  - binary-tree
+  - string-matching
+---
+
 # 572. Subtree of Another Tree
 
 ## Problem Statement

@@ -1,3 +1,10 @@
+---
+tags:
+  - linked-list
+  - hash-table
+  - deep-copy
+---
+
 # 138. Copy List with Random Pointer
 
 ## Problem Statement

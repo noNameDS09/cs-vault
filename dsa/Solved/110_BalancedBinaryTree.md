@@ -1,3 +1,10 @@
+---
+tags:
+  - tree
+  - dfs
+  - binary-tree
+---
+
 # 110. Balanced Binary Tree
 
 ## Problem Statement

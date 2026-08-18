@@ -1,3 +1,9 @@
+---
+tags:
+  - linked-list
+  - recursion
+---
+
 # 21. Merge Two Sorted Lists
 
 ## Problem Statement

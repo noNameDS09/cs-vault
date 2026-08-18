@@ -1,3 +1,9 @@
+---
+tags:
+  - array
+  - binary-search
+---
+
 # 33. Search in Rotated Sorted Array
 
 ## Problem Statement

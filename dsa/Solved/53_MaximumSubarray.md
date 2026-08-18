@@ -1,3 +1,11 @@
+---
+tags:
+  - array
+  - dynamic-programming
+  - divide-and-conquer
+  - kadane
+---
+
 # 53. Maximum Subarray
 
 - **Difficulty:** 🟡 Medium

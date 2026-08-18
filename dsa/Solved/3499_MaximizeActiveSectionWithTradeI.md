@@ -1,3 +1,10 @@
+---
+tags:
+  - array
+  - sliding-window
+  - prefix-sum
+---
+
 # 3499. Maximize Active Section with Trade I
 
 ## Problem Statement
