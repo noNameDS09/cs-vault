@@ -164,10 +164,6 @@ $$\frac{\partial C}{\partial y_i} = 4 \sum_j (P_{ij} - Q_{ij}) (y_i - y_j) (1 + 
 
 ### Q2(a) Explain parametric & nonparametric models in machine learning. [5]
 
-**NEW QUESTION** - Not covered in previous papers.
-
----
-
 #### Parametric vs Nonparametric Models
 
 ---
@@ -197,17 +193,17 @@ $$\frac{\partial C}{\partial y_i} = 4 \sum_j (P_{ij} - Q_{ij}) (y_i - y_j) (1 + 
 
 ##### Characteristics
 
-| Property | Parametric |
-|----------|------------|
-| **Model Complexity** | Fixed (determined before seeing data) |
-| **Parameters** | Finite, fixed $p$ |
-| **Training** | Parameter estimation (often convex) |
-| **Inference Speed** | Very fast ($O(p)$) |
-| **Storage** | $O(p)$ (just parameters) |
-| **Flexibility** | Limited by functional form |
-| **Assumptions** | Strong (linearity, Gaussian, etc.) |
-| **Risk** | **Underfitting** if model too simple |
-| **Sample Efficiency** | High (works with small $n$) |
+| Property              | Parametric                            |
+| --------------------- | ------------------------------------- |
+| **Model Complexity**  | Fixed (determined before seeing data) |
+| **Parameters**        | Finite, fixed $p$                     |
+| **Training**          | Parameter estimation (often convex)   |
+| **Inference Speed**   | Very fast ($O(p)$)                    |
+| **Storage**           | $O(p)$ (just parameters)              |
+| **Flexibility**       | Limited by functional form            |
+| **Assumptions**       | Strong (linearity, Gaussian, etc.)    |
+| **Risk**              | **Underfitting** if model too simple  |
+| **Sample Efficiency** | High (works with small $n$)           |
 
 ---
 
@@ -502,22 +498,8 @@ where:
 ---
 
 ##### Geometry
+![[Pasted image 20260819151224.png]]
 
-```
-Elastic Net Constraint Region (α=0.5):
-    
-    │ β₂
-    │     ╭─────╮
-    │   ╱         ╲
-    │  │           │   ← Rounded corners (L2)
-    │  │           │        but with
-    │   ╲         ╱        flat facets (L1)
-    │     ╰─────╯
-    └───────────── β₁
-    
-    Corners → sparsity (like Lasso)
-    Curved sides → grouping (like Ridge)
-```
 
 ---
 

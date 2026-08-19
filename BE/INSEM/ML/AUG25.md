@@ -142,16 +142,16 @@ PCA Direction:        LDA Direction:
 
 #### Core Components
 
-| Component | Symbol | Description |
-|-----------|--------|-------------|
-| **Agent** | - | The learner/decision maker |
-| **Environment** | - | The world the agent interacts with |
-| **State** | $s \in \mathcal{S}$ | Current situation of the environment |
-| **Action** | $a \in \mathcal{A}$ | Decision made by the agent |
-| **Reward** | $r \in \mathbb{R}$ | Scalar feedback signal |
-| **Policy** | $\pi(a|s)$ | Strategy mapping states to actions |
-| **Value Function** | $V^\pi(s)$ | Expected return from state $s$ under $\pi$ |
-| **Q-Function** | $Q^\pi(s,a)$ | Expected return from $(s,a)$ under $\pi$ |
+| Component          | Symbol              | Description                                |
+| ------------------ | ------------------- | ------------------------------------------ |
+| **Agent**          | -                   | The learner/decision maker                 |
+| **Environment**    | -                   | The world the agent interacts with         |
+| **State**          | $s \in \mathcal{S}$ | Current situation of the environment       |
+| **Action**         | $a \in \mathcal{A}$ | Decision made by the agent                 |
+| **Reward**         | $r \in \mathbb{R}$  | Scalar feedback signal                     |
+| **Policy**         | $\pi(a, s)$         | Strategy mapping states to actions         |
+| **Value Function** | $V^\pi(s)$          | Expected return from state $s$ under $\pi$ |
+| **Q-Function**     | $Q^\pi(s,a)$        | Expected return from $(s,a)$ under $\pi$   |
 
 ---
 
@@ -187,12 +187,12 @@ where $\gamma \in [0,1]$ is the **discount factor**.
 
 #### Key Approaches
 
-| Category | Method | Description |
-|----------|--------|-------------|
-| **Value-Based** | Q-Learning, DQN | Learn $Q(s,a)$, derive policy $\pi(s) = \arg\max_a Q(s,a)$ |
-| **Policy-Based** | REINFORCE, PPO | Directly optimize policy $\pi_\theta(a|s)$ |
-| **Actor-Critic** | A2C, A3C, SAC | Combine value + policy (critic evaluates actor) |
-| **Model-Based** | Dyna, MuZero | Learn environment model for planning |
+| Category         | Method          | Description                                                |
+| ---------------- | --------------- | ---------------------------------------------------------- |
+| **Value-Based**  | Q-Learning, DQN | Learn $Q(s,a)$, derive policy $\pi(s) = \arg\max_a Q(s,a)$ |
+| **Policy-Based** | REINFORCE, PPO  | Directly optimize policy $\pi_\theta(a,s)$                 |
+| **Actor-Critic** | A2C, A3C, SAC   | Combine value + policy (critic evaluates actor)            |
+| **Model-Based**  | Dyna, MuZero    | Learn environment model for planning                       |
 
 ---
 
@@ -386,15 +386,16 @@ grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
 
 #### Venn Diagram Representation
 
-```
-                    MACHINE LEARNING
-                        │
-        ┌───────────────┼───────────────┐
-        ▼               ▼               ▼
-   SUPERVISED      UNSUPERVISED    SEMI-SUPERVISED
-   (X, Y) ──────►  (X) ──────►    (X, Y) + (X)
-    f: X→Y         Structure       f: X→Y + 
-    Loss: L(y,ŷ)   Discovery       Structure Prior
+```mermaid
+flowchart TD
+    ML["MACHINE LEARNING"]
+
+    ML --> S["SUPERVISED<br/>(X, Y)<br/>f: X → Y<br/>Loss: L(y, ŷ)"]
+    ML --> U["UNSUPERVISED<br/>(X)<br/>Structure Discovery"]
+    ML --> SS["SEMI-SUPERVISED<br/>(X, Y) + (X)<br/>f: X → Y +<br/>Structure Prior"]
+
+    S --> U
+    U --> SS
 ```
 
 ---
@@ -496,13 +497,16 @@ Grade E: PD > 0.30    → "High Risk"  → Decline or secured only
 
 #### Combined Workflow (Common in Practice)
 
-```
-Raw Data → [Grouping: Clustering] → Cluster Profiles → [Feature Engineering]
-                                                        ↓
-Labeled Data → [Grading: Scoring Model] ← Cluster Features as Inputs
-                                                        ↓
-                                               Business Decisions
-                                               (Tiered treatment per score)
+```mermaid
+flowchart TD
+    A["Raw Data"] --> B["Grouping: Clustering"]
+    B --> C["Cluster Profiles"]
+    C --> D["Feature Engineering"]
+
+    E["Labeled Data"] --> F["Grading: Scoring Model"]
+    D --> F
+
+    F --> G["Business Decisions<br/>(Tiered treatment per score)"]
 ```
 
 ---
@@ -542,7 +546,7 @@ $$\max_{j, t} \left[ \text{MSE}_{\text{parent}} - \frac{N_L}{N}\text{MSE}_L - \f
 
 ##### Algorithm (CART for Regression)
 
-```
+```bash
 BUILD_TREE(X, y, depth=0):
     if stopping_criteria_met:  # max_depth, min_samples_split, min_samples_leaf, max_leaf_nodes
         return LeafNode(value=mean(y))
@@ -617,7 +621,7 @@ where $T_b$ are decorrelated trees trained on bootstrap samples.
 
 ##### Algorithm
 
-```
+```bash
 RANDOM_FOREST_REGRESSION(X, y, B, max_features):
     trees = []
     for b in 1..B:
@@ -837,74 +841,7 @@ $$\mathbb{E}_{\mathcal{D}}[(y - \hat{f}(x))^2] = \underbrace{(\mathbb{E}_{\mathc
 
 #### Diagram: Bias-Variance Trade-off
 
-```
-ERROR
-  │
-  │     ◄────── Total Error ──────►
-  │    ╭───────────────────────────╮
-  │    │       *                   │
-  │    │     *   *                 │
-  │    │   *       *               │
-  │    │  *         *  Variance    │
-  │    │ *           *  (increasing)│
-  │    │*             *             │
-  │    ╰───────────────╯            │
-  │    │    *        *              │
-  │    │  *    *    *               │
-  │    │*        *                  │
-  │    │  Bias² (decreasing)        │
-  │    │                            │
-  │    └────────────────────────────► MODEL COMPLEXITY
-  │         Simple          Complex
-  │
-  │    ● Optimal Complexity (Minimum Total Error)
-  │
-  └──────────────────────────────────────►
-```
-
----
-
-#### Textual Representation (ASCII Diagram)
-
-```
-                    TOTAL ERROR = BIAS² + VARIANCE + IRREDUCIBLE ERROR
-                    
-        ERROR
-         ↑
-         │                                                   
-         │     ╭─────────────────────────────────────────╮
-         │     │            VARIANCE                     │
-         │     │        (increases with complexity)      │
-         │     │           ╱╲                            │
-         │     │          ╱  ╲                           │
-         │     │         ╱    ╲                          │
-         │     │        ╱      ╲                         │
-         │     │       ╱        ╲                        │
-         │     │      ╱          ╲                       │
-         │     │     ╱            ╲                      │
-         │     │    ╱              ╲                     │
-         │     │   ╱                ╲                    │
-         │     │  ╱                  ╲                   │
-         │     │ ╱                    ╲                  │
-         │     │╱                      ╲                 │
-         │     ╰──────────────────────────╯              │
-         │     │        ╲              ╱                 │
-         │     │         ╲            ╱                  │
-         │     │          ╲          ╱   BIAS²           │
-         │     │           ╲        ╱   (decreases       │
-         │     │            ╲      ╱    with complexity) │
-         │     │             ╲    ╱                      │
-         │     │              ╲  ╱                       │
-         │     │               ╲╱                        │
-         │     │                ▼                        │
-         │     └────────────────────────────────────────► MODEL COMPLEXITY
-         │          Low                    High
-         │       (Underfit)              (Overfit)
-         │
-         │    ●  ← Optimal Model Complexity
-         │
-         └──────────────────────────────────────────────────►
-```
+<image src="https://imgs.search.brave.com/cD1uJ8E4wbXuffbS5Ep6Urd0YPiWceupS-RPEzpOrLk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHV0b3JpYWxzcG9p/bnQuY29tL21hY2hp/bmVfbGVhcm5pbmcv/aW1hZ2VzL2JpYXNf/dmFyaWFuY2VfdHJh/ZGVvZmYuanBn"></image>
 
 ---
 
@@ -1082,13 +1019,13 @@ $$\text{RMSE} = \sqrt{\text{MSE}} = \sqrt{\frac{1}{n} \sum_{i=1}^n (y_i - \hat{y
 
 ##### Properties
 
-| Property | Description |
-|----------|-------------|
-| **Scale** | Same units as target (RMSE) or squared units (MSE) |
-| **Sensitivity** | **Heavily penalizes large errors** (quadratic) |
-| **Differentiability** | Smooth, differentiable everywhere → good for optimization |
-| **Optimal Predictor** | Minimizing MSE → predicts **conditional mean** $\mathbb{E}[Y|X]$ |
-| **Range** | $[0, \infty)$, lower is better |
+| Property              | Description                                                      |
+| --------------------- | ---------------------------------------------------------------- |
+| **Scale**             | Same units as target (RMSE) or squared units (MSE)               |
+| **Sensitivity**       | **Heavily penalizes large errors** (quadratic)                   |
+| **Differentiability** | Smooth, differentiable everywhere → good for optimization        |
+| **Optimal Predictor** | Minimizing MSE → predicts **conditional mean** $\mathbb{E}[Y/X]$ |
+| **Range**             | $[0, \infty)$, lower is better                                   |
 
 ---
 
@@ -1117,14 +1054,14 @@ $$\text{MAE} = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i|$$
 
 ##### Properties
 
-| Property | Description |
-|----------|-------------|
-| **Scale** | Same units as target (interpretable) |
-| **Sensitivity** | **Linear penalty** - treats all errors proportionally |
-| **Robustness** | **Robust to outliers** (less influenced by extreme values) |
-| **Optimal Predictor** | Minimizing MAE → predicts **conditional median** $\text{Median}[Y|X]$ |
-| **Differentiability** | Not differentiable at 0 (subgradient used) |
-| **Range** | $[0, \infty)$, lower is better |
+| Property              | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| **Scale**             | Same units as target (interpretable)                                  |
+| **Sensitivity**       | **Linear penalty** - treats all errors proportionally                 |
+| **Robustness**        | **Robust to outliers** (less influenced by extreme values)            |
+| **Optimal Predictor** | Minimizing MAE → predicts **conditional median** $\text{Median}[Y/X]$ |
+| **Differentiability** | Not differentiable at 0 (subgradient used)                            |
+| **Range**             | $[0, \infty)$, lower is better                                        |
 
 ---
 
@@ -1169,13 +1106,13 @@ $$\text{MAE} = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i|$$
 
 #### Other Notable Metrics (Bonus)
 
-| Metric | Formula | Use Case |
-|--------|---------|----------|
-| **R² (Coefficient of Determination)** | $1 - \frac{\sum(y-\hat{y})^2}{\sum(y-\bar{y})^2}$ | Proportion of variance explained; scale-free |
-| **Adjusted R²** | $1 - \frac{(1-R^2)(n-1)}{n-p-1}$ | Penalizes unnecessary features |
-| **MAPE** | $\frac{100\%}{n}\sum|\frac{y-\hat{y}}{y}|$ | Percentage error; scale-free |
-| **SMAPE** | $\frac{100\%}{n}\sum\frac{|y-\hat{y}|}{(|y|+|\hat{y}|)/2}$ | Symmetric, handles near-zero actuals |
-| **Huber Loss** | $\begin{cases} \frac{1}{2}e^2 & |e| \leq \delta \\ \delta(|e|-\frac{\delta}{2}) & \text{otherwise} \end{cases}$ | Robust + differentiable |
+| Metric                                | Formula                                                                                                   | Use Case                                     |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| **R² (Coefficient of Determination)** | $1 - \frac{\sum(y-\hat{y})^2}{\sum(y-\bar{y})^2}$                                                         | Proportion of variance explained; scale-free |
+| **Adjusted R²**                       | $1 - \frac{(1-R^2)(n-1)}{n-p-1}$                                                                          | Penalizes unnecessary features               |
+| **MAPE**                              | $\frac{100\%}{n}\sum\frac{y-\hat{y}}{y}$                                                                  | Percentage error; scale-free                 |
+| **SMAPE**                             | $\frac{100\%}{n}\sum\frac{y-\hat{y}}{(y+\hat{y})/2}$                                                      | Symmetric, handles near-zero actuals         |
+| **Huber Loss**                        | $\begin{cases} \frac{1}{2}e^2 &e\leq \delta \\ \delta(e-\frac{\delta}{2}) & \text{otherwise} \end{cases}$ | Robust + differentiable                      |
 
 ---
 
@@ -1200,13 +1137,13 @@ $$\hat{\beta} = \arg\min_\beta \|y - X\beta\|_2^2 = (X^T X)^{-1} X^T y$$
 
 ##### Assumptions (Gauss-Markov)
 
-| Assumption | Description | Violation Consequence |
-|------------|-------------|----------------------|
-| **Linearity** | $E[y|X] = X\beta$ | Bias, poor fit |
-| **Independence** | Errors uncorrelated | Invalid SE, wrong inference |
-| **Homoscedasticity** | Constant error variance $\sigma^2$ | Inefficient, wrong SE |
-| **Normality** | $\epsilon \sim \mathcal{N}(0,\sigma^2)$ | Invalid small-sample inference |
-| **No Multicollinearity** | $X^T X$ invertible | Unstable coefficients, high variance |
+| Assumption               | Description                             | Violation Consequence                |
+| ------------------------ | --------------------------------------- | ------------------------------------ |
+| **Linearity**            | $E[y/X] = X\beta$                       | Bias, poor fit                       |
+| **Independence**         | Errors uncorrelated                     | Invalid SE, wrong inference          |
+| **Homoscedasticity**     | Constant error variance $\sigma^2$      | Inefficient, wrong SE                |
+| **Normality**            | $\epsilon \sim \mathcal{N}(0,\sigma^2)$ | Invalid small-sample inference       |
+| **No Multicollinearity** | $X^T X$ invertible                      | Unstable coefficients, high variance |
 
 ---
 

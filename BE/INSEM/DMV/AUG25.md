@@ -12,7 +12,7 @@
 
 **Covariance** measures the **direction** of the linear relationship between two random variables $X$ and $Y$.
 
-$$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}) \quad \text{(sample)}$$
+$$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}) \quad \text{(sample)}$$
 
 ---
 
@@ -23,14 +23,13 @@ $$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n} \sum_{i=1}
 **Graph**:
 ```
 Y ↑
-  │     ●
-  │       ●
-  │         ●
-  │           ●
   │             ●
-  │               ●
-  │                 ●
-  │                   ●
+  │           ●
+  │         ●
+  │       ●
+  │     ●
+  │   ●
+  │ ●
   └──────────────────→ X
        Positive Covariance
        (Upward trend)
@@ -119,11 +118,11 @@ Y ↑     ● ● ● ● ● ● ●
 
 #### Summary Table
 
-| Covariance | Direction | Graph Pattern | Example |
-|------------|-----------|---------------|---------|
-| **Positive** | Same direction | Upward slope ↗ | Height vs Weight |
-| **Negative** | Opposite direction | Downward slope ↘ | Price vs Demand |
-| **Zero** | No linear pattern | Random cloud / Symmetric curve | $X$ vs $X^2$ |
+| Covariance   | Direction              | Graph Pattern                  | Example          |
+| ------------ | ---------------------- | ------------------------------ | ---------------- |
+| **Positive** | Same direction         | Upward slope ↗                 | Height vs Weight |
+| **Negative** | Opposite direction     | Downward slope ↘               | Price vs Demand  |
+| **Zero**     | No linear relationship | Random cloud / Symmetric curve | $X$ vs $X^2$     |
 
 ---
 
@@ -148,7 +147,7 @@ $$\rho_{XY} = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}$$
 $$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \xrightarrow{d} \mathcal{N}(0, 1) \quad \text{as } n \to \infty$$
 
 Equivalently:
-$$\bar{X}_n \xrightarrow{d} \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right)$$
+$$\bar{X}_n \approx \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right)$$
 
 ---
 
