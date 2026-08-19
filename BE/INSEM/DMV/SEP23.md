@@ -23,14 +23,13 @@ $$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n} \sum_{i=1}
 **Graph**:
 ```
 Y ↑
-  │     ●
-  │       ●
-  │         ●
-  │           ●
   │             ●
-  │               ●
-  │                 ●
-  │                   ●
+  │           ●
+  │         ●
+  │       ●
+  │     ●
+  │   ●
+  │ ●
   └──────────────────→ X
        Positive Covariance
        (Upward trend)
@@ -239,6 +238,7 @@ $$P(X = k) = (1-p)^{k-1} p, \quad k = 1, 2, 3, \dots$$
 $$P(X \leq k) = 1 - (1-p)^k$$
 
 **Properties**:
+
 | Property | Formula |
 |----------|---------|
 | **Mean** | $\mu = \frac{1}{p}$ |
@@ -277,6 +277,7 @@ $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0, 1, \dots, n$$
 $$P(X \leq k) = \sum_{i=0}^k \binom{n}{i} p^i (1-p)^{n-i}$$
 
 **Properties**:
+
 | Property | Formula |
 |----------|---------|
 | **Mean** | $\mu = np$ |
@@ -563,6 +564,7 @@ Useful when only upper/lower tail matters.
 **General Form**: $\text{Estimate} \pm \text{Critical Value} \times \text{Standard Error}$
 
 **Common CIs**:
+
 | Parameter | Distribution | CI Formula |
 |-----------|--------------|------------|
 | Mean ($\sigma$ known) | Normal | $\bar{x} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}$ |
@@ -769,11 +771,11 @@ Std Error ≈ 0.001728
 ```
 Error = |π_est - π|
        │
-  0.1 ┤ *
+  0.1  ┤ *
        │  *
   0.01 ┤   *
        │     *
-  0.001 ┤       *
+  0.00 ┤       *
        │         *
        └─────────────→ N (log scale)
         100  1000  10000  100000
@@ -799,18 +801,13 @@ Error = |π_est - π|
 
 #### Queuing System Components (Kendall's Notation: $A/S/c/K/N/D$)
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    QUEUING SYSTEM                           │
-│                                                             │
-│  ┌──────────┐    ┌──────────┐    ┌────────────────────┐   │
-│  │ ARRIVAL  │───►│  QUEUE   │───►│    SERVICE         │   │
-│  │ PROCESS  │    │ (Buffer) │    │    FACILITY        │   │
-│  └──────────┘    └──────────┘    └─────────┬──────────┘   │
-│                                            │              │
-│  ┌─────────────────────────────────────────┘              │
-│  │                    DEPARTURE                           │
-│  └────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph QS["QUEUING SYSTEM"]
+        A["ARRIVAL<br/>PROCESS"] --> Q["QUEUE<br/>(Buffer)"]
+        Q --> S["SERVICE<br/>FACILITY"]
+        S --> D["DEPARTURE"]
+    end
 ```
 
 **Standard Notation** ($A/S/c$):
@@ -1004,15 +1001,15 @@ $$P_n = (1-\rho)\rho^n, \quad n = 0, 1, 2, \dots$$
 
 #### Detailed Steps
 
-| Step | Action | Detail |
-|------|--------|--------|
-| **1. Hypotheses** | $H_0$: Null (equality), $H_1$: Alternative (≠, >, <) | $H_0$ always has =; $H_1$ is research hypothesis |
-| **2. α Level** | Probability of Type I error | Typically 0.05; lower for serious consequences |
-| **3. Test Statistic** | Standardized measure | $Z$, $t$, $\chi^2$, $F$ based on parameter & assumptions |
-| **4. Rejection Region** | Values leading to $H_0$ rejection | Critical values from tables/software |
-| **5. Compute** | Plug in sample data | $z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}$ |
-| **6. Decision** | Compare to critical value | Reject $H_0$ if $|z| > z_{\alpha/2}$ (two-tailed) |
-| **7. Conclusion** | State in problem context | Include practical significance, not just statistical |
+| Step                    | Action                                               | Detail                                                   |
+| ----------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
+| **1. Hypotheses**       | $H_0$: Null (equality), $H_1$: Alternative (≠, >, <) | $H_0$ always has =; $H_1$ is research hypothesis         |
+| **2. α Level**          | Probability of Type I error                          | Typically 0.05; lower for serious consequences           |
+| **3. Test Statistic**   | Standardized measure                                 | $Z$, $t$, $\chi^2$, $F$ based on parameter & assumptions |
+| **4. Rejection Region** | Values leading to $H_0$ rejection                    | Critical values from tables/software                     |
+| **5. Compute**          | Plug in sample data                                  | $z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}$            |
+| **6. Decision**         | Compare to critical value                            | Reject $H_0$ if $z> z_{\alpha/2}$ (two-tailed)           |
+| **7. Conclusion**       | State in problem context                             | Include practical significance, not just statistical     |
 
 ---
 
@@ -1134,11 +1131,11 @@ Reject H₀ if |Z| > 1.96
 
 #### Summary Table
 
-| Test Type | $H_1$ | Rejection Region | Critical Value ($\alpha=0.05$) |
-|-----------|-------|------------------|-------------------------------|
-| **Right-tailed** | $\theta > \theta_0$ | $Z > z_\alpha$ | $Z > 1.645$ |
-| **Left-tailed** | $\theta < \theta_0$ | $Z < -z_\alpha$ | $Z < -1.645$ |
-| **Two-tailed** | $\theta \neq \theta_0$ | $|Z| > z_{\alpha/2}$ | $|Z| > 1.96$ |
+| Test Type        | $H_1$                  | Rejection Region  | Critical Value ($\alpha=0.05$) |
+| ---------------- | ---------------------- | ----------------- | ------------------------------ |
+| **Right-tailed** | $\theta > \theta_0$    | $Z > z_\alpha$    | $Z > 1.645$                    |
+| **Left-tailed**  | $\theta < \theta_0$    | $Z < -z_\alpha$   | $Z < -1.645$                   |
+| **Two-tailed**   | $\theta \neq \theta_0$ | $Z> z_{\alpha/2}$ | $Z> 1.96$                      |
 
 ---
 
@@ -1259,21 +1256,29 @@ b_2(v_1) & b_2(v_2) & b_2(v_3)
 #### Combined HMM Diagram
 
 ```
-         TIME →
+                              TIME →
              
-    t=1        t=2        t=3        t=4
-    ▼          ▼          ▼          ▼
-┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
-│  S₁   │──►│  S₂   │──►│  S₁   │──►│  S₂   │  ← HIDDEN STATES (Markov chain)
-│ (0.7) │   │ (0.6) │   │ (0.7) │   │ (0.6) │
-└───┬───┘   └───┬───┘   └───┬───┘   └───┬───┘
-    │          │          │          │
-    ▼          ▼          ▼          ▼
-┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
-│  v₂   │  │  v₃   │  │  v₁   │  │  v₃   │  ← OBSERVATIONS (Emissions)
-│ b₁(v₂)│  │ b₂(v₃)│  │ b₁(v₁)│  │ b₂(v₃)│
-│ 0.3   │  │ 0.5   │  │ 0.5   │  │ 0.5   │
-└───────┘  └───────┘  └───────┘  └───────┘
+              t=1          t=2          t=3          t=4
+               ▼            ▼            ▼            ▼
+
+          ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+          │   S₁    │───►│   S₂    │───►│   S₁    │───►│   S₂    │
+          │         │    │         │    │         │    │         │
+          └────┬────┘    └────┬────┘    └────┬────┘    └────┬────┘
+               │              │              │              │
+               │              │              │              │
+               ▼              ▼              ▼              ▼
+          ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
+          │   v₂    │    │   v₃    │    │   v₁    │    │   v₃    │
+          │ b₁(v₂)  │    │ b₂(v₃)  │    │ b₁(v₁)  │    │ b₂(v₃)  │
+          │  = 0.3  │    │  = 0.5  │    │  = 0.5  │    │  = 0.5  │
+          └─────────┘    └─────────┘    └─────────┘    └─────────┘
+
+       HIDDEN STATES (Markov chain)
+       S₁  ─────►  S₂  ─────►  S₁  ─────►  S₂
+
+       OBSERVATIONS (emissions)
+       v₂          v₃          v₁          v₃
 ```
 
 ---
@@ -1284,12 +1289,14 @@ b_2(v_1) & b_2(v_2) & b_2(v_3)
 **Observations**: Umbrella $V = \{\text{Yes}, \text{No}\}$
 
 **Transition Matrix** ($A$):
+
 | From \ To | Sunny | Rainy |
 |-----------|-------|-------|
 | **Sunny** | 0.8 | 0.2 |
 | **Rainy** | 0.4 | 0.6 |
 
 **Emission Matrix** ($B$):
+
 | State | Umbrella=Yes | Umbrella=No |
 |-------|--------------|-------------|
 | **Sunny** | 0.1 | 0.9 |
@@ -1303,22 +1310,24 @@ b_2(v_1) & b_2(v_2) & b_2(v_3)
 
 **Transition Diagram**:
 ```
-       0.8
-  ┌─────────┐
-  │         │
-  ▼         │
-┌──────┐   │
-│Sunny │───┼──┐
-└───┬───┘   │  │ 0.2
-    │       │  │
-    │ 0.4   │  │
-    ▼       │  │
-┌──────┐    │  │
-│Rainy │◄───┘  │
-└───┬───┘       │
-    │           │
-    │    0.6    │
-    └───────────┘
+                 0.8
+          ┌──────────────┐
+          │              │
+          ▼              │
+      ┌────────┐         │
+      │ Sunny  │─────────┘
+      └───┬────┘    0.2
+          │
+        0.2
+          │
+          ▼
+      ┌────────┐
+      │ Rainy  │
+      └───┬────┘
+          │
+        0.6
+          │
+          └──────────────► Sunny
 ```
 
 **Emission Diagram**:
@@ -1377,7 +1386,7 @@ Normal: $\hat{\mu} = \bar{x}$, $\hat{\sigma}^2_{\text{MLE}} = \frac{1}{n}\sum(x_
 $$P(|X-\mu| \geq k\sigma) \leq \frac{1}{k^2}$$
 
 ### Monte Carlo π
-$$\pi \approx 4 \times \frac{\text{# points in circle}}{\text{total points}}$$
+$$\pi \approx 4 \times \frac{\text{points in circle}}{\text{total points}}$$
 
 ### Queuing (M/M/1)
 $$\rho = \frac{\lambda}{\mu}, \quad L = \frac{\rho}{1-\rho}, \quad W = \frac{1}{\mu-\lambda}, \quad W_q = \frac{\rho}{\mu(1-\rho)}$$

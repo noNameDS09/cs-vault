@@ -34,15 +34,17 @@ $$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n} \sum_{i=1}
 
 **Positive Covariance**:
 ```
-Y ↑     ●
-        ●
-          ●
-            ●
-              ●
-                ●
-                  ●
-                    ●
-└──────────────────→ X
+Y ↑
+  │             ●
+  │           ●
+  │         ●
+  │       ●
+  │     ●
+  │   ●
+  │ ●
+  └──────────────────→ X
+       Positive Covariance
+       (Upward trend)
 ```
 
 **Negative Covariance**:

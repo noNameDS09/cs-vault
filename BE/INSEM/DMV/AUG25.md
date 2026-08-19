@@ -213,7 +213,7 @@ plt.show()
 
 Since $\bar{X} \approx \mathcal{N}(\mu, \sigma^2/n)$ for large $n$:
 
-$$\text{95% CI for } \mu: \quad \bar{x} \pm 1.96 \frac{\sigma}{\sqrt{n}}$$
+$$\text{95\% CI for } \mu: \quad \bar{x} \pm 1.96 \frac{\sigma}{\sqrt{n}}$$
 
 If $\sigma$ unknown, use sample $s$ and $t$-distribution.
 
@@ -324,7 +324,7 @@ If $\sigma$ unknown, use sample $s$ and $t$-distribution.
 
 **Conceptual (ER)**:
 ```
-┌──────────┐       places       ┌─────────┐
+┌──────────┐       places        ┌─────────┐
 │ Customer │ ◄─────────────────► │  Order  │
 └────┬─────┘       1:N           └────┬────┘
      │                                │
@@ -333,7 +333,7 @@ If $\sigma$ unknown, use sample $s$ and $t$-distribution.
 ┌──────────┐       1:N           ┌──────────┐
 │  Order   │ ◄─────────────────► │ Product  │
 │  Item    │       M:N           │          │
-└──────────┘                      └──────────┘
+└──────────┘                     └──────────┘
 ```
 
 **Logical (Normalized Tables)**:
@@ -376,19 +376,19 @@ OrderItem(OrderID FK, ProductID FK, Quantity, UnitPrice)
 
 **Common Plot Types**:
 
-| Plot Type | Purpose | Variables |
-|-----------|---------|-----------|
-| **Histogram** | Distribution of 1 continuous var | 1 continuous |
-| **Box Plot** | 5-number summary, outliers | 1 continuous (+ groups) |
-| **Scatter Plot** | Relationship between 2 vars | 2 continuous |
-| **Bar Chart** | Categorical frequencies | 1 categorical |
-| **Density Plot** | Smoothed distribution | 1 continuous |
-| **Q-Q Plot** | Normality assessment | 1 continuous |
-| **Heatmap** | Correlation matrix / 2D density | 2+ continuous / categorical |
-| **Violin Plot** | Distribution + density | 1 continuous + groups |
-| **Pair Plot** | All pairwise relationships | Multiple continuous |
-| **Time Series Plot** | Trends over time | Time + 1 continuous |
-| **Facet Grid** | Compare across categories | Multiple + grouping |
+| Plot Type            | Purpose                               | Variables                   |
+| -------------------- | ------------------------------------- | --------------------------- |
+| **Histogram**        | Distribution of 1 continuous variable | 1 continuous                |
+| **Box Plot**         | 5-number summary, outliers            | 1 continuous (+ groups)     |
+| **Scatter Plot**     | Relationship between 2 vars           | 2 continuous                |
+| **Bar Chart**        | Categorical frequencies               | 1 categorical               |
+| **Density Plot**     | Smoothed distribution                 | 1 continuous                |
+| **Q-Q Plot**         | Normality assessment                  | 1 continuous                |
+| **Heatmap**          | Correlation matrix / 2D density       | 2+ continuous / categorical |
+| **Violin Plot**      | Distribution + density                | 1 continuous + groups       |
+| **Pair Plot**        | All pairwise relationships            | Multiple continuous         |
+| **Time Series Plot** | Trends over time                      | Time + 1 continuous         |
+| **Facet Grid**       | Compare across categories             | Multiple + grouping         |
 
 **Output**: Visual charts/plots.
 
@@ -544,16 +544,16 @@ HISTORICAL DATA MODELING PIPELINE
 
 #### Common Discrete Distributions
 
-| Distribution | Support | Parameters | Use Case |
-|--------------|---------|------------|----------|
-| **Bernoulli** | $\{0, 1\}$ | $p$ | Single trial (success/failure) |
-| **Binomial** | $\{0, 1, \dots, n\}$ | $n, p$ | # successes in $n$ trials |
-| **Geometric** | $\{1, 2, \dots\}$ | $p$ | Trials until 1st success |
-| **Negative Binomial** | $\{r, r+1, \dots\}$ | $r, p$ | Trials until $r$-th success |
-| **Poisson** | $\{0, 1, 2, \dots\}$ | $\lambda$ | Rare events in fixed interval |
-| **Hypergeometric** | $\{0, \dots, \min(n,K)\}$ | $N, K, n$ | Sampling without replacement |
-| **Discrete Uniform** | $\{a, a+1, \dots, b\}$ | $a, b$ | Equally likely outcomes |
-| **Categorical/Multinomial** | $\{1, \dots, K\}$ | $p_1, \dots, p_K$ | Multiple categories |
+| Distribution                | Support                   | Parameters        | Use Case                       |
+| --------------------------- | ------------------------- | ----------------- | ------------------------------ |
+| **Bernoulli**               | $\{0, 1\}$                | $p$               | Single trial (success/failure) |
+| **Binomial**                | $\{0, 1, \dots, n\}$      | $n, p$            | successes in $n$ trials        |
+| **Geometric**               | $\{1, 2, \dots\}$         | $p$               | Trials until 1st success       |
+| **Negative Binomial**       | $\{r, r+1, \dots\}$       | $r, p$            | Trials until $r$-th success    |
+| **Poisson**                 | $\{0, 1, 2, \dots\}$      | $\lambda$         | Rare events in fixed interval  |
+| **Hypergeometric**          | $\{0, \dots, \min(n,K)\}$ | $N, K, n$         | Sampling without replacement   |
+| **Discrete Uniform**        | $\{a, a+1, \dots, b\}$    | $a, b$            | Equally likely outcomes        |
+| **Categorical/Multinomial** | $\{1, \dots, K\}$         | $p_1, \dots, p_K$ | Multiple categories            |
 
 ---
 
@@ -568,12 +568,14 @@ $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0, 1, \dots, n$$
 $$P(X \leq k) = \sum_{i=0}^k \binom{n}{i} p^i (1-p)^{n-i}$$
 
 **Properties**:
-| Property | Formula |
-|----------|---------|
-| **Mean** | $\mu = np$ |
-| **Variance** | $\sigma^2 = np(1-p)$ |
-| **MGF** | $M(t) = (1-p + pe^t)^n$ |
+
+| Property     | Formula                       |
+| ------------ | ----------------------------- |
+| **Mean**     | $\mu = np$                    |
+| **Variance** | $\sigma^2 = np(1-p)$          |
+| **MGF**      | $M(t) = (1-p + pe^t)^n$       |
 | **Skewness** | $\frac{1-2p}{\sqrt{np(1-p)}}$ |
+
 
 **Graph** ($n=10, p=0.4$):
 ```
@@ -605,6 +607,7 @@ $$P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}, \quad k = 0, 1, 2, \dots$$
 $$P(X \leq k) = e^{-\lambda} \sum_{i=0}^k \frac{\lambda^i}{i!}$$
 
 **Properties**:
+
 | Property | Formula |
 |----------|---------|
 | **Mean** | $\mu = \lambda$ |
@@ -737,7 +740,7 @@ Both test hypotheses about **population mean(s)**.
                           │
               ┌───────────┴───────────┐
               ▼                       ▼
-            YES                      NO
+             YES                      NO
               │                       │
               ▼                       ▼
     ┌─────────────────┐     ┌─────────────────┐
@@ -746,7 +749,7 @@ Both test hypotheses about **population mean(s)**.
     └─────────────────┘              │
                           ┌──────────┴──────────┐
                           ▼                     ▼
-                        YES                    NO
+                         YES                    NO
                           │                     │
                           ▼                     ▼
                 ┌─────────────────┐    ┌─────────────────┐
@@ -781,7 +784,7 @@ Both test hypotheses about **population mean(s)**.
 
 **If $\sigma=8$ known (Z-test)**:
 $$Z = \frac{52-50}{8/\sqrt{15}} = 0.968$$
-Critical $z_{0.025} = 1.96$ → **Fail to reject** $H_0$
+Critical $z_{0.025} = 1.96$ $\rightarrow$ $Z \le z_critical$ $\rightarrow$ **Fail to reject** $H_0$
 
 **If $\sigma$ unknown (T-test)**:
 $$t = \frac{52-50}{8/\sqrt{15}} = 0.968$$
@@ -819,6 +822,19 @@ $$P(X_1, \dots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$
 
 ---
 
+<image src="https://images.openai.com/static-rsc-4/Faxv4JhYH6Qp1Nm1TgI-gV1QvNXXfk7Tdmevli9ICJFmiUb4MoivCMYU0W_VBH-lsBitlLGecD0Lq767BN7pcz4AKs2k0x5d_DIPHk90r0Q3LSCM2S-qr-bwAQYBitlZbPbCzu6Pu_DjN3_BKMpksGwUTYz6mHGWcaC2Nwc_tr6uxff_ZfTKOPTrP7e_AgH4?purpose=fullsize"></image>
+
+Here:
+
+- **Rain → Sprinkler**: Whether it rains affects whether the sprinkler is used.
+- **Rain → Wet Grass**: Rain can make the grass wet.
+- **Sprinkler → Wet Grass**: The sprinkler can also make the grass wet.
+
+The joint probability distribution can be factorized as:
+
+					$P(R,S,G) = P(R) × P(S∣R) × P(G∣S,R)$
+
+---
 #### Example: Medical Diagnosis (Classic)
 
 **Variables**:
@@ -842,30 +858,35 @@ $$P(X_1, \dots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$
 **Conditional Probability Tables (CPTs)**:
 
 **Smoking (Root)**:
-| S | P(S) |
-|---|------|
-| No | 0.7 |
-| Yes | 0.3 |
+
+| S   | P(S) |
+| --- | ---- |
+| No  | 0.7  |
+| Yes | 0.3  |
 
 **Cancer** (Parents: Smoking):
-| S | C=Yes | C=No |
-|---|-------|------|
-| No | 0.01 | 0.99 |
-| Yes | 0.1 | 0.9 |
+
+| S   | C=Yes | C=No |
+| --- | ----- | ---- |
+| No  | 0.01  | 0.99 |
+| Yes | 0.1   | 0.9  |
 
 **Bronchitis** (Parents: Smoking):
-| S | B=Yes | B=No |
-|---|-------|------|
-| No | 0.05 | 0.95 |
-| Yes | 0.6 | 0.4 |
+
+| S   | B=Yes | B=No |
+| --- | ----- | ---- |
+| No  | 0.05  | 0.95 |
+| Yes | 0.6   | 0.4  |
 
 **X-Ray** (Parents: Cancer):
+
 | C | X=Pos | X=Neg |
 |---|-------|-------|
 | No | 0.1 | 0.9 |
 | Yes | 0.9 | 0.1 |
 
 **Dyspnoea** (Parents: Cancer, Bronchitis):
+
 | C | B | D=Yes | D=No |
 |---|---|-------|------|
 | No | No | 0.1 | 0.9 |
@@ -1029,9 +1050,9 @@ $$P(s_t \mid s_{t-1}, s_{t-2}, \dots, s_1) = P(s_t \mid s_{t-1}) = a_{s_{t-1}, s
 **Shows**: Probabilities of moving **between hidden states**.
 
 ```
-        ┌─────────────┐
-        │             ▼
-    ┌───────┐   a₂₁  ┌───────┐
+        ┌─────────────────┐
+        │                 ▼
+    ┌───────┐   a₂₁   ┌───────┐
     │  S₁   ├────────►│  S₂   │
     └───┬───┘         └───┬───┘
         │ a₁₂         a₂₂ │
@@ -1051,29 +1072,17 @@ $$A = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} = \begin{
 
 **Shows**: Probabilities of **observing symbols** from each hidden state.
 
-```
-         EMISSIONS from State S₁
-    
-    ┌──────────┐
-    │   S₁     │
-    └────┬─────┘
-         │ b₁(v₁)=0.5
-         ▼
-      ┌─────┐
-      │ v₁  │
-      └─────┘
-         │
-         │ b₁(v₂)=0.3
-         ▼
-      ┌─────┐
-      │ v₂  │
-      └─────┘
-         │
-         │ b₁(v₃)=0.2
-         ▼
-      ┌─────┐
-      │ v₃  │
-      └─────┘
+```mermaid
+flowchart TD
+    S1["S₁"] -->|"b₁(v₁) = 0.5"| V1["v₁"]
+    V1 -->|"b₁(v₂) = 0.3"| V2["v₂"]
+    V2 -->|"b₁(v₃) = 0.2"| V3["v₃"]
+
+    classDef state fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    classDef obs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+
+    class S1 state
+    class V1,V2,V3 obs
 ```
 
 **Matrix** (2 states, 3 observations):
@@ -1083,21 +1092,31 @@ $$B = \begin{bmatrix} b_1(v_1) & b_1(v_2) & b_1(v_3) \\ b_2(v_1) & b_2(v_2) & b_
 
 #### Combined Temporal Diagram
 
-```
-         TIME →
-             
-    t=1        t=2        t=3        t=4
-    ▼          ▼          ▼          ▼
-┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
-│  S₁   │──►│  S₂   │──►│  S₁   │──►│  S₂   │  ← HIDDEN STATES
-│ (0.7) │   │ (0.6) │   │ (0.7) │   │ (0.6) │
-└───┬───┘   └───┬───┘   └───┬───┘   └───┬───┘
-    │          │          │          │
-    ▼          ▼          ▼          ▼
-┌───────┐  ┌───────┐  ┌───────┐  ┌───────┐
-│  v₂   │  │  v₃   │  │  v₁   │  │  v₃   │  ← OBSERVATIONS
-│  0.3  │  │  0.5  │  │  0.5  │  │  0.5  │
-└───────┘  └───────┘  └───────┘  └───────┘
+```mermaid
+flowchart LR
+    T1["t=1"] --> T2["t=2"] --> T3["t=3"] --> T4["t=4"]
+
+    S1["S₁<br/>(0.7)"] --> V2["v₂<br/>0.3"]
+    S2["S₂<br/>(0.6)"] --> V3a["v₃<br/>0.5"]
+    S1b["S₁<br/>(0.7)"] --> V1["v₁<br/>0.5"]
+    S2b["S₂<br/>(0.6)"] --> V3b["v₃<br/>0.5"]
+
+    S1 --> S2
+    S2 --> S1b
+    S1b --> S2b
+
+    T1 -.-> S1
+    T2 -.-> S2
+    T3 -.-> S1b
+    T4 -.-> S2b
+
+    classDef hidden fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
+    classDef obs fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef time fill:none,stroke:none
+
+    class S1,S2,S1b,S2b hidden
+    class V2,V3a,V1,V3b obs
+    class T1,T2,T3,T4 time
 ```
 
 ---
@@ -1108,16 +1127,18 @@ $$B = \begin{bmatrix} b_1(v_1) & b_1(v_2) & b_1(v_3) \\ b_2(v_1) & b_2(v_2) & b_
 **Observations**: Umbrella $V = \{\text{Yes}, \text{No}\}$
 
 **Transition Matrix**:
+
 | From \ To | Sunny | Rainy |
-|-----------|-------|-------|
-| **Sunny** | 0.8 | 0.2 |
-| **Rainy** | 0.4 | 0.6 |
+| --------- | ----- | ----- |
+| **Sunny** | 0.8   | 0.2   |
+| **Rainy** | 0.4   | 0.6   |
 
 **Emission Matrix**:
-| State | Umbrella=Yes | Umbrella=No |
-|-------|--------------|-------------|
-| **Sunny** | 0.1 | 0.9 |
-| **Rainy** | 0.8 | 0.2 |
+
+| State     | Umbrella=Yes | Umbrella=No |
+| --------- | ------------ | ----------- |
+| **Sunny** | 0.1          | 0.9         |
+| **Rainy** | 0.8          | 0.2         |
 
 **Initial**: $\pi = [0.6, 0.4]$
 
@@ -1139,18 +1160,13 @@ $$B = \begin{bmatrix} b_1(v_1) & b_1(v_2) & b_1(v_3) \\ b_2(v_1) & b_2(v_2) & b_
 
 #### Queuing System Components
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    QUEUING SYSTEM                           │
-│                                                             │
-│  ┌──────────┐    ┌──────────┐    ┌────────────────────┐   │
-│  │ ARRIVAL  │───►│  QUEUE   │───►│    SERVICE         │   │
-│  │ PROCESS  │    │ (Buffer) │    │    FACILITY        │   │
-│  └──────────┘    └──────────┘    └─────────┬──────────┘   │
-│                                            │              │
-│  ┌─────────────────────────────────────────┘              │
-│  │                    DEPARTURE                           │
-│  └────────────────────────────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph QS["QUEUING SYSTEM"]
+        A["ARRIVAL<br/>PROCESS"] --> Q["QUEUE<br/>(Buffer)"]
+        Q --> S["SERVICE<br/>FACILITY"]
+        S --> D["DEPARTURE"]
+    end
 ```
 
 **Kendall's Notation**: $A/S/c/K/N/D$
@@ -1262,40 +1278,29 @@ P_n = (1-ρ)ρⁿ
 
 #### Job Lifecycle in Queuing System
 
-```
-JOB ARRIVAL
-    │
-    ▼
-┌──────────────────────────────────────┐
-│ 1. ARRIVAL                           │
-│    - Inter-arrival time ~ Exp(λ)     │
-│    - If system full (K finite):      │
-│      → BLOCKED/REJECTED              │
-│    - Else: Enter system              │
-└──────────────────────────────────────┘
-    │
-    ▼
-┌──────────────────────────────────────┐
-│ 2. QUEUEING (if server busy)         │
-│    - Joins queue per discipline      │
-│    - Waits for service               │
-│    - Queue length = L_q              │
-│    - Wait time = W_q                 │
-└──────────────────────────────────────┘
-    │
-    ▼ (Server available)
-┌──────────────────────────────────────┐
-│ 3. SERVICE                           │
-│    - Service time ~ Exp(μ)           │
-│    - Server works on job             │
-└──────────────────────────────────────┘
-    │
-    ▼
-┌──────────────────────────────────────┐
-│ 4. DEPARTURE                         │
-│    - Job leaves system               │
-│    - Total time in system = W = W_q + 1/μ │
-└──────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["JOB ARRIVAL"] --> B
+
+    B["1. ARRIVAL<br/><br/>• Inter-arrival time ~ Exp(λ)<br/>• If system full (K finite):<br/>  → BLOCKED / REJECTED<br/>• Else: Enter system"] --> C
+
+    C["2. QUEUEING (if server busy)<br/><br/>• Joins queue per discipline<br/>• Waits for service<br/>• Queue length = Lq<br/>• Wait time = Wq"] -->|"Server available"| D
+
+    D["3. SERVICE<br/><br/>• Service time ~ Exp(μ)<br/>• Server works on job"] --> E
+
+    E["4. DEPARTURE<br/><br/>• Job leaves system<br/>• Total time in system:<br/>  W = Wq + 1/μ"]
+
+    classDef arrival fill:#D6EAF8,stroke:#2E86C1,stroke-width:2px
+    classDef queue fill:#E8DAEF,stroke:#8E44AD,stroke-width:2px
+    classDef service fill:#FDEBD0,stroke:#E67E22,stroke-width:2px
+    classDef departure fill:#D5F5E3,stroke:#27AE60,stroke-width:2px
+    classDef start fill:#AED6F1,stroke:#1B4F72,stroke-width:2px
+
+    class A start
+    class B arrival
+    class C queue
+    class D service
+    class E departure
 ```
 
 ---
