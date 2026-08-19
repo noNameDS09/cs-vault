@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e392d80d2d59977a",
+        "id": "2a5abb77b6eca2fa",
         "type": "tabs",
         "children": [
           {
-            "id": "ca39c50666413a5c",
+            "id": "551f5d7bc3c0f579",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "BE/INSEM/ML/AUG25.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "AUG25"
             }
           }
         ]
@@ -208,8 +212,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "809928d553b27851",
+  "active": "551f5d7bc3c0f579",
   "lastOpenFiles": [
+    "BE/INSEM/ML/AUG25.md",
+    "BE/INSEM/DMV/AUG25.md",
+    "BE/INSEM/DMV/SEP23.md",
+    "BE/INSEM/DMV/SEP24.md",
+    "dsa/Solved/1386_CinemaSeatAllocation.md",
+    "BE/INSEM/DMV",
+    "dsa/Leetcode Solved List.md",
+    "BE/INSEM/ML/SEP23.md",
+    "BE/INSEM/ML/SEP24.md",
+    "BE/INSEM/ML",
+    "BE/INSEM",
+    "BE",
+    "ETAG/Probability and Statistics/Theory/10 Continuous Random Variables.md",
     "ETAG/Probability and Statistics/Theory/09 Discrete Random Variables.md",
     "ETAG/Probability and Statistics/Theory/08 Random Variables.md",
     "ETAG/Probability and Statistics/Theory/07 Independence.md",
@@ -227,25 +244,12 @@
     "ETAG/Probability and Statistics/Theory/59 Spearman Rank Correlation.md",
     "ETAG/Probability and Statistics/Theory/58 Pearson Correlation.md",
     "ETAG/Probability and Statistics/Theory/57 Covariance and Correlation.md",
-    "ETAG/Probability and Statistics/Theory/56 Skewness and Kurtosis.md",
-    "ETAG/Probability and Statistics/Theory/55 Range Variance Standard Deviation.md",
-    "ETAG/Probability and Statistics/Theory/54 Quartiles and Percentiles.md",
-    "ETAG/Probability and Statistics/Theory/53 Mean Median Mode.md",
-    "ETAG/Probability and Statistics/Theory/52 Descriptive Statistics.md",
-    "ETAG/Probability and Statistics/Theory/51 ANOVA.md",
-    "ETAG/Probability and Statistics/Theory/50 Chi Square Test.md",
-    "ETAG/Probability and Statistics/Theory/49 t Test.md",
-    "ETAG/Probability and Statistics/Theory/48 z Test.md",
     "ETAG/Machine Learning/DPPs/Decision Tree DPP 1 Notes.pdf",
     "ETAG/Machine Learning/DPPs/Decision Tree DPP 1.pdf",
     "dsa/Solved/add_tags.py",
     "Projects/Cloning old softwares",
     "Projects/Simple AI Agent",
     "ETAG/Probability and Statistics/Theory",
-    "ETAG/Probability and Statistics/MCQs",
-    "ETAG/Papers/GATE2024DASampleQuestionPaperFinal.pdf",
-    "ETAG/Papers/Unconfirmed 502489.crdownload",
-    "dsa/templates/segment_tree.py",
     "Blogs/images/AI Bubble.png",
     "Untitled 1.canvas",
     "Untitled.canvas",
