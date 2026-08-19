@@ -142,7 +142,7 @@ $$\rho_{XY} = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}$$
 
 #### Central Limit Theorem (CLT)
 
-**Statement**: Let $X_1, X_2, \dots, X_n$ be **independent and identically distributed (i.i.d.)** random variables with mean $\mu$ and finite variance $\sigma^2$. Then the **sample mean** $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i$ satisfies:
+**Statement**: Let $X_1, X_2, \dots, X_n$ be *independent and identically distributed (i.i.d.)* random variables with mean $\mu$ and finite variance $\sigma^2$. Then the **sample mean** $\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i$ satisfies:
 
 $$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \xrightarrow{d} \mathcal{N}(0, 1) \quad \text{as } n \to \infty$$
 
@@ -153,12 +153,12 @@ $$\bar{X}_n \approx \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right)$$
 
 #### Key Points
 
-| Aspect | Description |
-|--------|-------------|
-| **Distribution-free** | Works for **ANY** distribution with finite $\mu, \sigma^2$ |
-| **Sample size** | $n \geq 30$ typically sufficient (rule of thumb) |
-| **Sum version** | $\sum X_i \sim \mathcal{N}(n\mu, n\sigma^2)$ |
-| **Standardized** | $Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0,1)$ |
+| Aspect                | Description                                                       |
+| --------------------- | ----------------------------------------------------------------- |
+| **Distribution-free** | Works for **ANY** distribution with finite $\mu, \sigma^2$        |
+| **Sample size**       | $n \geq 30$ typically sufficient (rule of thumb)                  |
+| **Sum version**       | $\sum X_i \sim \mathcal{N}(n\mu, n\sigma^2)$                      |
+| **Standardized**      | $Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0,1)$ |
 
 ---
 

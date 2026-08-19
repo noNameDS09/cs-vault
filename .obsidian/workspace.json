@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BE/INSEM/DMV/AUG25.md",
+                "file": "BE/INSEM/ML/UT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AUG25"
+              "title": "UT"
             }
           },
           {
@@ -59,18 +59,6 @@
               },
               "icon": "lucide-file-text",
               "title": "U1"
-            }
-          },
-          {
-            "id": "1b54b8c00c3d0c2c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "BE/DMV/data-modeling-visualization-notes-for-sppu-417522-semester-vii.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "data-modeling-visualization-notes-for-sppu-417522-semester-vii"
             }
           },
           {
@@ -147,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.70001220703125,
-    "collapsed": true
+    "width": 248.70001220703125
   },
   "right": {
     "id": "15a703db7c0dcfb2",
@@ -279,12 +266,13 @@
   },
   "active": "dfb7b5dd6f262b94",
   "lastOpenFiles": [
+    "BE/INSEM/DMV/AUG25.md",
+    "BE/INSEM/ML/UT.md",
+    "BE/DMV/U1.pdf",
     "BE/INSEM/DMV/SEP24.md",
     "BE/INSEM/DMV/SEP23.md",
-    "BE/INSEM/DMV/AUG25.md",
-    "BE/DMV/data-modeling-visualization-notes-for-sppu-417522-semester-vii.pdf",
     "BE/DMV/U2.pdf",
-    "BE/DMV/U1.pdf",
+    "BE/DMV/data-modeling-visualization-notes-for-sppu-417522-semester-vii.pdf",
     "BE/INSEM/ML/AUG25.md",
     "BE/INSEM/ML/SEP23.md",
     "BE/INSEM/ML/Pasted image 20260819151224.png",

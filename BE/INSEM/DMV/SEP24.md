@@ -16,7 +16,7 @@
 
 **Definition**: Covariance measures the **direction** of the linear relationship between two random variables $X$ and $Y$.
 
-$$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n} \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}) \quad \text{(sample)}$$
+$$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}) \quad \text{(sample)}$$
 
 ---
 
@@ -50,22 +50,22 @@ Y ↑
 **Negative Covariance**:
 ```
 Y ↑ ●
-    ●
-      ●
-        ●
-          ●
-            ●
-              ●
-                ●
-└──────────────────→ X
+  │    ●
+  │      ●
+  │        ●
+  │          ●
+  │            ●
+  │              ●
+  │                ●
+  └──────────────────→ X
 ```
 
 **Zero Covariance**:
 ```
-Y ↑   ●       ●
-    ●   ●   ●   ●
-  ●               ●
-└────────────────────→ X
+Y ↑   ●   ●   ●
+  │  ●   ●   ●   ●
+  │  ●               ●
+  └────────────────────→ X
 ```
 
 ---
@@ -883,15 +883,15 @@ Error = |π_est - π|
 
 #### Detailed Steps
 
-| Step | Action | Detail |
-|------|--------|--------|
-| **1. Hypotheses** | $H_0$: Null (equality), $H_1$: Alternative (≠, >, <) | $H_0$ always has =; $H_1$ is research hypothesis |
-| **2. α Level** | Probability of Type I error | Typically 0.05; lower for serious consequences |
-| **3. Test Statistic** | Standardized measure | $Z$, $t$, $\chi^2$, $F$ based on parameter & assumptions |
-| **4. Rejection Region** | Values leading to $H_0$ rejection | Critical values from tables/software |
-| **5. Compute** | Plug in sample data | $z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}$ |
-| **6. Decision** | Compare to critical value | Reject $H_0$ if $|z| > z_{\alpha/2}$ (two-tailed) |
-| **7. Conclusion** | State in problem context | Include practical significance, not just statistical |
+| Step                    | Action                                               | Detail                                                   |
+| ----------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
+| **1. Hypotheses**       | $H_0$: Null (equality), $H_1$: Alternative (≠, >, <) | $H_0$ always has =; $H_1$ is research hypothesis         |
+| **2. α Level**          | Probability of Type I error                          | Typically 0.05; lower for serious consequences           |
+| **3. Test Statistic**   | Standardized measure                                 | $Z$, $t$, $\chi^2$, $F$ based on parameter & assumptions |
+| **4. Rejection Region** | Values leading to $H_0$ rejection                    | Critical values from tables/software                     |
+| **5. Compute**          | Plug in sample data                                  | $z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}$            |
+| **6. Decision**         | Compare to critical value                            | Reject $H_0$ if $z> z_{\alpha/2}$ (two-tailed)           |
+| **7. Conclusion**       | State in problem context                             | Include practical significance, not just statistical     |
 
 ---
 
