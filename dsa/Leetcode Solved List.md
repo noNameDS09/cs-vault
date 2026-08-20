@@ -106,5 +106,6 @@
 - [[1563_StoneGameV]]
 - [[3471_FindTheLargestAlmostMissingInteger]]
 - [[1386_CinemaSeatAllocation]]
+- [[3069_DistributeElementsIntoTwoArraysI]]
 - [[kmp_PatternSearch]]
 

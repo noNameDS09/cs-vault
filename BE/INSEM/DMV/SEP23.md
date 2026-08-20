@@ -270,6 +270,7 @@ P(X=k) ↑
 
 **Support**: $X \in \{0, 1, 2, \dots, n\}$
 
+
 **PMF**:
 $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0, 1, \dots, n$$
 
@@ -864,27 +865,27 @@ JOB ARRIVAL
 
 #### Key Performance Metrics (Little's Law)
 
-| Metric | Symbol | Formula (Steady State) |
-|--------|--------|------------------------|
-| **Arrival Rate** | $\lambda$ | Jobs/time unit |
-| **Service Rate** | $\mu$ | Jobs/time unit per server |
-| **Utilization** | $\rho$ | $\rho = \frac{\lambda}{c\mu}$ |
-| **Avg # in System** | $L$ | $L = \lambda W$ (Little's Law) |
-| **Avg # in Queue** | $L_q$ | $L_q = \lambda W_q$ |
-| **Avg Time in System** | $W$ | $W = W_q + 1/\mu$ |
-| **Avg Time in Queue** | $W_q$ | Varies by model |
+| Metric                 | Symbol    | Formula (Steady State)         |
+| ---------------------- | --------- | ------------------------------ |
+| **Arrival Rate**       | $\lambda$ | Jobs/time unit                 |
+| **Service Rate**       | $\mu$     | Jobs/time unit per server      |
+| **Utilization**        | $\rho$    | $\rho = \frac{\lambda}{c\mu}$  |
+| **Avg # in System**    | $L$       | $L = \lambda W$ (Little's Law) |
+| **Avg # in Queue**     | $L_q$     | $L_q = \lambda W_q$            |
+| **Avg Time in System** | $W$       | $W = W_q + 1/\mu$              |
+| **Avg Time in Queue**  | $W_q$     | Varies by model                |
 
 ---
 
 #### Common Queue Models
 
-| Model | Description | Key Formulas |
-|-------|-------------|--------------|
-| **M/M/1** | Single server, Poisson arrivals, Exp service | $\rho = \lambda/\mu$, $L = \frac{\rho}{1-\rho}$, $W = \frac{1}{\mu-\lambda}$ |
-| **M/M/c** | $c$ servers | Erlang-C formula for $W_q$ |
-| **M/M/1/K** | Finite capacity $K$ | $P_n = \frac{(1-\rho)\rho^n}{1-\rho^{K+1}}$ |
-| **M/G/1** | General service time | Pollaczek-Khinchine: $W_q = \frac{\lambda \mathbb{E}[S^2]}{2(1-\rho)}$ |
-| **M/D/1** | Deterministic service | $W_q = \frac{\rho}{2\mu(1-\rho)}$ |
+| Model       | Description                                      | Key Formulas                                                                 |
+| ----------- | ------------------------------------------------ | ---------------------------------------------------------------------------- |
+| **M/M/1**   | Single server, Poisson arrivals, <br>Exp service | $\rho = \lambda/\mu$, $L = \frac{\rho}{1-\rho}$, $W = \frac{1}{\mu-\lambda}$ |
+| **M/M/c**   | $c$ servers                                      | Erlang-C formula for $W_q$                                                   |
+| **M/M/1/K** | Finite capacity $K$                              | $P_n = \frac{(1-\rho)\rho^n}{1-\rho^{K+1}}$                                  |
+| **M/G/1**   | General service time                             | Pollaczek-Khinchine: $W_q = \frac{\lambda \mathbb{E}[S^2]}{2(1-\rho)}$       |
+| **M/D/1**   | Deterministic service                            | $W_q = \frac{\rho}{2\mu(1-\rho)}$                                            |
 
 ---
 
@@ -945,11 +946,11 @@ $$P_n = (1-\rho)\rho^n, \quad n = 0, 1, 2, \dots$$
 
 #### Step-by-Step Procedure
 
-```
+### dig
 ┌─────────────────────────────────────────────────────────────┐
 │ 1. STATE HYPOTHESES                                         │
 │    H₀ (Null):    θ = θ₀        (status quo, no effect)      │
-│    H₁ (Alternative): θ ≠ θ₀ / θ > θ₀ / θ < θ₀              │
+│    H₁ (Alternative): θ ≠ θ₀ / θ > θ₀ / θ < θ₀               │
 └─────────────────────────────────────────────────────────────┘
                             │
                             ▼
@@ -995,6 +996,41 @@ $$P_n = (1-\rho)\rho^n, \quad n = 0, 1, 2, \dots$$
 │    "There is sufficient evidence at α=0.05 to conclude..."  │
 │    Report p-value if possible                               │
 └─────────────────────────────────────────────────────────────┘
+
+### Digram
+```mermaid
+flowchart TD
+    A["1. STATE HYPOTHESES<br/><br/>H₀ (Null): θ = θ₀<br/>Status quo, no effect<br/><br/>H₁ (Alternative): θ ≠ θ₀ / θ &gt; θ₀ / θ &lt; θ₀"]
+    
+    B["2. CHOOSE SIGNIFICANCE LEVEL α<br/><br/>Common: 0.05, 0.01, 0.10<br/><br/>α = P(Type I Error)<br/>= P(Reject H₀ | H₀ true)"]
+    
+    C["3. SELECT TEST STATISTIC &amp; SAMPLING DISTRIBUTION<br/><br/>Z-test (σ known, n large) → N(0,1)<br/>t-test (σ unknown) → t(n−1)<br/>χ²-test (variance) → χ²(n−1)<br/>F-test (variances) → F(df₁, df₂)"]
+    
+    D["4. DETERMINE CRITICAL / REJECTION REGION<br/><br/>Based on α and H₁<br/>(one-tailed or two-tailed)<br/><br/>Critical value(s): zα, tα, χ²α, etc."]
+    
+    E["5. COMPUTE TEST STATISTIC FROM SAMPLE DATA<br/><br/>Example:<br/>z = (x̄ − μ₀) / (σ / √n)"]
+    
+    F["6. MAKE DECISION<br/><br/>If test statistic is in rejection region → REJECT H₀<br/><br/>Else → FAIL TO REJECT H₀<br/><br/>Never say “accept H₀”"]
+    
+    G["7. INTERPRET RESULT IN CONTEXT<br/><br/>“There is sufficient evidence at α = 0.05 to conclude...”<br/><br/>Report the p-value if possible"]
+
+    A --> B --> C --> D --> E --> F --> G
+
+    classDef step1 fill:#EAF4FC,stroke:#A8C7E1,color:#23415C,stroke-width:2px
+    classDef step2 fill:#F3EEFA,stroke:#C7B5DE,color:#49385C,stroke-width:2px
+    classDef step3 fill:#EEF8F0,stroke:#B5D6BA,color:#315438,stroke-width:2px
+    classDef step4 fill:#FFF8E8,stroke:#E5CE9B,color:#66511F,stroke-width:2px
+    classDef step5 fill:#FDF0F5,stroke:#E2B7C5,color:#633B49,stroke-width:2px
+    classDef step6 fill:#FDEEEE,stroke:#E2B3B3,color:#673838,stroke-width:2px
+    classDef step7 fill:#EEF3FA,stroke:#B7C8DE,color:#34485F,stroke-width:2px
+
+    class A step1
+    class B step2
+    class C step3
+    class D step4
+    class E step5
+    class F step6
+    class G step7
 ```
 
 ---
@@ -1043,29 +1079,68 @@ $$P_n = (1-\rho)\rho^n, \quad n = 0, 1, 2, \dots$$
 - $\alpha = 0.01$: $z_{0.005} = 2.576$, $z_{0.01} = 2.326$
 
 ---
+```mermaid
+flowchart TB
+    A["Right-Tailed<br/>Hypothesis Test<br/><br/>α = 0.05"] --> B
 
+    B["H₀: θ = θ₀<br/>H₁: θ > θ₀"] --> D
+
+    subgraph D["Standard Normal Distribution"]
+        direction LR
+        L["Acceptance Region<br/><br/>1 − α = 0.95"]
+        C["Critical Value<br/><br/>z₀.₀₅ = 1.645"]
+        R["Rejection Region<br/><br/>α = 0.05"]
+        L --> C --> R
+    end
+
+    D --> E["Decision Rule<br/><br/>Reject H₀ if Z > 1.645"]
+
+    classDef title fill:#F3E8FF,stroke:#C4B5FD,color:#4C1D95,stroke-width:2px
+    classDef hypothesis fill:#E0F2FE,stroke:#93C5FD,color:#1E3A5F,stroke-width:2px
+    classDef accept fill:#DAFFE6,stroke:#86EFAC,color:#166534,stroke-width:2px
+    classDef critical fill:#FEF3C7,stroke:#FCD34D,color:#78350F,stroke-width:2px
+    classDef reject fill:#FEE2E2,stroke:#FCA5A5,color:#991B1B,stroke-width:2px
+    classDef decision fill:#EDE9FE,stroke:#C4B5FD,color:#4C1D95,stroke-width:2px
+
+    class A title
+    class B hypothesis
+    class L accept
+    class C critical
+    class R reject
+    class E decision
+
+    style D fill:#FAFADA,stroke:#D1D5DB,stroke-width:1.5px,color:#374151
+```
+
+---
+<image src="https://imgs.search.brave.com/P17FXB0nvANP6-dMjENBIip7SIYgER21mTMB62aLwJM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC8wODN6ZmJn/a3J6eHovMjBZMW5Z/Q1UwN3BmeE5OM3h0/ZEtXTC81OWIyZWNm/MWZhZGM2OWE4YTZh/MTc0ZDhhY2JmYWQ2/OC9PbmVfdGFpbGVk/X2ltYWdlXzFfMTIx/ODI0LnBuZw"/>
+
+---
 #### 1. Right-Tailed Test ($H_1: \theta > \theta_0$)
 
 ```
-                    REJECTION REGION (α)
-                         ████████
-                          ██████
-                           ████
-                            ██
-                             █
-f(z)    ──────────────────────────────
-        │                              │
-        │     ACCEPTANCE REGION        │
-        │    (1-α) = 0.95              │
-        │                              │
-        └──────────────────────────────┘
-        -3  -2  -1   0   1  z₀.₀₅=1.645  2   3
-                              │
-                        Critical Value
-                        
+                         Standard Normal Distribution
+
+                              Acceptance Region
+                                 (1 − α) = 0.95
+                         ┌───────────────────────┐
+                       ╭─┘                       └─╮
+                     ╭─┘                           └─╮
+                   ╭─┘                               └─╮
+                 ╭─┘                                   └─╮
+───────────────╯                                           ╰──────
+ -3       -2       -1        0        1       1.645       2       3
+                                               │
+                                               │ Critical Value
+                                               │ z₀.₀₅ = 1.645
+                                               │
+                                               └──────► Rejection
+                                                        Region (α=.05)
+
 H₀: θ = θ₀
 H₁: θ > θ₀
-Reject H₀ if Z > 1.645
+
+Decision Rule:  Reject H₀ if Z > 1.645
 ```
 
 **Rejection Region**: $Z > z_\alpha$
@@ -1075,24 +1150,31 @@ Reject H₀ if Z > 1.645
 #### 2. Left-Tailed Test ($H_1: \theta < \theta_0$)
 
 ```
-        REJECTION REGION (α)
-     ████████
-      ██████
-       ████
-        ██
-         █
-f(z)  ──────────────────────────────
-      │                              │
-      │     ACCEPTANCE REGION        │
-      │    (1-α) = 0.95              │
-      │                              │
-      └──────────────────────────────┘
-      -3  -2  -1.645  -1   0   1   2   3
-            │
-      Critical Value
-      
+                 REJECTION REGION (α = 0.05)
+              █
+             ███
+            █████
+           ███████
+          █████████
+        ╭────────────╮
+      ╭─┘            └─╮
+    ╭─┘                └─╮
+  ╭─┘                      └─╮
+─┴─────────────────────────────┴──────────────→ z
+ -3       -1.645        0                  3
+          │
+          │ Critical Value
+          │ z₀.₀₅ = -1.645
+          ▼
+
+        ACCEPTANCE REGION
+             (1 − α) = 0.95
+
+
 H₀: θ = θ₀
 H₁: θ < θ₀
+
+Decision Rule:
 Reject H₀ if Z < -1.645
 ```
 
@@ -1103,26 +1185,35 @@ Reject H₀ if Z < -1.645
 #### 3. Two-Tailed Test ($H_1: \theta \neq \theta_0$)
 
 ```
-    REJECTION (α/2)                    REJECTION (α/2)
-     ████████                              ████████
-      ██████                                ██████
-       ████                                  ████
-        ██                                    ██
-         █                                      █
-f(z)  ──────────────────────────────────────────────
-      │                                            │
-      │          ACCEPTANCE REGION                 │
-      │           (1-α) = 0.95                     │
-      │                                            │
-      └────────────────────────────────────────────┘
-      -3  -2  -1.96  -1   0   1   1.96  2   3
-            │                    │
-      Critical Values        Critical Values
-       -z₀.₀₂₅ = -1.96       z₀.₀₂₅ = 1.96
-      
+       REJECTION REGION (α/2)              REJECTION REGION (α/2)
+            α/2 = 0.025                         α/2 = 0.025
+             ██████                              ██████
+            ████████                            ████████
+           ██████████                          ██████████
+          ████████████                        ████████████
+        ╭──────────────╮                    ╭──────────────╮
+      ╭─┘              └─╮                ╭─┘              └─╮
+    ╭─┘                  └─╮            ╭─┘                  └─╮
+───┴────────────────────────┴──────────┴────────────────────────┴───→ z
+  -3        -1.96           0              1.96                 3
+            │                                │
+            │                                │
+     Critical Value                   Critical Value
+       -z₀.₀₂₅ = -1.96                z₀.₀₂₅ = 1.96
+
+
+              ◄──────── ACCEPTANCE REGION ────────►
+                         1 − α = 0.95
+
+
 H₀: θ = θ₀
 H₁: θ ≠ θ₀
-Reject H₀ if |Z| > 1.96
+
+Decision Rule:
+
+            ┌─────────────────────────────┐
+            │  Reject H₀ if |Z| > 1.96   │
+            └─────────────────────────────┘
 ```
 
 **Rejection Region**: $|Z| > z_{\alpha/2}$ (i.e., $Z < -z_{\alpha/2}$ or $Z > z_{\alpha/2}$)
